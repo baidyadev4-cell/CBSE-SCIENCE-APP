@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBSE Class 10 Science | Study App</title>
+  <meta name="description"
+    content="Complete NCERT Class 10 Science study app with notes, Q&A, and quizzes for Physics, Chemistry, and Biology.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HOME -->
+  <div id="page-home" class="page active">
+    <header class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🎓 CBSE Class 10</div>
+        <h1>Science <span class="highlight">Study Hub</span></h1>
+        <p class="hero-sub">Complete NCERT notes, concept explanations, Q&A, and 336+ quizzes across Physics, Chemistry
+          & Biology</p>
+        <div class="subject-pills">
+          <span class="pill pill-ph" onclick="filterSubject('physics')">⚡ Physics</span>
+          <span class="pill pill-ch" onclick="filterSubject('chemistry')">🧪 Chemistry</span>
+          <span class="pill pill-bi" onclick="filterSubject('biology')">🌿 Biology</span>
+          <span class="pill pill-all active" onclick="filterSubject('all')">📚 All</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="stats-bar">
+      <div class="stat"><span class="stat-num">11</span><span class="stat-lbl">Chapters</span></div>
+      <div class="stat"><span class="stat-num">330</span><span class="stat-lbl">Quiz Questions</span></div>
+      <div class="stat"><span class="stat-num">200+</span><span class="stat-lbl">Q&amp;A Notes</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Subjects</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2 id="chapter-section-title">📖 All Chapters</h2>
+        <button class="quiz-btn" onclick="goNotes()">📝 Watch Notes</button>
+      </div>
+      <div class="card-grid" id="chapter-grid"></div>
+    </section>
+  </div>
+
+  <!-- CHAPTER DETAIL -->
+  <div id="page-chapter" class="page">
+    <div class="chapter-bar">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <span id="chapter-bar-title"></span>
+      <button class="quiz-btn-sm" id="chapter-quiz-btn">🎯 Quiz This Chapter</button>
+    </div>
+    <div class="chapter-content" id="chapter-content"></div>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="page-quiz" class="page">
+    <div class="chapter-bar">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <span id="quiz-bar-title">Quiz Session</span>
+      <span class="quiz-score-badge">Score: <span id="quiz-score">0</span>/<span id="quiz-total">0</span></span>
+    </div>
+    <div class="quiz-wrapper">
+      <div class="quiz-progress-bar">
+        <div id="quiz-progress" class="quiz-progress-fill"></div>
+      </div>
+      <div id="quiz-card" class="quiz-card"></div>
+      <div class="quiz-nav">
+        <button class="quiz-prev" id="quiz-prev" onclick="prevQ()">← Prev</button>
+        <span id="quiz-counter"></span>
+        <button class="quiz-next" id="quiz-next" onclick="nextQ()">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div id="page-notes" class="page">
+    <div class="chapter-bar">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <span id="notes-bar-title">📝 Chapter-wise Handwritten Notes</span>
+    </div>
+    <div class="notes-wrapper">
+      <div class="notes-grid" id="notes-grid"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+# Python scripts (not needed for the website)
+*.py
+
+# Raw data and notes
+raw_chapters/
+notes/
+extract_pdf_output.txt
+
+# JSON data files (already compiled into data.js)
+*.json
+
+# Python cache
+__pycache__/
+*.pyc
