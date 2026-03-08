@@ -1,14 +1,43 @@
 // ===== CBSE SCIENCE APP - Main App Logic =====
 
 let currentFilter = 'all';
+let currentSearch = '';
 let currentChapter = null;
 let quizPool = [];
 let quizIdx = 0;
 let quizScore = 0;
 let answered = {};
 
+// ---- THEME ----
+function initTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeBtn(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.documentElement.setAttribute('data-theme', 'light');
+    updateThemeBtn('light');
+  }
+}
+
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  updateThemeBtn(newTheme);
+}
+
+function updateThemeBtn(theme) {
+  const btn = document.getElementById('theme-btn');
+  if (btn) {
+    btn.innerHTML = theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode';
+  }
+}
+
 // ---- INIT ----
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   renderGrid(currentFilter);
 });
 
@@ -24,9 +53,27 @@ function filterSubject(subject) {
 }
 
 // ---- GRID ----
+function handleSearch() {
+  const input = document.getElementById('chapter-search');
+  if (input) {
+    currentSearch = input.value.trim();
+    renderGrid(currentFilter);
+  }
+}
+
 function renderGrid(filter) {
   const grid = document.getElementById('chapter-grid');
-  const list = filter === 'all' ? chapters : chapters.filter(c => c.subject === filter);
+  let list = filter === 'all' ? chapters : chapters.filter(c => c.subject === filter);
+
+  if (currentSearch) {
+    const s = currentSearch.toLowerCase();
+    list = list.filter(c =>
+      c.title.toLowerCase().includes(s) ||
+      c.desc.toLowerCase().includes(s) ||
+      (c.topics && c.topics.some(t => t.toLowerCase().includes(s)))
+    );
+  }
+
   grid.innerHTML = list.map(ch => `
     <div class="chapter-card ${ch.subject}" onclick="openChapter('${ch.id}')">
       <div class="card-tag">${ch.subject.charAt(0).toUpperCase() + ch.subject.slice(1)}</div>
@@ -151,42 +198,42 @@ function openNotesPdf(chapterId) {
   }
 }
 
-// ---- PW PREMIUM NOTES ----
-const pwNotesData = [
-  { id: 'pw-ph1', subject: 'physics', chapter: 'Chapter 10', title: 'Light – Reflection and Refraction', pdf: 'Light - Reflection and Refraction  Short Notes.pdf' },
-  { id: 'pw-ph2', subject: 'physics', chapter: 'Chapter 11', title: 'Human Eye and Colourful World', pdf: 'Human Eye and Colorful World  Short Notes.pdf' },
-  { id: 'pw-ph3', subject: 'physics', chapter: 'Chapter 12', title: 'Electricity', pdf: 'Electricity  Short Notes.pdf' },
-  { id: 'pw-ph4', subject: 'physics', chapter: 'Chapter 13', title: 'Magnetic Effects of Electric Current', pdf: 'Magnetic Effects of Electric Current  Short Notes.pdf' },
-  { id: 'pw-ch1', subject: 'chemistry', chapter: 'Chapter 1', title: 'Chemical Reactions and Equations', pdf: 'Chemical Reactions and Equations  Short Notes.pdf' },
-  { id: 'pw-ch2', subject: 'chemistry', chapter: 'Chapter 2', title: 'Acids, Bases and Salts', pdf: 'Acids, Bases and Salts  Short Notes.pdf' },
-  { id: 'pw-ch3', subject: 'chemistry', chapter: 'Chapter 3', title: 'Metals and Non-Metals', pdf: 'Metals and Non - Metals  Short Notes.pdf' },
-  { id: 'pw-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon and its Compounds  Short Notes.pdf' },
-  { id: 'pw-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Life Processes  Short Notes.pdf' },
-  { id: 'pw-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Control and Coordination  Short Notes.pdf' },
-  { id: 'pw-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'How Do Organisms Reproduce  Short Notes.pdf' },
-  { id: 'pw-bi4', subject: 'biology', chapter: 'Chapter 9', title: 'Heredity and Evolution', pdf: 'Heredity and Evolution  Short Notes.pdf' },
-  { id: 'pw-bi5', subject: 'biology', chapter: 'Chapter 15', title: 'Our Environment', pdf: 'Our Environment  Short Notes.pdf' }
+// ---- OPEN-SOURCE NOTES ----
+const osNotesData = [
+  { id: 'os-ph1', subject: 'physics', chapter: 'Chapter 10', title: 'Light – Reflection and Refraction', pdf: 'Light_Reflection_Refraction_OS_Notes.pdf' },
+  { id: 'os-ph2', subject: 'physics', chapter: 'Chapter 11', title: 'Human Eye and Colourful World', pdf: 'Human_Eye_OS_Notes.pdf' },
+  { id: 'os-ph3', subject: 'physics', chapter: 'Chapter 12', title: 'Electricity', pdf: 'Electricity_OS_Notes.pdf' },
+  { id: 'os-ph4', subject: 'physics', chapter: 'Chapter 13', title: 'Magnetic Effects of Electric Current', pdf: 'Magnetic_Effects_OS_Notes.pdf' },
+  { id: 'os-ch1', subject: 'chemistry', chapter: 'Chapter 1', title: 'Chemical Reactions and Equations', pdf: 'Chem_Reactions_OS_Notes.pdf' },
+  { id: 'os-ch2', subject: 'chemistry', chapter: 'Chapter 2', title: 'Acids, Bases and Salts', pdf: 'Acids_Bases_OS_Notes.pdf' },
+  { id: 'os-ch3', subject: 'chemistry', chapter: 'Chapter 3', title: 'Metals and Non-Metals', pdf: 'Metals_OS_Notes.pdf' },
+  { id: 'os-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon_OS_Notes.pdf' },
+  { id: 'os-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Life_Processes_OS_Notes.pdf' },
+  { id: 'os-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Control_Coordination_OS_Notes.pdf' },
+  { id: 'os-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'Reproduction_OS_Notes.pdf' },
+  { id: 'os-bi4', subject: 'biology', chapter: 'Chapter 9', title: 'Heredity and Evolution', pdf: 'Heredity_OS_Notes.pdf' },
+  { id: 'os-bi5', subject: 'biology', chapter: 'Chapter 13', title: 'Our Environment', pdf: 'Our_Environment_OS_Notes.pdf' }
 ];
 
-function goPwNotes() {
-  const grid = document.getElementById('pw-notes-grid');
-  const filtered = currentFilter === 'all' ? pwNotesData : pwNotesData.filter(n => n.subject === currentFilter);
+function goOsNotes() {
+  const grid = document.getElementById('os-notes-grid');
+  const filtered = currentFilter === 'all' ? osNotesData : osNotesData.filter(n => n.subject === currentFilter);
   grid.innerHTML = filtered.map(note => `
-    <div class="pw-note-card ${note.subject}" onclick="openPwNotesPdf('${note.id}')">
-      <div class="pw-card-crown">👑</div>
-      <div class="pw-card-tag">${note.subject.charAt(0).toUpperCase() + note.subject.slice(1)}</div>
-      <div class="pw-card-chapter">${note.chapter}</div>
-      <div class="pw-card-title">${note.title}</div>
-      <div class="pw-card-action">📄 View Short Notes</div>
+    <div class="os-note-card ${note.subject}" onclick="openOsNotesPdf('${note.id}')">
+      <div class="os-card-crown">📚</div>
+      <div class="os-card-tag">${note.subject.charAt(0).toUpperCase() + note.subject.slice(1)}</div>
+      <div class="os-card-chapter">${note.chapter}</div>
+      <div class="os-card-title">${note.title}</div>
+      <div class="os-card-action">📄 View Short Notes</div>
     </div>
   `).join('');
-  showPage('page-pw-notes');
+  showPage('page-os-notes');
 }
 
-function openPwNotesPdf(noteId) {
-  const note = pwNotesData.find(n => n.id === noteId);
+function openOsNotesPdf(noteId) {
+  const note = osNotesData.find(n => n.id === noteId);
   if (note) {
-    window.open('pw_notes/' + encodeURIComponent(note.pdf), '_blank');
+    window.open('os_notes/' + encodeURIComponent(note.pdf), '_blank');
   }
 }
 
@@ -215,6 +262,43 @@ function openPyqPdf(pyqId) {
   const pyq = pyqData.find(p => p.id === pyqId);
   if (pyq) {
     window.open('pyqs/' + encodeURIComponent(pyq.pdf), '_blank');
+  }
+}
+
+// ---- PPTs (MASTER CARD) ----
+const pptData = [
+  { id: 'ppt-ph1', subject: 'physics', chapter: 'Chapter 10', title: 'Light – Reflection & Refraction', pdf: 'The_Optics_Playbook.pdf' },
+  { id: 'ppt-ph2', subject: 'physics', chapter: 'Chapter 11', title: 'Human Eye & Colourful World', pdf: 'Light_and_Vision.pdf' },
+  { id: 'ppt-ph3', subject: 'physics', chapter: 'Chapter 12', title: 'Electricity', pdf: 'Electricity_Foundations.pdf' },
+  { id: 'ppt-ph4', subject: 'physics', chapter: 'Chapter 13', title: 'Magnetic Effects of Electric Current', pdf: 'Electromagnetism_Decoded.pdf' },
+  { id: 'ppt-ch1', subject: 'chemistry', chapter: 'Chapter 1', title: 'Chemical Reactions and Equations', pdf: 'Mastering_Chemical_Reactions.pdf' },
+  { id: 'ppt-ch2', subject: 'chemistry', chapter: 'Chapter 2', title: 'Acids, Bases and Salts', pdf: 'Everyday_Acids_Bases_and_Salts.pdf' },
+  { id: 'ppt-ch3', subject: 'chemistry', chapter: 'Chapter 3', title: 'Metals and Non-Metals', pdf: 'Metals_and_Non-Metals_Mastery.pdf' },
+  { id: 'ppt-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon_Architecture.pdf' },
+  { id: 'ppt-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Engines_of_Life.pdf' },
+  { id: 'ppt-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Biological_Control_and_Coordination.pdf' },
+  { id: 'ppt-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'Biological_Reproduction.pdf' }
+];
+
+function goPpts() {
+  const grid = document.getElementById('ppt-grid');
+  const filtered = currentFilter === 'all' ? pptData : pptData.filter(n => n.subject === currentFilter);
+  grid.innerHTML = filtered.map(ppt => `
+    <div class="ppt-card ${ppt.subject}" onclick="openPptPdf('${ppt.id}')">
+      <div class="ppt-card-icon">📊</div>
+      <div class="ppt-card-tag">${ppt.subject.charAt(0).toUpperCase() + ppt.subject.slice(1)}</div>
+      <div class="ppt-card-chapter">${ppt.chapter}</div>
+      <div class="ppt-card-title">${ppt.title}</div>
+      <div class="ppt-card-action">📄 View PPT</div>
+    </div>
+  `).join('');
+  showPage('page-ppts');
+}
+
+function openPptPdf(pptId) {
+  const ppt = pptData.find(p => p.id === pptId);
+  if (ppt) {
+    window.open('PPT_S/' + encodeURIComponent(ppt.pdf), '_blank');
   }
 }
 

@@ -1,13 +1,13 @@
-﻿// CBSE Class 10 Science - Full Structured Study Data
+// CBSE Class 10 Science - Full Structured Study Data
 // Auto-generated. Contains all Physics, Chemistry, Biology chapters + 336 quiz questions.
 
 const chapters = [
   {
     "id": "ph1",
     "num": "Chapter 10",
-    "icon": "ðŸ”†",
+    "icon": "🔆",
     "subject": "physics",
-    "title": "Light â€“ Reflection and Refraction",
+    "title": "Light – Reflection and Refraction",
     "desc": "Mirrors, lenses, refraction and reflection laws.",
     "topics": [
       "Reflection",
@@ -36,7 +36,7 @@ const chapters = [
           "heading": "Concave and Convex Mirrors",
           "explanation": "A concave mirror (converging) curves inward. A convex mirror (diverging) curves outward. Concave mirrors form real and inverted images (used in torches, headlights). Convex mirrors form virtual, erect, diminished images (used in rear-view mirrors).",
           "formula": "Mirror formula: 1/v + 1/u = 1/f\nMagnification: m = -v/u",
-          "solved": "Q: An object is placed 30 cm in front of a concave mirror of focal length 15 cm. Find the image distance.\nSoln: 1/f = 1/v + 1/u â†’ 1/-15 = 1/v + 1/-30 â†’ 1/v = 1/-15 + 1/30 = -2/30 + 1/30 = -1/30 â†’ v = -30 cm (real, inverted image)",
+          "solved": "Q: An object is placed 30 cm in front of a concave mirror of focal length 15 cm. Find the image distance.\nSoln: 1/f = 1/v + 1/u → 1/-15 = 1/v + 1/-30 → 1/v = 1/-15 + 1/30 = -2/30 + 1/30 = -1/30 → v = -30 cm (real, inverted image)",
           "qa": [
             {
               "q": "Where are convex mirrors used and why?",
@@ -55,19 +55,19 @@ const chapters = [
         {
           "heading": "Refraction of Light",
           "explanation": "Refraction is the bending of light as it passes from one medium to another due to a change in speed. Light bends towards the normal when entering a denser medium and away when entering a rarer medium.",
-          "formula": "Snell's Law: nâ‚ sin i = nâ‚‚ sin r\nRefractive index: n = c/v (speed of light in vacuum / speed in medium)",
-          "solved": "Q: Light travels from air (n=1) to glass (n=1.5) at 30Â° incidence. Find refraction angle.\nSoln: nâ‚ sin i = nâ‚‚ sin r â†’ 1 Ã— sin30Â° = 1.5 Ã— sin r â†’ 0.5 = 1.5 sin r â†’ sin r = 0.333 â†’ r â‰ˆ 19.5Â°",
+          "formula": "Snell's Law: n₁ sin i = n₂ sin r\nRefractive index: n = c/v (speed of light in vacuum / speed in medium)",
+          "solved": "Q: Light travels from air (n=1) to glass (n=1.5) at 30° incidence. Find refraction angle.\nSoln: n₁ sin i = n₂ sin r → 1 × sin30° = 1.5 × sin r → 0.5 = 1.5 sin r → sin r = 0.333 → r ≈ 19.5°",
           "qa": [
             {
               "q": "Why does a pencil appear bent in water?",
-              "a": "Due to refraction â€“ light changes speed and bends at the water-air boundary."
+              "a": "Due to refraction – light changes speed and bends at the water-air boundary."
             },
             {
               "q": "What is absolute refractive index?",
               "a": "The ratio of speed of light in vacuum to speed in the medium: n = c/v"
             },
             {
-              "q": "Which medium is optically denser â€“ air or glass?",
+              "q": "Which medium is optically denser – air or glass?",
               "a": "Glass, because light travels slower in glass than in air."
             }
           ]
@@ -76,7 +76,7 @@ const chapters = [
           "heading": "Lenses and Power",
           "explanation": "A convex lens (converging) is thicker at the centre. A concave lens (diverging) is thinner at the centre. Lenses form images and their strength is measured in Dioptres.",
           "formula": "Lens formula: 1/v - 1/u = 1/f\nPower of lens: P = 1/f (f in metres), unit = Dioptre (D)",
-          "solved": "Q: A convex lens has focal length 25 cm. What is its power?\nSoln: f = 25 cm = 0.25 m â†’ P = 1/0.25 = +4 D",
+          "solved": "Q: A convex lens has focal length 25 cm. What is its power?\nSoln: f = 25 cm = 0.25 m → P = 1/0.25 = +4 D",
           "qa": [
             {
               "q": "What is the power of a concave lens of focal length 50 cm?",
@@ -98,7 +98,7 @@ const chapters = [
   {
     "id": "ph2",
     "num": "Chapter 11",
-    "icon": "ðŸ‘ï¸",
+    "icon": "👁️",
     "subject": "physics",
     "title": "Human Eye and Colourful World",
     "desc": "Eye structure, vision defects, dispersion and scattering.",
@@ -121,7 +121,7 @@ const chapters = [
             },
             {
               "q": "What is the least distance of distinct vision?",
-              "a": "25 cm â€” the minimum distance at which a normal eye sees clearly without strain."
+              "a": "25 cm — the minimum distance at which a normal eye sees clearly without strain."
             },
             {
               "q": "What is the function of the iris?",
@@ -134,7 +134,7 @@ const chapters = [
           "explanation": "Myopia (short-sightedness): Distant objects blur; image forms before retina. Corrected by concave lens. Hypermetropia (long-sightedness): Near objects blur; image forms behind retina. Corrected by convex lens. Presbyopia: Loss of accommodation in old age. Corrected by bifocal lens.",
           "qa": [
             {
-              "q": "What defect does a person with â€“3D power lens have?",
+              "q": "What defect does a person with –3D power lens have?",
               "a": "Myopia. Negative power means concave lens, correcting short-sightedness."
             },
             {
@@ -167,7 +167,7 @@ const chapters = [
         },
         {
           "heading": "Scattering of Light (Tyndall Effect)",
-          "explanation": "Scattering occurs when light hits fine particles. Blue light scatters more than red (shorter wavelength). Sky is blue because atmospheric particles scatter blue light. Danger signals are red â€” red is least scattered and visible from a distance. At sunrise/sunset, sky appears red because blue light is scattered away over long distances.",
+          "explanation": "Scattering occurs when light hits fine particles. Blue light scatters more than red (shorter wavelength). Sky is blue because atmospheric particles scatter blue light. Danger signals are red — red is least scattered and visible from a distance. At sunrise/sunset, sky appears red because blue light is scattered away over long distances.",
           "qa": [
             {
               "q": "Why is the sky blue?",
@@ -189,7 +189,7 @@ const chapters = [
   {
     "id": "ph3",
     "num": "Chapter 12",
-    "icon": "ðŸ’¡",
+    "icon": "💡",
     "subject": "physics",
     "title": "Electricity",
     "desc": "Electric current, Ohm's Law, resistance, circuits and power.",
@@ -207,7 +207,7 @@ const chapters = [
           "heading": "Electric Current and Potential Difference",
           "explanation": "Electric current (I) is the rate of flow of electric charge. Potential difference (V) is the work done per unit charge to move it between two points.",
           "formula": "I = Q/t (Current = Charge / Time, unit: Ampere)\nV = W/Q (Potential difference = Work / Charge, unit: Volt)",
-          "solved": "Q: A charge of 60 C flows through a wire in 2 minutes. Find the current.\nSoln: t = 2Ã—60 = 120 s. I = Q/t = 60/120 = 0.5 A",
+          "solved": "Q: A charge of 60 C flows through a wire in 2 minutes. Find the current.\nSoln: t = 2×60 = 120 s. I = Q/t = 60/120 = 0.5 A",
           "qa": [
             {
               "q": "What is 1 Ampere?",
@@ -222,28 +222,28 @@ const chapters = [
         {
           "heading": "Ohm's Law",
           "explanation": "At constant temperature, the current through a conductor is directly proportional to the potential difference across it.",
-          "formula": "V = I Ã— R\n(Voltage = Current Ã— Resistance)",
-          "solved": "Q: A 6V battery drives current through a 12Î© resistor. Find the current.\nSoln: I = V/R = 6/12 = 0.5 A",
+          "formula": "V = I × R\n(Voltage = Current × Resistance)",
+          "solved": "Q: A 6V battery drives current through a 12Ω resistor. Find the current.\nSoln: I = V/R = 6/12 = 0.5 A",
           "qa": [
             {
               "q": "State Ohm's Law.",
-              "a": "V âˆ I (at constant temperature), or V = IR where R is the constant resistance."
+              "a": "V ∝ I (at constant temperature), or V = IR where R is the constant resistance."
             },
             {
               "q": "What is the unit of resistance?",
-              "a": "Ohm (Î©)"
+              "a": "Ohm (Ω)"
             },
             {
-              "q": "A wire has R = 5Î© and I = 2A. What is the voltage?",
-              "a": "V = IR = 2 Ã— 5 = 10V"
+              "q": "A wire has R = 5Ω and I = 2A. What is the voltage?",
+              "a": "V = IR = 2 × 5 = 10V"
             }
           ]
         },
         {
           "heading": "Resistance and Resistivity",
-          "explanation": "Resistance depends on the material, length, and cross-section of the conductor. Longer wire â†’ more resistance. Thicker wire â†’ less resistance. Resistivity (Ï) is the intrinsic property of the material.",
-          "formula": "R = ÏL/A\n(R = resistance, Ï = resistivity, L = length, A = cross-section area)",
-          "solved": "Q: A copper wire of length 2m and area 0.5 mmÂ² has resistivity 1.7Ã—10â»â¸ Î©m. Find R.\nSoln: R = ÏL/A = (1.7Ã—10â»â¸ Ã— 2)/(0.5Ã—10â»â¶) = 0.068 Î©",
+          "explanation": "Resistance depends on the material, length, and cross-section of the conductor. Longer wire → more resistance. Thicker wire → less resistance. Resistivity (ρ) is the intrinsic property of the material.",
+          "formula": "R = ρL/A\n(R = resistance, ρ = resistivity, L = length, A = cross-section area)",
+          "solved": "Q: A copper wire of length 2m and area 0.5 mm² has resistivity 1.7×10⁻⁸ Ωm. Find R.\nSoln: R = ρL/A = (1.7×10⁻⁸ × 2)/(0.5×10⁻⁶) = 0.068 Ω",
           "qa": [
             {
               "q": "How does resistance change with length?",
@@ -262,8 +262,8 @@ const chapters = [
         {
           "heading": "Series and Parallel Circuits",
           "explanation": "Series: All components share same current. Total resistance adds up. One break stops all. Parallel: All components share same voltage. Total resistance decreases. One break doesn't stop others.",
-          "formula": "Series: R_total = Râ‚ + Râ‚‚ + Râ‚ƒ\nParallel: 1/R_total = 1/Râ‚ + 1/Râ‚‚ + 1/Râ‚ƒ",
-          "solved": "Q: Râ‚=3Î© and Râ‚‚=6Î© in parallel. Find equivalent resistance.\nSoln: 1/R = 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2 â†’ R = 2Î©",
+          "formula": "Series: R_total = R₁ + R₂ + R₃\nParallel: 1/R_total = 1/R₁ + 1/R₂ + 1/R₃",
+          "solved": "Q: R₁=3Ω and R₂=6Ω in parallel. Find equivalent resistance.\nSoln: 1/R = 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2 → R = 2Ω",
           "qa": [
             {
               "q": "Why are household appliances connected in parallel?",
@@ -274,28 +274,28 @@ const chapters = [
               "a": "Total resistance increases."
             },
             {
-              "q": "Two 6Î© resistors in series. Find total resistance.",
-              "a": "R = 6+6 = 12Î©"
+              "q": "Two 6Ω resistors in series. Find total resistance.",
+              "a": "R = 6+6 = 12Ω"
             }
           ]
         },
         {
           "heading": "Electric Power and Heating Effect",
           "explanation": "Electric power is the rate of doing electrical work (energy consumed per second). The heating effect (Joule's Law) occurs because current flowing through resistance produces heat.",
-          "formula": "P = VI = IÂ²R = VÂ²/R (unit: Watt)\nH = IÂ²Rt (Heat in Joules â€“ Joule's Law)\n1 kWh = 3.6 Ã— 10â¶ J",
-          "solved": "Q: A 2000W geyser runs for 2 hours. Find energy in kWh.\nSoln: E = PÃ—t = 2000W Ã— 2h = 4000Wh = 4 kWh",
+          "formula": "P = VI = I²R = V²/R (unit: Watt)\nH = I²Rt (Heat in Joules – Joule's Law)\n1 kWh = 3.6 × 10⁶ J",
+          "solved": "Q: A 2000W geyser runs for 2 hours. Find energy in kWh.\nSoln: E = P×t = 2000W × 2h = 4000Wh = 4 kWh",
           "qa": [
             {
               "q": "What is the commercial unit of electrical energy?",
-              "a": "Kilowatt-hour (kWh), also called 1 unit. 1 kWh = 3.6 Ã— 10â¶ J."
+              "a": "Kilowatt-hour (kWh), also called 1 unit. 1 kWh = 3.6 × 10⁶ J."
             },
             {
               "q": "Why does a fuse wire melt?",
-              "a": "It has high resistance and low melting point. Excess current produces too much heat (H=IÂ²Rt), melting it."
+              "a": "It has high resistance and low melting point. Excess current produces too much heat (H=I²Rt), melting it."
             },
             {
               "q": "A 100W bulb runs for 5 hours. How many units of energy?",
-              "a": "E = 100W Ã— 5h = 500Wh = 0.5 kWh = 0.5 units"
+              "a": "E = 100W × 5h = 500Wh = 0.5 kWh = 0.5 units"
             }
           ]
         }
@@ -305,7 +305,7 @@ const chapters = [
   {
     "id": "ph4",
     "num": "Chapter 13",
-    "icon": "ðŸ§²",
+    "icon": "🧲",
     "subject": "physics",
     "title": "Magnetic Effects of Electric Current",
     "desc": "Magnetic fields, electromagnets, motors and generators.",
@@ -328,7 +328,7 @@ const chapters = [
             },
             {
               "q": "What are the properties of magnetic field lines?",
-              "a": "(1) They form closed loops. (2) They go Nâ†’S outside, Sâ†’N inside. (3) They never cross. (4) Closer lines = stronger field."
+              "a": "(1) They form closed loops. (2) They go N→S outside, S→N inside. (3) They never cross. (4) Closer lines = stronger field."
             },
             {
               "q": "What does it mean when field lines are crowded?",
@@ -338,7 +338,7 @@ const chapters = [
         },
         {
           "heading": "Magnetic Field due to Current-Carrying Conductors",
-          "explanation": "Straight wire: produces concentric circular field lines. Right-hand Thumb Rule: hold wire with right hand, thumb in current direction â€” fingers curl in field direction. Solenoid: produces a uniform magnetic field inside, like a bar magnet. An electromagnet is a solenoid with a soft iron core.",
+          "explanation": "Straight wire: produces concentric circular field lines. Right-hand Thumb Rule: hold wire with right hand, thumb in current direction — fingers curl in field direction. Solenoid: produces a uniform magnetic field inside, like a bar magnet. An electromagnet is a solenoid with a soft iron core.",
           "qa": [
             {
               "q": "State the Right-Hand Thumb Rule.",
@@ -355,12 +355,12 @@ const chapters = [
           ]
         },
         {
-          "heading": "Force on a Current-Carrying Conductor â€“ Fleming's Left-Hand Rule",
+          "heading": "Force on a Current-Carrying Conductor – Fleming's Left-Hand Rule",
           "explanation": "A current-carrying conductor in a magnetic field experiences a force. Fleming's Left-Hand Rule: Stretch thumb, forefinger, middle finger of left hand mutually perpendicular. Forefinger = magnetic field direction. Middle finger = current direction. Thumb = force/motion direction. This is the basis of the electric motor.",
           "qa": [
             {
               "q": "State Fleming's Left-Hand Rule.",
-              "a": "Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. Forefingerâ†’field, Middle fingerâ†’current, Thumbâ†’force."
+              "a": "Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. Forefinger→field, Middle finger→current, Thumb→force."
             },
             {
               "q": "What converts electrical energy to mechanical energy?",
@@ -368,7 +368,7 @@ const chapters = [
             },
             {
               "q": "State Fleming's Right-Hand Rule.",
-              "a": "Used for generators: Forefingerâ†’field, Thumbâ†’motion, Middle fingerâ†’induced current direction."
+              "a": "Used for generators: Forefinger→field, Thumb→motion, Middle finger→induced current direction."
             }
           ]
         },
@@ -396,7 +396,7 @@ const chapters = [
   {
     "id": "ch1",
     "num": "Chapter 1",
-    "icon": "ðŸ”¥",
+    "icon": "🔥",
     "subject": "chemistry",
     "title": "Chemical Reactions and Equations",
     "desc": "Types of reactions, balancing equations, oxidation and reduction.",
@@ -425,57 +425,57 @@ const chapters = [
             },
             {
               "q": "Why must a chemical equation be balanced?",
-              "a": "To obey the Law of Conservation of Mass â€” atoms are neither created nor destroyed."
+              "a": "To obey the Law of Conservation of Mass — atoms are neither created nor destroyed."
             }
           ]
         },
         {
           "heading": "Combination Reactions",
-          "explanation": "Two or more substances combine to form a single product.\nExample: CaO + Hâ‚‚O â†’ Ca(OH)â‚‚ + Heat\nBurning coal: C + Oâ‚‚ â†’ COâ‚‚\nRespiration: Câ‚†Hâ‚â‚‚Oâ‚† + 6Oâ‚‚ â†’ 6COâ‚‚ + 6Hâ‚‚O + energy\nExothermic reactions release heat. Endothermic absorb heat.",
+          "explanation": "Two or more substances combine to form a single product.\nExample: CaO + H₂O → Ca(OH)₂ + Heat\nBurning coal: C + O₂ → CO₂\nRespiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy\nExothermic reactions release heat. Endothermic absorb heat.",
           "qa": [
             {
               "q": "Define a combination reaction.",
-              "a": "A reaction in which two or more reactants combine to form a single product: A + B â†’ AB"
+              "a": "A reaction in which two or more reactants combine to form a single product: A + B → AB"
             },
             {
               "q": "Is slaking of lime exothermic or endothermic?",
-              "a": "Exothermic â€” CaO + Hâ‚‚O â†’ Ca(OH)â‚‚ + Heat"
+              "a": "Exothermic — CaO + H₂O → Ca(OH)₂ + Heat"
             },
             {
               "q": "Give an example of an endothermic reaction.",
-              "a": "Photosynthesis or electrolysis of water â€” energy is absorbed from surroundings."
+              "a": "Photosynthesis or electrolysis of water — energy is absorbed from surroundings."
             }
           ]
         },
         {
           "heading": "Decomposition Reactions",
-          "explanation": "A single compound breaks down into simpler products.\nThermal decomposition: CaCOâ‚ƒ â†’ CaO + COâ‚‚ (on heating)\nElectrolytic decomposition: 2Hâ‚‚O â†’ 2Hâ‚‚ + Oâ‚‚ (electricity)\nPhoto decomposition: 2AgCl â†’ 2Ag + Clâ‚‚ (sunlight)\n2AgBr â†’ 2Ag + Brâ‚‚ (used in black-and-white photography)",
+          "explanation": "A single compound breaks down into simpler products.\nThermal decomposition: CaCO₃ → CaO + CO₂ (on heating)\nElectrolytic decomposition: 2H₂O → 2H₂ + O₂ (electricity)\nPhoto decomposition: 2AgCl → 2Ag + Cl₂ (sunlight)\n2AgBr → 2Ag + Br₂ (used in black-and-white photography)",
           "qa": [
             {
               "q": "What is a decomposition reaction?",
-              "a": "A reaction where a single reactant breaks down into two or more simpler products: AB â†’ A + B"
+              "a": "A reaction where a single reactant breaks down into two or more simpler products: AB → A + B"
             },
             {
               "q": "Give an example of photodecomposition.",
-              "a": "2AgCl â†’ 2Ag + Clâ‚‚ (silver chloride turns grey in sunlight)"
+              "a": "2AgCl → 2Ag + Cl₂ (silver chloride turns grey in sunlight)"
             },
             {
               "q": "What is thermal decomposition? Give an example.",
-              "a": "Decomposition caused by heat. E.g., CaCOâ‚ƒ (limestone) â†’ CaO (quicklime) + COâ‚‚"
+              "a": "Decomposition caused by heat. E.g., CaCO₃ (limestone) → CaO (quicklime) + CO₂"
             }
           ]
         },
         {
           "heading": "Displacement and Double Displacement Reactions",
-          "explanation": "Displacement: A more reactive element displaces a less reactive one from a compound.\nFe + CuSOâ‚„ â†’ FeSOâ‚„ + Cu (iron displaces copper)\nDouble Displacement: Both reactants exchange ions (precipitate often forms).\nNaâ‚‚SOâ‚„ + BaClâ‚‚ â†’ BaSOâ‚„â†“ + 2NaCl",
+          "explanation": "Displacement: A more reactive element displaces a less reactive one from a compound.\nFe + CuSO₄ → FeSO₄ + Cu (iron displaces copper)\nDouble Displacement: Both reactants exchange ions (precipitate often forms).\nNa₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl",
           "qa": [
             {
               "q": "What is a displacement reaction?",
-              "a": "A more reactive element displaces a less reactive element from its compound. E.g., Zn + CuSOâ‚„ â†’ ZnSOâ‚„ + Cu"
+              "a": "A more reactive element displaces a less reactive element from its compound. E.g., Zn + CuSO₄ → ZnSO₄ + Cu"
             },
             {
               "q": "What is a double displacement reaction?",
-              "a": "Both reactants exchange ions to form two new compounds. E.g., NaOH + HCl â†’ NaCl + Hâ‚‚O"
+              "a": "Both reactants exchange ions to form two new compounds. E.g., NaOH + HCl → NaCl + H₂O"
             },
             {
               "q": "What is a precipitate?",
@@ -485,7 +485,7 @@ const chapters = [
         },
         {
           "heading": "Oxidation and Reduction (Redox)",
-          "explanation": "Oxidation = gain of oxygen / loss of hydrogen / loss of electrons.\nReduction = loss of oxygen / gain of hydrogen / gain of electrons.\nBoth oxidation and reduction occur simultaneously in a redox reaction.\nCorrosion: metals oxidize slowly (e.g., rusting of iron).\n4Fe + 3Oâ‚‚ + xHâ‚‚O â†’ 2Feâ‚‚Oâ‚ƒ.xHâ‚‚O (rust)\nRancidity: oxidation of fats/oils causing bad smell/taste.",
+          "explanation": "Oxidation = gain of oxygen / loss of hydrogen / loss of electrons.\nReduction = loss of oxygen / gain of hydrogen / gain of electrons.\nBoth oxidation and reduction occur simultaneously in a redox reaction.\nCorrosion: metals oxidize slowly (e.g., rusting of iron).\n4Fe + 3O₂ + xH₂O → 2Fe₂O₃.xH₂O (rust)\nRancidity: oxidation of fats/oils causing bad smell/taste.",
           "qa": [
             {
               "q": "Define oxidation.",
@@ -507,7 +507,7 @@ const chapters = [
   {
     "id": "ch2",
     "num": "Chapter 2",
-    "icon": "ðŸ§‚",
+    "icon": "🧂",
     "subject": "chemistry",
     "title": "Acids, Bases and Salts",
     "desc": "Properties, pH scale, neutralisation and salts.",
@@ -518,15 +518,15 @@ const chapters = [
       "Important Salts"
     ],
     "content": {
-      "intro": "Acids and bases are two important classes of chemical compounds that affect our daily life â€” from the food we eat to the products we use.",
+      "intro": "Acids and bases are two important classes of chemical compounds that affect our daily life — from the food we eat to the products we use.",
       "sections": [
         {
           "heading": "Acids and Bases",
-          "explanation": "Acids: sour taste, turn blue litmus red, pH < 7, release Hâº ions in water.\nBases: bitter taste, slippery, turn red litmus blue, pH > 7, release OHâ» ions.\nStrong acids: HCl, Hâ‚‚SOâ‚„, HNOâ‚ƒ. Weak acids: CHâ‚ƒCOOH (vinegar), Hâ‚‚COâ‚ƒ.\nStrong bases: NaOH, KOH. Weak bases: Mg(OH)â‚‚, Ca(OH)â‚‚.",
+          "explanation": "Acids: sour taste, turn blue litmus red, pH < 7, release H⁺ ions in water.\nBases: bitter taste, slippery, turn red litmus blue, pH > 7, release OH⁻ ions.\nStrong acids: HCl, H₂SO₄, HNO₃. Weak acids: CH₃COOH (vinegar), H₂CO₃.\nStrong bases: NaOH, KOH. Weak bases: Mg(OH)₂, Ca(OH)₂.",
           "qa": [
             {
               "q": "How do acids behave in water?",
-              "a": "They dissociate to release Hâº (hydrogen) ions. These ions combine with water to form Hâ‚ƒOâº (hydronium ions)."
+              "a": "They dissociate to release H⁺ (hydrogen) ions. These ions combine with water to form H₃O⁺ (hydronium ions)."
             },
             {
               "q": "What is an alkali?",
@@ -544,11 +544,11 @@ const chapters = [
           "qa": [
             {
               "q": "What does pH stand for and what does it measure?",
-              "a": "'Power of Hydrogen'. It measures the concentration of Hâº ions. pH = -log[Hâº]."
+              "a": "'Power of Hydrogen'. It measures the concentration of H⁺ ions. pH = -log[H⁺]."
             },
             {
               "q": "What is the pH of pure water?",
-              "a": "7 â€” it is perfectly neutral."
+              "a": "7 — it is perfectly neutral."
             },
             {
               "q": "What happens to aquatic life if acid rain makes river pH fall to 6?",
@@ -558,23 +558,23 @@ const chapters = [
         },
         {
           "heading": "Salts and Neutralisation",
-          "explanation": "Neutralisation: Acid + Base â†’ Salt + Water\nHCl + NaOH â†’ NaCl + Hâ‚‚O\nImportant Salts:\nâ€¢ Baking soda: NaHCOâ‚ƒ â€” used in cooking, antacids\nâ€¢ Washing soda: Naâ‚‚COâ‚ƒ.10Hâ‚‚O â€” cleaning agent, water softener\nâ€¢ Bleaching powder: Ca(OCl)Cl â€” disinfectant, textile bleaching\nâ€¢ Plaster of Paris: CaSOâ‚„.Â½Hâ‚‚O â€” making casts\nâ€¢ Common salt: NaCl â€” made by evaporation of seawater",
+          "explanation": "Neutralisation: Acid + Base → Salt + Water\nHCl + NaOH → NaCl + H₂O\nImportant Salts:\n• Baking soda: NaHCO₃ — used in cooking, antacids\n• Washing soda: Na₂CO₃.10H₂O — cleaning agent, water softener\n• Bleaching powder: Ca(OCl)Cl — disinfectant, textile bleaching\n• Plaster of Paris: CaSO₄.½H₂O — making casts\n• Common salt: NaCl — made by evaporation of seawater",
           "qa": [
             {
               "q": "What is neutralisation?",
-              "a": "A reaction between an acid and a base that forms salt and water: Acid + Base â†’ Salt + Hâ‚‚O"
+              "a": "A reaction between an acid and a base that forms salt and water: Acid + Base → Salt + H₂O"
             },
             {
               "q": "What is baking powder?",
-              "a": "A mixture of baking soda (NaHCOâ‚ƒ) and tartaric acid. When heated or wet, COâ‚‚ is released making food fluffy."
+              "a": "A mixture of baking soda (NaHCO₃) and tartaric acid. When heated or wet, CO₂ is released making food fluffy."
             },
             {
               "q": "How is Plaster of Paris (POP) made?",
-              "a": "By heating gypsum (CaSOâ‚„.2Hâ‚‚O) at 100Â°C: CaSOâ‚„.2Hâ‚‚O â†’ CaSOâ‚„.Â½Hâ‚‚O + 1.5Hâ‚‚O"
+              "a": "By heating gypsum (CaSO₄.2H₂O) at 100°C: CaSO₄.2H₂O → CaSO₄.½H₂O + 1.5H₂O"
             },
             {
               "q": "Why is baking soda used in antacids?",
-              "a": "Baking soda (NaHCOâ‚ƒ) is a mild base that neutralises excess stomach acid."
+              "a": "Baking soda (NaHCO₃) is a mild base that neutralises excess stomach acid."
             }
           ]
         }
@@ -584,7 +584,7 @@ const chapters = [
   {
     "id": "ch3",
     "num": "Chapter 3",
-    "icon": "âš™ï¸",
+    "icon": "⚙️",
     "subject": "chemistry",
     "title": "Metals and Non-metals",
     "desc": "Properties, reactivity series, ionic bonding, extraction and alloys.",
@@ -619,7 +619,7 @@ const chapters = [
         },
         {
           "heading": "Reactivity Series",
-          "explanation": "Decreasing order of reactivity:\nK > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au\nMetals above hydrogen displace Hâ‚‚ from dilute acids.\nMore reactive metals displace less reactive metals from their salt solutions.\nGold and platinum are least reactive â€” called noble metals.",
+          "explanation": "Decreasing order of reactivity:\nK > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au\nMetals above hydrogen displace H₂ from dilute acids.\nMore reactive metals displace less reactive metals from their salt solutions.\nGold and platinum are least reactive — called noble metals.",
           "qa": [
             {
               "q": "What is the reactivity series?",
@@ -631,13 +631,13 @@ const chapters = [
             },
             {
               "q": "What happens when zinc is added to copper sulphate solution?",
-              "a": "Zinc displaces copper: Zn + CuSOâ‚„ â†’ ZnSOâ‚„ + Cu. The blue colour fades."
+              "a": "Zinc displaces copper: Zn + CuSO₄ → ZnSO₄ + Cu. The blue colour fades."
             }
           ]
         },
         {
           "heading": "Ionic Bonding and Properties of Ionic Compounds",
-          "explanation": "Ionic bonds form by transfer of electrons from metal to non-metal. Metal loses electrons (oxidation) â†’ cation. Non-metal gains electrons (reduction) â†’ anion. Ionic compounds: high melting/boiling points, hard and brittle, conduct electricity when dissolved or molten, soluble in water.",
+          "explanation": "Ionic bonds form by transfer of electrons from metal to non-metal. Metal loses electrons (oxidation) → cation. Non-metal gains electrons (reduction) → anion. Ionic compounds: high melting/boiling points, hard and brittle, conduct electricity when dissolved or molten, soluble in water.",
           "qa": [
             {
               "q": "Why do ionic compounds have high melting points?",
@@ -649,13 +649,13 @@ const chapters = [
             },
             {
               "q": "Give the formation of NaCl.",
-              "a": "Na â†’ Naâº + eâ» (oxidation). Cl + eâ» â†’ Clâ» (reduction). Naâº + Clâ» â†’ NaCl (ionic compound)."
+              "a": "Na → Na⁺ + e⁻ (oxidation). Cl + e⁻ → Cl⁻ (reduction). Na⁺ + Cl⁻ → NaCl (ionic compound)."
             }
           ]
         },
         {
           "heading": "Extraction and Corrosion Prevention",
-          "explanation": "Gangue: impurities in ore. Ore â†’ concentrated ore â†’ metal oxide â†’ pure metal.\nThermite reaction: 2Al + Feâ‚‚Oâ‚ƒ â†’ Alâ‚‚Oâ‚ƒ + 2Fe (used for welding railway tracks).\nGalvanisation: coating iron with zinc to prevent rusting.\nAlloying: mixing metals to improve properties. Brass = Cu+Zn. Bronze = Cu+Sn. Solder = Pb+Sn. Steel = Fe+C.",
+          "explanation": "Gangue: impurities in ore. Ore → concentrated ore → metal oxide → pure metal.\nThermite reaction: 2Al + Fe₂O₃ → Al₂O₃ + 2Fe (used for welding railway tracks).\nGalvanisation: coating iron with zinc to prevent rusting.\nAlloying: mixing metals to improve properties. Brass = Cu+Zn. Bronze = Cu+Sn. Solder = Pb+Sn. Steel = Fe+C.",
           "qa": [
             {
               "q": "What is galvanisation?",
@@ -667,7 +667,7 @@ const chapters = [
             },
             {
               "q": "What is the thermite reaction used for?",
-              "a": "Welding broken railway tracks. 2Al + Feâ‚‚Oâ‚ƒ â†’ Alâ‚‚Oâ‚ƒ + 2Fe + large heat"
+              "a": "Welding broken railway tracks. 2Al + Fe₂O₃ → Al₂O₃ + 2Fe + large heat"
             },
             {
               "q": "Why is steel harder than pure iron?",
@@ -681,7 +681,7 @@ const chapters = [
   {
     "id": "ch4",
     "num": "Chapter 4",
-    "icon": "â¬¡",
+    "icon": "⬡",
     "subject": "chemistry",
     "title": "Carbon and its Compounds",
     "desc": "Carbon chemistry, hydrocarbons, functional groups, soaps and detergents.",
@@ -697,7 +697,7 @@ const chapters = [
       "sections": [
         {
           "heading": "Special Properties of Carbon",
-          "explanation": "Carbon has valency 4 â€” forms strong covalent bonds.\nCatenation: forms chains, branches, and rings with itself.\nAllotropes: Diamond (hardest natural substance, insulator), Graphite (soft, conductor, lubricant).\nTetravalency + catenation = reason for huge variety of organic compounds.",
+          "explanation": "Carbon has valency 4 — forms strong covalent bonds.\nCatenation: forms chains, branches, and rings with itself.\nAllotropes: Diamond (hardest natural substance, insulator), Graphite (soft, conductor, lubricant).\nTetravalency + catenation = reason for huge variety of organic compounds.",
           "qa": [
             {
               "q": "What is catenation?",
@@ -715,11 +715,11 @@ const chapters = [
         },
         {
           "heading": "Hydrocarbons",
-          "explanation": "Hydrocarbons contain only C and H atoms.\nAlkanes (saturated): Câ‚™Hâ‚‚â‚™â‚Šâ‚‚ â€” no double/triple bonds. Methane (CHâ‚„), Ethane (Câ‚‚Hâ‚†).\nAlkenes (unsaturated): Câ‚™Hâ‚‚â‚™ â€” one C=C double bond. Ethene (Câ‚‚Hâ‚„).\nAlkynes (unsaturated): Câ‚™Hâ‚‚â‚™â‚‹â‚‚ â€” one Câ‰¡C triple bond. Ethyne (Câ‚‚Hâ‚‚).\nIsomers: same molecular formula, different structures.",
+          "explanation": "Hydrocarbons contain only C and H atoms.\nAlkanes (saturated): CₙH₂ₙ₊₂ — no double/triple bonds. Methane (CH₄), Ethane (C₂H₆).\nAlkenes (unsaturated): CₙH₂ₙ — one C=C double bond. Ethene (C₂H₄).\nAlkynes (unsaturated): CₙH₂ₙ₋₂ — one C≡C triple bond. Ethyne (C₂H₂).\nIsomers: same molecular formula, different structures.",
           "qa": [
             {
               "q": "What is the general formula for alkanes?",
-              "a": "Câ‚™Hâ‚‚â‚™â‚Šâ‚‚"
+              "a": "CₙH₂ₙ₊₂"
             },
             {
               "q": "What is the difference between saturated and unsaturated hydrocarbons?",
@@ -727,17 +727,17 @@ const chapters = [
             },
             {
               "q": "What is the molecular formula of butane?",
-              "a": "Câ‚„Hâ‚â‚€ (alkane formula Câ‚™Hâ‚‚â‚™â‚Šâ‚‚ with n=4: 4+2=10 H atoms)"
+              "a": "C₄H₁₀ (alkane formula CₙH₂ₙ₊₂ with n=4: 4+2=10 H atoms)"
             }
           ]
         },
         {
           "heading": "Functional Groups and Important Compounds",
-          "explanation": "Functional groups determine chemical properties:\nâ€¢ â€“OH (Alcohol/hydroxyl) â†’ Ethanol Câ‚‚Hâ‚…OH\nâ€¢ â€“COOH (Carboxylic acid) â†’ Ethanoic acid CHâ‚ƒCOOH (vinegar)\nâ€¢ â€“CHO (Aldehyde)\nâ€¢ â€“COâ€“ (Ketone)\nEthanol: used as fuel, in medicines, beverages. Denatured alcohol = ethanol + poisonous substance.\nEthanoic acid (acetic acid): present in vinegar (~5-8%). Used as preservative.",
+          "explanation": "Functional groups determine chemical properties:\n• –OH (Alcohol/hydroxyl) → Ethanol C₂H₅OH\n• –COOH (Carboxylic acid) → Ethanoic acid CH₃COOH (vinegar)\n• –CHO (Aldehyde)\n• –CO– (Ketone)\nEthanol: used as fuel, in medicines, beverages. Denatured alcohol = ethanol + poisonous substance.\nEthanoic acid (acetic acid): present in vinegar (~5-8%). Used as preservative.",
           "qa": [
             {
               "q": "What functional group is present in ethanol?",
-              "a": "Hydroxyl group (â€“OH). Ethanol = Câ‚‚Hâ‚…OH."
+              "a": "Hydroxyl group (–OH). Ethanol = C₂H₅OH."
             },
             {
               "q": "What is denatured spirit?",
@@ -745,17 +745,17 @@ const chapters = [
             },
             {
               "q": "What happens when ethanoic acid reacts with sodium carbonate?",
-              "a": "CHâ‚ƒCOOH + Naâ‚‚COâ‚ƒ â†’ CHâ‚ƒCOONa + Hâ‚‚O + COâ‚‚. Brisk effervescence (COâ‚‚ gas) confirms the carboxylic acid."
+              "a": "CH₃COOH + Na₂CO₃ → CH₃COONa + H₂O + CO₂. Brisk effervescence (CO₂ gas) confirms the carboxylic acid."
             }
           ]
         },
         {
           "heading": "Soaps and Detergents",
-          "explanation": "Soap: sodium or potassium salt of a long-chain fatty acid. Made by saponification: Fat + NaOH â†’ Soap + Glycerol.\nStructure: long hydrophobic tail + ionic hydrophilic head. Soap forms micelles â€” hydrophobic tails surround oil, hydrophilic heads face water, lifting dirt away.\nSoap scum: in hard water, MgÂ²âº/CaÂ²âº ions react with soap â†’ insoluble precipitate.\nDetergents: work in hard water, have sulfonate head instead. Used for washing clothes.",
+          "explanation": "Soap: sodium or potassium salt of a long-chain fatty acid. Made by saponification: Fat + NaOH → Soap + Glycerol.\nStructure: long hydrophobic tail + ionic hydrophilic head. Soap forms micelles — hydrophobic tails surround oil, hydrophilic heads face water, lifting dirt away.\nSoap scum: in hard water, Mg²⁺/Ca²⁺ ions react with soap → insoluble precipitate.\nDetergents: work in hard water, have sulfonate head instead. Used for washing clothes.",
           "qa": [
             {
               "q": "What is saponification?",
-              "a": "The process of making soap by reacting fat/oil with a strong alkali (NaOH). Fat + NaOH â†’ Soap + Glycerol."
+              "a": "The process of making soap by reacting fat/oil with a strong alkali (NaOH). Fat + NaOH → Soap + Glycerol."
             },
             {
               "q": "How does soap clean clothes?",
@@ -763,7 +763,7 @@ const chapters = [
             },
             {
               "q": "Why doesn't soap work well in hard water?",
-              "a": "Hard water contains CaÂ²âº and MgÂ²âº ions that react with soap to form insoluble soap scum, wasting the soap."
+              "a": "Hard water contains Ca²⁺ and Mg²⁺ ions that react with soap to form insoluble soap scum, wasting the soap."
             },
             {
               "q": "How are detergents different from soaps?",
@@ -777,7 +777,7 @@ const chapters = [
   {
     "id": "bi1",
     "num": "Chapter 6",
-    "icon": "ðŸƒ",
+    "icon": "🍃",
     "subject": "biology",
     "title": "Life Processes",
     "desc": "Nutrition, respiration, transportation and excretion.",
@@ -796,7 +796,7 @@ const chapters = [
           "qa": [
             {
               "q": "What is autotrophic nutrition?",
-              "a": "Organisms that make their own food using sunlight, COâ‚‚ and water. Example: plants (photosynthesis)."
+              "a": "Organisms that make their own food using sunlight, CO₂ and water. Example: plants (photosynthesis)."
             },
             {
               "q": "What is heterotrophic nutrition?",
@@ -804,11 +804,11 @@ const chapters = [
             },
             {
               "q": "Write the equation for photosynthesis.",
-              "a": "6COâ‚‚ + 6Hâ‚‚O â†’ Câ‚†Hâ‚â‚‚Oâ‚† + 6Oâ‚‚ (in presence of sunlight and chlorophyll)"
+              "a": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in presence of sunlight and chlorophyll)"
             },
             {
               "q": "What happens in the stomata of leaves?",
-              "a": "Stomata are tiny pores in leaves. They allow COâ‚‚ to enter and Oâ‚‚/water vapour to exit. Guard cells control their opening and closing."
+              "a": "Stomata are tiny pores in leaves. They allow CO₂ to enter and O₂/water vapour to exit. Guard cells control their opening and closing."
             },
             {
               "q": "What is the role of chlorophyll in photosynthesis?",
@@ -816,7 +816,7 @@ const chapters = [
             },
             {
               "q": "What are the steps of photosynthesis?",
-              "a": "(1) Absorption of light energy by chlorophyll. (2) Splitting of water into H and O (light reaction). (3) Reduction of COâ‚‚ to glucose (dark reaction)."
+              "a": "(1) Absorption of light energy by chlorophyll. (2) Splitting of water into H and O (light reaction). (3) Reduction of CO₂ to glucose (dark reaction)."
             },
             {
               "q": "What is saprophytic nutrition?",
@@ -832,7 +832,7 @@ const chapters = [
             },
             {
               "q": "What is the function of bile?",
-              "a": "Bile (made in liver, stored in gall bladder) emulsifies fats â€” breaks large fat globules into smaller droplets for easier enzyme digestion."
+              "a": "Bile (made in liver, stored in gall bladder) emulsifies fats — breaks large fat globules into smaller droplets for easier enzyme digestion."
             }
           ]
         },
@@ -842,15 +842,15 @@ const chapters = [
           "qa": [
             {
               "q": "What is aerobic respiration?",
-              "a": "Breakdown of glucose using oxygen: Câ‚†Hâ‚â‚‚Oâ‚† + 6Oâ‚‚ â†’ 6COâ‚‚ + 6Hâ‚‚O + energy (ATP). Occurs in mitochondria."
+              "a": "Breakdown of glucose using oxygen: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (ATP). Occurs in mitochondria."
             },
             {
               "q": "What is anaerobic respiration in yeast?",
-              "a": "Glucose â†’ Ethanol + COâ‚‚ + small amount of energy. No oxygen needed."
+              "a": "Glucose → Ethanol + CO₂ + small amount of energy. No oxygen needed."
             },
             {
               "q": "Why do muscles cramp after vigorous exercise?",
-              "a": "Lack of oxygen causes anaerobic respiration in muscles: Glucose â†’ Lactic acid. Lactic acid build-up causes cramps."
+              "a": "Lack of oxygen causes anaerobic respiration in muscles: Glucose → Lactic acid. Lactic acid build-up causes cramps."
             },
             {
               "q": "What is the difference between breathing and respiration?",
@@ -862,7 +862,7 @@ const chapters = [
             },
             {
               "q": "Do plants respire?",
-              "a": "Yes, plants respire 24 hours a day (like animals). During the day they also photosynthesize, which consumes more COâ‚‚ than they produce in respiration."
+              "a": "Yes, plants respire 24 hours a day (like animals). During the day they also photosynthesize, which consumes more CO₂ than they produce in respiration."
             }
           ]
         },
@@ -872,11 +872,11 @@ const chapters = [
           "qa": [
             {
               "q": "What is double circulation in humans?",
-              "a": "Blood passes through the heart twice per cycle: (1) Pulmonary circulation â€” heart to lungs and back. (2) Systemic circulation â€” heart to body and back."
+              "a": "Blood passes through the heart twice per cycle: (1) Pulmonary circulation — heart to lungs and back. (2) Systemic circulation — heart to body and back."
             },
             {
               "q": "What are the components of blood?",
-              "a": "(1) Plasma â€” liquid part carrying nutrients, hormones. (2) Red blood cells (RBCs) â€” carry oxygen via haemoglobin. (3) White blood cells (WBCs) â€” fight infection. (4) Platelets â€” help in clotting."
+              "a": "(1) Plasma — liquid part carrying nutrients, hormones. (2) Red blood cells (RBCs) — carry oxygen via haemoglobin. (3) White blood cells (WBCs) — fight infection. (4) Platelets — help in clotting."
             },
             {
               "q": "What is the role of haemoglobin?",
@@ -884,11 +884,11 @@ const chapters = [
             },
             {
               "q": "How do plants transport water?",
-              "a": "Through xylem vessels â€” a network of dead cells that transports water and minerals from roots to leaves. The pull is due to transpiration (evaporation of water from leaves)."
+              "a": "Through xylem vessels — a network of dead cells that transports water and minerals from roots to leaves. The pull is due to transpiration (evaporation of water from leaves)."
             },
             {
               "q": "How do plants transport food?",
-              "a": "Through phloem â€” made of living cells. Transports sugars (made in leaves by photosynthesis) to all parts of the plant."
+              "a": "Through phloem — made of living cells. Transports sugars (made in leaves by photosynthesis) to all parts of the plant."
             },
             {
               "q": "What is transpiration?",
@@ -910,11 +910,11 @@ const chapters = [
             },
             {
               "q": "Describe the structure of a nephron.",
-              "a": "Glomerulus (capillary knot inside Bowman's capsule) â†’ proximal tubule â†’ loop of Henle â†’ distal tubule â†’ collecting duct â†’ ureter â†’ bladder â†’ urethra."
+              "a": "Glomerulus (capillary knot inside Bowman's capsule) → proximal tubule → loop of Henle → distal tubule → collecting duct → ureter → bladder → urethra."
             },
             {
               "q": "How do plants excrete?",
-              "a": "Plants excrete: COâ‚‚ and Oâ‚‚ through stomata. They also store waste in leaves which are shed. Some excrete waste into soil around roots."
+              "a": "Plants excrete: CO₂ and O₂ through stomata. They also store waste in leaves which are shed. Some excrete waste into soil around roots."
             },
             {
               "q": "What waste do humans mainly excrete through urine?",
@@ -966,7 +966,7 @@ const chapters = [
   {
     "id": "bi2",
     "num": "Chapter 7",
-    "icon": "ðŸ§ ",
+    "icon": "🧠",
     "subject": "biology",
     "title": "Control and Coordination",
     "desc": "Nervous system, hormones, reflexes and plant movements.",
@@ -998,11 +998,11 @@ const chapters = [
             },
             {
               "q": "How does a nerve impulse travel?",
-              "a": "Dendrite â†’ Cell body â†’ Axon â†’ Synapse (chemical transmission) â†’ Next neuron's dendrite."
+              "a": "Dendrite → Cell body → Axon → Synapse (chemical transmission) → Next neuron's dendrite."
             },
             {
               "q": "What is the peripheral nervous system (PNS)?",
-              "a": "All nerves outside the CNS â€” cranial nerves from brain and spinal nerves. They connect CNS to rest of the body."
+              "a": "All nerves outside the CNS — cranial nerves from brain and spinal nerves. They connect CNS to rest of the body."
             }
           ]
         },
@@ -1016,7 +1016,7 @@ const chapters = [
             },
             {
               "q": "What is a reflex arc?",
-              "a": "The pathway taken by nerve impulses during reflex action: Receptor â†’ Sensory neuron â†’ Spinal cord â†’ Motor neuron â†’ Effector (muscle/gland)."
+              "a": "The pathway taken by nerve impulses during reflex action: Receptor → Sensory neuron → Spinal cord → Motor neuron → Effector (muscle/gland)."
             },
             {
               "q": "Why are reflex actions so fast?",
@@ -1060,7 +1060,7 @@ const chapters = [
             },
             {
               "q": "What is the role of auxin in phototropism?",
-              "a": "Auxin accumulates on the shaded side of the shoot, causing those cells to elongate more â†’ shoot bends towards light."
+              "a": "Auxin accumulates on the shaded side of the shoot, causing those cells to elongate more → shoot bends towards light."
             },
             {
               "q": "What is geotropism?",
@@ -1068,7 +1068,7 @@ const chapters = [
             },
             {
               "q": "Name four types of plant hormones and their functions.",
-              "a": "(1) Auxin â€” promotes cell elongation, phototropism. (2) Gibberellin â€” promotes stem growth. (3) Cytokinin â€” promotes cell division. (4) Abscisic acid â€” inhibits growth, causes wilting."
+              "a": "(1) Auxin — promotes cell elongation, phototropism. (2) Gibberellin — promotes stem growth. (3) Cytokinin — promotes cell division. (4) Abscisic acid — inhibits growth, causes wilting."
             },
             {
               "q": "How is movement of sensitive plant (Mimosa) different from phototropism?",
@@ -1148,7 +1148,106 @@ const chapters = [
             },
             {
               "q": "[5 Marks] Explain the transmission of nerve impulses starting from the receptor to the effector with the help of a flowchart.",
-              "a": "The transmission of an electrical nerve impulse is a rapid and highly coordinated electrochemical event transferring information throughout the body.\n\n1. Reception: Specialized receptor cells situated in sense organs (such as the skin, eyes, or ears) detect a stimulus (e.g., intense heat). \n2. Generation of Impulse: This physical or chemical stimulus decisively sets off a tiny, rapid electrical impulse at the highly branched dendritic tips of a specialized sensory neuron.\n3. Transmission via Sensory Neuron: The electrical impulse travels rapidly from the dendrite, squarely into the main cell body, and swiftly down the long axon until it reaches the axon terminal. \n4. Synaptic Transfer: At the terminal, the impulse triggers the release of distinct chemical messengers (neurotransmitters). These chemicals drift across the microscopic gap (synapse) and chemically initiate a fresh electrical impulse in the adjacent dendrite of a relay neuron located securely within the spinal cord or brain.\n5. Transfer to Motor Neuron: Following internal processing, the impulse crosses another crucial synapse to forcefully enter a designated motor neuron.\n6. Effecting the Response: The motor neuron carries the impulse away from the central nervous system to a specific effector organ (usually a muscle or a gland). Upon arrival, the impulse initiates a cellular chemical change in the muscle fibers, causing them to physically contract and thus producing the desired rapid response.\n\nFlowchart:\nStimulus â†’ Receptor Organ â†’ Sensory Neuron Dendrite â†’ Axon â†’ Synapse (Neurotransmitters) â†’ Relay Neuron (CNS) â†’ Synapse â†’ Motor Neuron â†’ Effector Muscle/Gland â†’ Response."
+              "a": "The transmission of an electrical nerve impulse is a rapid and highly coordinated electrochemical event transferring information throughout the body.\n\n1. Reception: Specialized receptor cells situated in sense organs (such as the skin, eyes, or ears) detect a stimulus (e.g., intense heat). \n2. Generation of Impulse: This physical or chemical stimulus decisively sets off a tiny, rapid electrical impulse at the highly branched dendritic tips of a specialized sensory neuron.\n3. Transmission via Sensory Neuron: The electrical impulse travels rapidly from the dendrite, squarely into the main cell body, and swiftly down the long axon until it reaches the axon terminal. \n4. Synaptic Transfer: At the terminal, the impulse triggers the release of distinct chemical messengers (neurotransmitters). These chemicals drift across the microscopic gap (synapse) and chemically initiate a fresh electrical impulse in the adjacent dendrite of a relay neuron located securely within the spinal cord or brain.\n5. Transfer to Motor Neuron: Following internal processing, the impulse crosses another crucial synapse to forcefully enter a designated motor neuron.\n6. Effecting the Response: The motor neuron carries the impulse away from the central nervous system to a specific effector organ (usually a muscle or a gland). Upon arrival, the impulse initiates a cellular chemical change in the muscle fibers, causing them to physically contract and thus producing the desired rapid response.\n\nFlowchart:\nStimulus → Receptor Organ → Sensory Neuron Dendrite → Axon → Synapse (Neurotransmitters) → Relay Neuron (CNS) → Synapse → Motor Neuron → Effector Muscle/Gland → Response."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bi_repo",
+    "num": "Chapter 8",
+    "icon": "🌱",
+    "subject": "biology",
+    "title": "How Do Organisms Reproduce",
+    "desc": "Asexual and sexual reproduction in plants and animals, human reproductive systems.",
+    "topics": [
+      "Asexual Reproduction",
+      "Sexual Reproduction in Plants",
+      "Human Reproduction",
+      "Reproductive Health"
+    ],
+    "content": {
+      "intro": "Reproduction is the biological process by which new individual organisms are produced from their 'parents'.",
+      "sections": [
+        {
+          "heading": "Asexual Reproduction",
+          "explanation": "Involves a single parent. No formation or fusion of gametes. Offspring are genetically identical clones.\nMethods:\n• Fission (Binary in Amoeba, Multiple in Plasmodium)\n• Fragmentation (Spirogyra)\n• Regeneration (Planaria, Hydra)\n• Budding (Hydra, Yeast)\n• Vegetative Propagation (Potato eyes, Bryophyllum leaves)\n• Spore Formation (Rhizopus/bread mould)",
+          "qa": [
+            {
+              "q": "What is vegetative propagation?",
+              "a": "A form of asexual reproduction in plants where new plants grow from parts like stems, roots, or leaves (e.g., Bryophyllum leaf buds)."
+            },
+            {
+              "q": "How does amoeba reproduce?",
+              "a": "By binary fission. The cell divides into two identical daughter cells."
+            },
+            {
+              "q": "What is regeneration? Give an example.",
+              "a": "The ability to grow a completely new organism from a cut body part. Example: Planaria."
+            },
+            {
+              "q": "How is fragmentation different from regeneration?",
+              "a": "Fragmentation is a normal method of reproduction in simple multicellular organisms (like Spirogyra) where the body breaks into pieces, and each grows. Regeneration is mostly an emergency repair process."
+            }
+          ]
+        },
+        {
+          "heading": "Sexual Reproduction in Flowering Plants",
+          "explanation": "Involves male gametes (pollen from anther) and female gametes (egg in ovary). Pollination (transfer of pollen to stigma) → Fertilization (fusion in ovary) → Zygote → Embryo. Ovary becomes fruit, ovules become seeds.",
+          "qa": [
+            {
+              "q": "What is pollination?",
+              "a": "The transfer of pollen grains from the anther to the stigma of a flower."
+            },
+            {
+              "q": "What happens after fertilization in a flower?",
+              "a": "The zygote divides to form an embryo within the ovule. The ovule develops a tough coat and becomes a seed. The ovary ripens to form a fruit."
+            },
+            {
+              "q": "What is the difference between self-pollination and cross-pollination?",
+              "a": "Self-pollination: pollen transfers to stigma of the same flower. Cross-pollination: pollen transfers to stigma of a different flower."
+            }
+          ]
+        },
+        {
+          "heading": "Human Reproduction",
+          "explanation": "Male: Testes produce sperm and testosterone. Scrotum keeps testes cool. Vas deferens carries sperm.\nFemale: Ovaries produce eggs (ova) and estrogen/progesterone. Fallopian tube (oviduct) is site of fertilization. Uterus is where embryo develops. Placenta nourishes embryo.",
+          "qa": [
+            {
+              "q": "Why are testes located outside the abdominal cavity?",
+              "a": "Sperm formation requires a temperature lower than normal body temperature (by about 2-3°C). The scrotum provides this cooler temperature."
+            },
+            {
+              "q": "What is the role of the placenta?",
+              "a": "It is a specialized tissue that connects the developing embryo/fetus to the mother's uterine wall. It supplies oxygen and nutrients from mother to fetus, and removes waste from fetus to mother."
+            },
+            {
+              "q": "Where does fertilization occur in humans?",
+              "a": "In the fallopian tube (oviduct)."
+            },
+            {
+              "q": "What happens if the egg is not fertilized?",
+              "a": "The thick, spongy lining of the uterus is no longer needed. It breaks down and comes out through the vagina as blood and mucus. This is called menstruation."
+            }
+          ]
+        },
+        {
+          "heading": "Reproductive Health",
+          "explanation": "Involves safe sex, avoiding STDs (e.g., HIV/AIDS, Syphilis, Gonorrhea), and family planning.\nContraceptive methods:\n• Barrier: Condoms (prevent STDs)\n• Chemical: Oral pills (change hormonal balance)\n• IUD: Copper-T (placed in uterus)\n• Surgical: Vasectomy (males), Tubectomy (females).",
+          "qa": [
+            {
+              "q": "What are sexually transmitted diseases (STDs)? Give two examples.",
+              "a": "Diseases passed from one person to another during sexual contact. Viral: HIV/AIDS, Warts. Bacterial: Syphilis, Gonorrhea."
+            },
+            {
+              "q": "How do oral contraceptive pills work?",
+              "a": "They contain hormones that prevent the release of eggs (ovulation) from the ovaries."
+            },
+            {
+              "q": "Which contraceptive method also protects against STDs?",
+              "a": "Barrier methods like condoms."
             }
           ]
         }
@@ -1158,7 +1257,7 @@ const chapters = [
   {
     "id": "bi3",
     "num": "Chapter 9",
-    "icon": "ðŸ§¬",
+    "icon": "🧬",
     "subject": "biology",
     "title": "Heredity and Evolution",
     "desc": "Mendel's laws, genes, chromosomes, natural selection and evolution.",
@@ -1202,7 +1301,7 @@ const chapters = [
             },
             {
               "q": "What is a dominant allele?",
-              "a": "An allele whose trait is expressed even when only one copy is present (e.g., Tt appears tall â€” T is dominant)."
+              "a": "An allele whose trait is expressed even when only one copy is present (e.g., Tt appears tall — T is dominant)."
             },
             {
               "q": "What is the dihybrid cross F2 ratio?",
@@ -1216,11 +1315,11 @@ const chapters = [
           "qa": [
             {
               "q": "How many chromosomes do humans have?",
-              "a": "46 chromosomes arranged in 23 pairs â€” 22 pairs of autosomes and 1 pair of sex chromosomes."
+              "a": "46 chromosomes arranged in 23 pairs — 22 pairs of autosomes and 1 pair of sex chromosomes."
             },
             {
               "q": "How is sex determined in humans?",
-              "a": "By sex chromosomes. Females: XX. Males: XY. Sperm carrying Y chromosome â†’ male offspring. Sperm carrying X chromosome â†’ female offspring."
+              "a": "By sex chromosomes. Females: XX. Males: XY. Sperm carrying Y chromosome → male offspring. Sperm carrying X chromosome → female offspring."
             },
             {
               "q": "In whose gametes is the sex of the child determined?",
@@ -1228,7 +1327,7 @@ const chapters = [
             },
             {
               "q": "What is the role of DNA in heredity?",
-              "a": "DNA (in chromosomes) contains genes â€” the instructions for traits. DNA is copied and passed to offspring, carrying hereditary information."
+              "a": "DNA (in chromosomes) contains genes — the instructions for traits. DNA is copied and passed to offspring, carrying hereditary information."
             }
           ]
         },
@@ -1242,11 +1341,11 @@ const chapters = [
             },
             {
               "q": "What is the difference between homologous and analogous organs?",
-              "a": "Homologous organs: same basic structure, different functions (e.g., human arm, whale flipper, bat wing â€” all have same bones). Analogous organs: different structures, same function (e.g., bat wing & butterfly wing)."
+              "a": "Homologous organs: same basic structure, different functions (e.g., human arm, whale flipper, bat wing — all have same bones). Analogous organs: different structures, same function (e.g., bat wing & butterfly wing)."
             },
             {
               "q": "What do homologous organs indicate?",
-              "a": "Evidence for common ancestry â€” organisms with similar basic structures evolved from the same ancestor."
+              "a": "Evidence for common ancestry — organisms with similar basic structures evolved from the same ancestor."
             },
             {
               "q": "What are fossils?",
@@ -1258,7 +1357,7 @@ const chapters = [
             },
             {
               "q": "Why are bacteria more likely to develop antibiotic resistance than humans?",
-              "a": "Bacteria reproduce very fast (short generation time). Even if 1 in 10 million has resistance, that one quickly multiplies under antibiotic pressure â€” evolution by natural selection."
+              "a": "Bacteria reproduce very fast (short generation time). Even if 1 in 10 million has resistance, that one quickly multiplies under antibiotic pressure — evolution by natural selection."
             },
             {
               "q": "What is mutation?",
@@ -1291,16 +1390,91 @@ const chapters = [
               "a": "Fossils provide irreplaceable, direct physical evidence of extinct or archaic organisms that inhabited the Earth precisely in the distant past. By thoroughly studying the anatomical structure of fossilized remains and analyzing their chronological depth in distinct rock layers, scientists can establish undisputed evolutionary connections, trace the origin of newly formed species, and robustly verify that complex modern organisms gradually evolved from much simpler ancestral forms."
             },
             {
-              "q": "[5 Marks] Using a detailed monohybrid cross, clearly explain Mendelâ€™s Law of Segregation.",
-              "a": "Mendelâ€™s Law of Segregation states that during the formation of gametes (sperm and egg cells), the two paired alleles responsible for a given genetic trait strictly separate or segregate from each other. As a result, each gamete receives only a single allele for that trait.\n\nTo demonstrate this vividly, consider a classic monohybrid cross between a pure tall pea plant (genotype TT) and a pure dwarf pea plant (genotype tt). The completely tall plant will produce gametes carrying strictly the 'T' allele, while the respective dwarf plant produces gametes harboring only the 't' allele.\n\nUpon initial fertilization, the F1 generation strictly possesses the highly uniform genotype 'Tt'. Despite harboring both alleles, they all uniformly express the tall phenotype because the dominant 'T' successfully masks the recessive 't'. \n\nHowever, the absolute proof of segregation emerges when these F1 plants (Tt) naturally self-pollinate. Due to segregation, half the gametes carry the 'T' allele and the other half distinctly carry the 't' allele. When these naturally varied gametes randomly fuse to create the F2 generation, the possible resulting offspring genotypes are strictly 1 TT : 2 Tt : 1 tt. The spectacular reappearance of the pure, dwarf phenotype (tt) unequivocally proves that the hidden 't' allele did not blend with the 'T' allele, but instead purely segregated and combined intact during fertilization."
+              "q": "[5 Marks] Using a detailed monohybrid cross, clearly explain Mendel’s Law of Segregation.",
+              "a": "Mendel’s Law of Segregation states that during the formation of gametes (sperm and egg cells), the two paired alleles responsible for a given genetic trait strictly separate or segregate from each other. As a result, each gamete receives only a single allele for that trait.\n\nTo demonstrate this vividly, consider a classic monohybrid cross between a pure tall pea plant (genotype TT) and a pure dwarf pea plant (genotype tt). The completely tall plant will produce gametes carrying strictly the 'T' allele, while the respective dwarf plant produces gametes harboring only the 't' allele.\n\nUpon initial fertilization, the F1 generation strictly possesses the highly uniform genotype 'Tt'. Despite harboring both alleles, they all uniformly express the tall phenotype because the dominant 'T' successfully masks the recessive 't'. \n\nHowever, the absolute proof of segregation emerges when these F1 plants (Tt) naturally self-pollinate. Due to segregation, half the gametes carry the 'T' allele and the other half distinctly carry the 't' allele. When these naturally varied gametes randomly fuse to create the F2 generation, the possible resulting offspring genotypes are strictly 1 TT : 2 Tt : 1 tt. The spectacular reappearance of the pure, dwarf phenotype (tt) unequivocally proves that the hidden 't' allele did not blend with the 'T' allele, but instead purely segregated and combined intact during fertilization."
             },
             {
               "q": "[5 Marks] Elaborate comprehensively on how the sex of a human child is genetically determined at the fundamental moment of fertilization.",
-              "a": "In human beings, the fundamental sex of a child is rigorously determined by a specialized pair of chromosomes famously known as the sex chromosomes. Generally speaking, humans possess a total of 46 chromosomes systematically paired into 23 sets. Within this matrix, 22 pairs are known as autosomes (responsible for general body features), leaving one unique pair designated universally specifically to dictate the individual's sex.\n\nIn human females, this sex chromosome pair contains two perfectly matched, large X chromosomes (denoted genetically as XX). Therefore, when a female naturally produces an egg (the female gamete), each and every ovum uniformly receives identical genetic informationâ€”it unequivocally receives just one 'X' chromosome. \n\nConversely, in human males, this specific pair consists of one standard X chromosome heavily contrasted with one much smaller Y chromosome (denoted collectively as XY). Consequently, during spermatogenesis, a male uniquely produces two vastly different types of sperm in perfectly equal proportions: exactly 50% of the sperm carry a distinctly female-oriented X chromosome, and the other 50% strictly harbor the uniquely male-determining Y chromosome. \n\nAt the pivotal moment of actual fertilization, if an X-carrying sperm successfully fuses with the mother's X-carrying egg, the resulting zygote commands the unified XX genotype and inevitably develops into a female child. In strict contrast, should a Y-carrying sperm penetrate the identical X-bearing egg, the resulting unified zygote commands the XY chromosome set, and will unequivocally develop into a male child. Thus, it is irrefutable that the sex of the human offspring is permanently dictated by the precise type of sperm chromosome contributed by the male parent."
+              "a": "In human beings, the fundamental sex of a child is rigorously determined by a specialized pair of chromosomes famously known as the sex chromosomes. Generally speaking, humans possess a total of 46 chromosomes systematically paired into 23 sets. Within this matrix, 22 pairs are known as autosomes (responsible for general body features), leaving one unique pair designated universally specifically to dictate the individual's sex.\n\nIn human females, this sex chromosome pair contains two perfectly matched, large X chromosomes (denoted genetically as XX). Therefore, when a female naturally produces an egg (the female gamete), each and every ovum uniformly receives identical genetic information—it unequivocally receives just one 'X' chromosome. \n\nConversely, in human males, this specific pair consists of one standard X chromosome heavily contrasted with one much smaller Y chromosome (denoted collectively as XY). Consequently, during spermatogenesis, a male uniquely produces two vastly different types of sperm in perfectly equal proportions: exactly 50% of the sperm carry a distinctly female-oriented X chromosome, and the other 50% strictly harbor the uniquely male-determining Y chromosome. \n\nAt the pivotal moment of actual fertilization, if an X-carrying sperm successfully fuses with the mother's X-carrying egg, the resulting zygote commands the unified XX genotype and inevitably develops into a female child. In strict contrast, should a Y-carrying sperm penetrate the identical X-bearing egg, the resulting unified zygote commands the XY chromosome set, and will unequivocally develop into a male child. Thus, it is irrefutable that the sex of the human offspring is permanently dictated by the precise type of sperm chromosome contributed by the male parent."
             },
             {
               "q": "[5 Marks] Detail what speciation is and explicitly describe three prominent factors responsible for driving the origin of a wholly new species from a pre-existing population.",
-              "a": "Speciation is defined as the complex and gradual evolutionary process through which distinct, entirely new biological species organically arise from pre-existing, older ancestral populations. Over a prolonged span, multiple cumulative factors cause profound sub-population differences, to the extent that they securely lose their integral ability to interbreed.\n\nThe principal factors driving this speciation profoundly include:\n1. Geographical Isolation: When an extensive, continuously breeding population becomes involuntarily divided by overwhelming physical geographical barriersâ€”such as newly emerging massive mountain ranges, deep rivers, or drifting continentsâ€”inter-mating and continuous gene flow fundamentally stop. The divided subgroups are left isolated in profoundly different environmental habitats.\n2. Natural Selection: Once isolated, the radically different environments immediately subject these separated populations to unique survival pressures. Over countless generations, nature inherently selects and promotes entirely different physiological or anatomical survival traits best suited for each distinct environment, causing the subgroups to diverge drastically from one another.\n3. Genetic Drift: In relatively small or sharply diminished populations, purely random, unpredictable changes heavily impact the statistical occurrence of distinct genetic traits. Some genes may inadvertently disappear or become ubiquitous by random chance alone, utterly independent of survival advantages. Over an extended evolutionary period, the compounding genetic accumulation driven jointly by intense natural selection and relentless genetic drift alters their fundamental DNA architecture to such an extreme that members belonging to the respective segregated populations can essentially never successfully interbreed again, resulting securely in the undisputed emergence of a radically new species."
+              "a": "Speciation is defined as the complex and gradual evolutionary process through which distinct, entirely new biological species organically arise from pre-existing, older ancestral populations. Over a prolonged span, multiple cumulative factors cause profound sub-population differences, to the extent that they securely lose their integral ability to interbreed.\n\nThe principal factors driving this speciation profoundly include:\n1. Geographical Isolation: When an extensive, continuously breeding population becomes involuntarily divided by overwhelming physical geographical barriers—such as newly emerging massive mountain ranges, deep rivers, or drifting continents—inter-mating and continuous gene flow fundamentally stop. The divided subgroups are left isolated in profoundly different environmental habitats.\n2. Natural Selection: Once isolated, the radically different environments immediately subject these separated populations to unique survival pressures. Over countless generations, nature inherently selects and promotes entirely different physiological or anatomical survival traits best suited for each distinct environment, causing the subgroups to diverge drastically from one another.\n3. Genetic Drift: In relatively small or sharply diminished populations, purely random, unpredictable changes heavily impact the statistical occurrence of distinct genetic traits. Some genes may inadvertently disappear or become ubiquitous by random chance alone, utterly independent of survival advantages. Over an extended evolutionary period, the compounding genetic accumulation driven jointly by intense natural selection and relentless genetic drift alters their fundamental DNA architecture to such an extreme that members belonging to the respective segregated populations can essentially never successfully interbreed again, resulting securely in the undisputed emergence of a radically new species."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bi4",
+    "num": "Chapter 13",
+    "icon": "🌍",
+    "subject": "biology",
+    "title": "Our Environment",
+    "desc": "Ecosystems, food chains, ozone layer and waste management.",
+    "topics": [
+      "Ecosystem Components",
+      "Food Chains & Webs",
+      "Ozone Layer",
+      "Waste Management"
+    ],
+    "content": {
+      "intro": "Our environment includes our physical surroundings and the biological world of plants and animals.",
+      "sections": [
+        {
+          "heading": "Ecosystems and their Components",
+          "explanation": "An ecosystem consists of biotic components (living organisms like plants, animals) and abiotic components (physical factors like temperature, rainfall, wind, soil).",
+          "qa": [
+            {
+              "q": "What is an ecosystem?",
+              "a": "A self-sustaining system where living organisms interact with each other and with their physical environment."
+            },
+            {
+              "q": "What are producers, consumers, and decomposers?",
+              "a": "Producers: make their own food (plants). Consumers: depend on others for food (animals). Decomposers: break down dead organic matter (fungi, bacteria)."
+            }
+          ]
+        },
+        {
+          "heading": "Food Chains and Webs",
+          "explanation": "A food chain shows the flow of energy from one organism to another. A food web is a network of interconnected food chains. Only 10% of energy is transferred from one trophic level to the next.",
+          "qa": [
+            {
+              "q": "What is a food chain?",
+              "a": "A linear sequence showing who eats whom, representing the flow of energy in an ecosystem."
+            },
+            {
+              "q": "Explain the 10% law.",
+              "a": "Only about 10% of the energy from one trophic level is transferred to the next. The rest is lost as heat."
+            },
+            {
+              "q": "What is biological magnification?",
+              "a": "The increase in concentration of harmful chemicals (like pesticides) at successive trophic levels."
+            }
+          ]
+        },
+        {
+          "heading": "Ozone Layer Depletion",
+          "explanation": "The ozone (O₃) layer protects the earth from harmful UV radiation. It is being depleted by chlorofluorocarbons (CFCs) used in refrigerators and aerosols.",
+          "qa": [
+            {
+              "q": "How is ozone formed?",
+              "a": "UV radiation splits O₂ into free oxygen atoms (O). These atoms combine with O₂ to form O₃ (ozone)."
+            },
+            {
+              "q": "Why is the ozone layer important?",
+              "a": "It absorbs harmful ultraviolet (UV) radiation from the sun, which can cause skin cancer in humans."
+            }
+          ]
+        },
+        {
+          "heading": "Managing the Garbage we Produce",
+          "explanation": "Waste is classified into biodegradable (can be broken down by microbes) and non-biodegradable (cannot be broken down). Proper disposal methods include recycling, composting, and using incinerators.",
+          "qa": [
+            {
+              "q": "Differentiate between biodegradable and non-biodegradable substances.",
+              "a": "Biodegradable substances are broken down by biological processes (e.g., vegetable peels). Non-biodegradable substances are not (e.g., plastics)."
             }
           ]
         }
@@ -1312,7 +1486,7 @@ const chapters = [
 const quizData = [
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "What is the unit of power of a lens?",
     "opts": [
       "Watt",
@@ -1325,7 +1499,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A concave mirror has a focal length of 20 cm. What is its radius of curvature?",
     "opts": [
       "10 cm",
@@ -1334,11 +1508,11 @@ const quizData = [
       "5 cm"
     ],
     "ans": 2,
-    "exp": "Radius of curvature = 2 Ã— focal length = 2 Ã— 20 = 40 cm."
+    "exp": "Radius of curvature = 2 × focal length = 2 × 20 = 40 cm."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "The mirror formula is:",
     "opts": [
       "1/f = 1/v - 1/u",
@@ -1351,7 +1525,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Which mirror is used in solar furnaces?",
     "opts": [
       "Convex",
@@ -1364,7 +1538,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A ray of light going through the centre of curvature of a concave mirror will:",
     "opts": [
       "Reflect along same path",
@@ -1377,8 +1551,8 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
-    "q": "In Snell's law, nâ‚ sin Î¸â‚ = nâ‚‚ sin Î¸â‚‚, what does n represent?",
+    "chapter": "Light – Reflection and Refraction",
+    "q": "In Snell's law, n₁ sin θ₁ = n₂ sin θ₂, what does n represent?",
     "opts": [
       "Angle of reflection",
       "Refractive index",
@@ -1390,7 +1564,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "When light goes from glass to air, it bends:",
     "opts": [
       "Towards the normal",
@@ -1403,20 +1577,20 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "The refractive index of glass with respect to air is 1.5. What is the speed of light in glass?",
     "opts": [
-      "2Ã—10â¸ m/s",
-      "3Ã—10â¸ m/s",
-      "1.5Ã—10â¸ m/s",
-      "4.5Ã—10â¸ m/s"
+      "2×10⁸ m/s",
+      "3×10⁸ m/s",
+      "1.5×10⁸ m/s",
+      "4.5×10⁸ m/s"
     ],
     "ans": 0,
-    "exp": "n = c/v â†’ v = c/n = 3Ã—10â¸/1.5 = 2Ã—10â¸ m/s."
+    "exp": "n = c/v → v = c/n = 3×10⁸/1.5 = 2×10⁸ m/s."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A convex lens of focal length 20 cm has power:",
     "opts": [
       "+2D",
@@ -1429,7 +1603,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A real image formed by a concave mirror is:",
     "opts": [
       "Erect and magnified",
@@ -1442,7 +1616,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Which type of lens forms a virtual, erect, and diminished image for all positions of object?",
     "opts": [
       "Concave lens",
@@ -1455,7 +1629,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "For a convex lens where the object is at focus (f), the image is at:",
     "opts": [
       "2f",
@@ -1468,7 +1642,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Magnification of a mirror is -3. The image is:",
     "opts": [
       "Real, erect, 3x size",
@@ -1481,20 +1655,20 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "The speed of light in vacuum is approximately:",
     "opts": [
-      "3Ã—10â¶ m/s",
-      "3Ã—10â¸ m/s",
-      "3Ã—10Â¹â° m/s",
-      "3Ã—10â´ m/s"
+      "3×10⁶ m/s",
+      "3×10⁸ m/s",
+      "3×10¹⁰ m/s",
+      "3×10⁴ m/s"
     ],
     "ans": 1,
-    "exp": "Speed of light in vacuum c â‰ˆ 3 Ã— 10â¸ m/s."
+    "exp": "Speed of light in vacuum c ≈ 3 × 10⁸ m/s."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A diverging lens always forms an image that is:",
     "opts": [
       "Real and magnified",
@@ -1507,7 +1681,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "For a convex lens, focal length is:",
     "opts": [
       "Negative",
@@ -1520,20 +1694,20 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Total internal reflection occurs when light moves from:",
     "opts": [
       "Rarer to denser",
-      "Denser to rarer at angle â‰¥ critical angle",
+      "Denser to rarer at angle ≥ critical angle",
       "Rarer to rarer",
       "Denser to denser"
     ],
     "ans": 1,
-    "exp": "Total internal reflection: light in denser medium hits boundary at angle â‰¥ critical angle. No refraction, all light reflects back."
+    "exp": "Total internal reflection: light in denser medium hits boundary at angle ≥ critical angle. No refraction, all light reflects back."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Image formed by a convex mirror is always:",
     "opts": [
       "Real, inverted",
@@ -1546,7 +1720,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Magnification of m = +0.5 means image is:",
     "opts": [
       "Larger than object, real",
@@ -1555,24 +1729,24 @@ const quizData = [
       "Smaller than object, real"
     ],
     "ans": 1,
-    "exp": "Positive m â†’ virtual and erect. |m|=0.5 < 1 â†’ image is smaller (diminished)."
+    "exp": "Positive m → virtual and erect. |m|=0.5 < 1 → image is smaller (diminished)."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Critical angle is the minimum angle of incidence for which:",
     "opts": [
       "No refraction occurs",
       "Total internal reflection occurs",
       "Reflection is maximum",
-      "Angle of refraction is 90Â°"
+      "Angle of refraction is 90°"
     ],
     "ans": 3,
-    "exp": "At the critical angle, the refracted ray goes along the surface (90Â°). Beyond this angle, total internal reflection occurs."
+    "exp": "At the critical angle, the refracted ray goes along the surface (90°). Beyond this angle, total internal reflection occurs."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "The angle of incidence equals the angle of reflection. This is the law of:",
     "opts": [
       "Refraction",
@@ -1585,7 +1759,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "An object placed at 2F of a convex lens gives an image at:",
     "opts": [
       "F",
@@ -1594,11 +1768,11 @@ const quizData = [
       "Infinity"
     ],
     "ans": 2,
-    "exp": "Object at 2F â†’ image at 2F on the other side, real, inverted, and same size."
+    "exp": "Object at 2F → image at 2F on the other side, real, inverted, and same size."
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Convex mirrors are used in vehicles because they:",
     "opts": [
       "Magnify objects",
@@ -1611,7 +1785,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "If a lens has power -4D, it is a:",
     "opts": [
       "Convex lens of f = 25 cm",
@@ -1624,7 +1798,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "The phenomenon of bending of light at the interface of two media is called:",
     "opts": [
       "Reflection",
@@ -1637,7 +1811,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A concave lens is also called a:",
     "opts": [
       "Converging lens",
@@ -1650,7 +1824,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "The lens formula is:",
     "opts": [
       "1/v + 1/u = 1/f",
@@ -1663,7 +1837,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "An object is placed between the pole and focus of a concave mirror. The image is:",
     "opts": [
       "Real and inverted",
@@ -1676,7 +1850,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "A pencil partially immersed in water appears bent due to:",
     "opts": [
       "Reflection",
@@ -1689,7 +1863,7 @@ const quizData = [
   },
   {
     "subject": "physics",
-    "chapter": "Light â€“ Reflection and Refraction",
+    "chapter": "Light – Reflection and Refraction",
     "q": "Two lenses of power +3D and -1D are combined. The net power is:",
     "opts": [
       "+4D",
@@ -1698,7 +1872,7 @@ const quizData = [
       "+1D"
     ],
     "ans": 1,
-    "exp": "When lenses are combined, P_net = Pâ‚ + Pâ‚‚ = +3 + (-1) = +2D."
+    "exp": "When lenses are combined, P_net = P₁ + P₂ = +3 + (-1) = +2D."
   },
   {
     "subject": "physics",
@@ -1919,7 +2093,7 @@ const quizData = [
       "Interference of light"
     ],
     "ans": 1,
-    "exp": "Starlight passes through layers of atmosphere with varying densities, causing continuous refraction â€” making stars twinkle."
+    "exp": "Starlight passes through layers of atmosphere with varying densities, causing continuous refraction — making stars twinkle."
   },
   {
     "subject": "physics",
@@ -1932,7 +2106,7 @@ const quizData = [
       "10 m"
     ],
     "ans": 1,
-    "exp": "A normal eye can see clearly up to infinity â€” the far point is at infinity."
+    "exp": "A normal eye can see clearly up to infinity — the far point is at infinity."
   },
   {
     "subject": "physics",
@@ -2023,7 +2197,7 @@ const quizData = [
       "Concave, 55 cm"
     ],
     "ans": 1,
-    "exp": "Negative power â†’ concave lens. f = 1/P = 1/5.5 = 0.1818 m â‰ˆ 18.18 cm."
+    "exp": "Negative power → concave lens. f = 1/P = 1/5.5 = 0.1818 m ≈ 18.18 cm."
   },
   {
     "subject": "physics",
@@ -2075,7 +2249,7 @@ const quizData = [
       "Ohm"
     ],
     "ans": 2,
-    "exp": "The SI unit of electric charge is Coulomb (C). 1 Coulomb = charge of about 6.24 Ã— 10Â¹â¸ electrons."
+    "exp": "The SI unit of electric charge is Coulomb (C). 1 Coulomb = charge of about 6.24 × 10¹⁸ electrons."
   },
   {
     "subject": "physics",
@@ -2088,12 +2262,12 @@ const quizData = [
       "None"
     ],
     "ans": 1,
-    "exp": "Ohm's Law: V âˆ I at constant temperature and other physical conditions."
+    "exp": "Ohm's Law: V ∝ I at constant temperature and other physical conditions."
   },
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "A resistor of 5Î© carries 2A. What is the voltage?",
+    "q": "A resistor of 5Ω carries 2A. What is the voltage?",
     "opts": [
       "2.5V",
       "10V",
@@ -2101,7 +2275,7 @@ const quizData = [
       "5V"
     ],
     "ans": 1,
-    "exp": "V = IR = 2 Ã— 5 = 10V."
+    "exp": "V = IR = 2 × 5 = 10V."
   },
   {
     "subject": "physics",
@@ -2114,20 +2288,20 @@ const quizData = [
       "Quadruples"
     ],
     "ans": 2,
-    "exp": "R = ÏL/A. Doubling L doubles R. Resistance is directly proportional to length."
+    "exp": "R = ρL/A. Doubling L doubles R. Resistance is directly proportional to length."
   },
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "In a series circuit with 3Î©, 4Î©, 5Î©, what is total resistance?",
+    "q": "In a series circuit with 3Ω, 4Ω, 5Ω, what is total resistance?",
     "opts": [
-      "12Î©",
-      "4Î©",
-      "60Î©",
-      "1.3Î©"
+      "12Ω",
+      "4Ω",
+      "60Ω",
+      "1.3Ω"
     ],
     "ans": 0,
-    "exp": "In series: R = 3+4+5 = 12Î©."
+    "exp": "In series: R = 3+4+5 = 12Ω."
   },
   {
     "subject": "physics",
@@ -2145,15 +2319,15 @@ const quizData = [
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "Two 6Î© resistors in parallel. Equivalent resistance =?",
+    "q": "Two 6Ω resistors in parallel. Equivalent resistance =?",
     "opts": [
-      "12Î©",
-      "6Î©",
-      "3Î©",
-      "1Î©"
+      "12Ω",
+      "6Ω",
+      "3Ω",
+      "1Ω"
     ],
     "ans": 2,
-    "exp": "1/R = 1/6 + 1/6 = 2/6 = 1/3 â†’ R = 3Î©."
+    "exp": "1/R = 1/6 + 1/6 = 2/6 = 1/3 → R = 3Ω."
   },
   {
     "subject": "physics",
@@ -2161,25 +2335,25 @@ const quizData = [
     "q": "1 kWh is equal to:",
     "opts": [
       "1000 J",
-      "3.6Ã—10Â³ J",
-      "3.6Ã—10â¶ J",
-      "3.6Ã—10â¹ J"
+      "3.6×10³ J",
+      "3.6×10⁶ J",
+      "3.6×10⁹ J"
     ],
     "ans": 2,
-    "exp": "1 kWh = 1000 W Ã— 3600 s = 3.6 Ã— 10â¶ J. This is the commercial unit of electrical energy."
+    "exp": "1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J. This is the commercial unit of electrical energy."
   },
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "A 1000W electric iron is used for 2 hours. What is the cost at â‚¹5 per unit?",
+    "q": "A 1000W electric iron is used for 2 hours. What is the cost at ₹5 per unit?",
     "opts": [
-      "â‚¹5",
-      "â‚¹10",
-      "â‚¹15",
-      "â‚¹20"
+      "₹5",
+      "₹10",
+      "₹15",
+      "₹20"
     ],
     "ans": 1,
-    "exp": "Energy = 1000W Ã— 2h = 2000Wh = 2 kWh = 2 units. Cost = 2 Ã— 5 = â‚¹10."
+    "exp": "Energy = 1000W × 2h = 2000Wh = 2 kWh = 2 units. Cost = 2 × 5 = ₹10."
   },
   {
     "subject": "physics",
@@ -2187,12 +2361,12 @@ const quizData = [
     "q": "Joule's Law of heating: H is proportional to:",
     "opts": [
       "I",
-      "IÂ²",
-      "IÂ³",
-      "âˆšI"
+      "I²",
+      "I³",
+      "√I"
     ],
     "ans": 1,
-    "exp": "H = IÂ²Rt. Heat is proportional to the square of current."
+    "exp": "H = I²Rt. Heat is proportional to the square of current."
   },
   {
     "subject": "physics",
@@ -2205,7 +2379,7 @@ const quizData = [
       "Transparency"
     ],
     "ans": 1,
-    "exp": "Tungsten has a very high melting point (~3380Â°C) and high resistance, making it glow without melting."
+    "exp": "Tungsten has a very high melting point (~3380°C) and high resistance, making it glow without melting."
   },
   {
     "subject": "physics",
@@ -2218,7 +2392,7 @@ const quizData = [
       "Shape"
     ],
     "ans": 2,
-    "exp": "Resistivity (Ï) is an intrinsic property depending only on the material and its temperature, not dimensions."
+    "exp": "Resistivity (ρ) is an intrinsic property depending only on the material and its temperature, not dimensions."
   },
   {
     "subject": "physics",
@@ -2227,11 +2401,11 @@ const quizData = [
     "opts": [
       "P = I/V",
       "P = V/I",
-      "P = VÃ—I",
+      "P = V×I",
       "P = V-I"
     ],
     "ans": 2,
-    "exp": "P = V Ã— I = IÂ²R = VÂ²/R. The unit is Watt (W)."
+    "exp": "P = V × I = I²R = V²/R. The unit is Watt (W)."
   },
   {
     "subject": "physics",
@@ -2244,7 +2418,7 @@ const quizData = [
       "Low melting point and low resistance"
     ],
     "ans": 1,
-    "exp": "Fuse wire must melt quickly when current exceeds limit â€” so it needs high resistance (to generate heat) and low melting point."
+    "exp": "Fuse wire must melt quickly when current exceeds limit — so it needs high resistance (to generate heat) and low melting point."
   },
   {
     "subject": "physics",
@@ -2296,7 +2470,7 @@ const quizData = [
       "Becomes zero"
     ],
     "ans": 1,
-    "exp": "As temperature rises, metal ions vibrate more, impeding electron flow â€” resistance increases."
+    "exp": "As temperature rises, metal ions vibrate more, impeding electron flow — resistance increases."
   },
   {
     "subject": "physics",
@@ -2322,7 +2496,7 @@ const quizData = [
       "Slightly higher"
     ],
     "ans": 2,
-    "exp": "Nichrome has very high resistivity (~100Ã— that of copper), making it ideal for heating elements."
+    "exp": "Nichrome has very high resistivity (~100× that of copper), making it ideal for heating elements."
   },
   {
     "subject": "physics",
@@ -2335,12 +2509,12 @@ const quizData = [
       "Silicon"
     ],
     "ans": 1,
-    "exp": "Copper has very low resistivity (~1.7Ã—10â»â¸ Î©m) â€” therefore it is used for electrical wiring."
+    "exp": "Copper has very low resistivity (~1.7×10⁻⁸ Ωm) — therefore it is used for electrical wiring."
   },
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "If P=VÂ²/R and voltage doubles while R is constant, power becomes:",
+    "q": "If P=V²/R and voltage doubles while R is constant, power becomes:",
     "opts": [
       "Same",
       "Double",
@@ -2348,7 +2522,7 @@ const quizData = [
       "Half"
     ],
     "ans": 2,
-    "exp": "P = VÂ²/R. If V doubles, P = (2V)Â²/R = 4VÂ²/R â€” power becomes 4 times."
+    "exp": "P = V²/R. If V doubles, P = (2V)²/R = 4V²/R — power becomes 4 times."
   },
   {
     "subject": "physics",
@@ -2361,7 +2535,7 @@ const quizData = [
       "Remains same"
     ],
     "ans": 1,
-    "exp": "R = ÏL/A. Halving A doubles R. Resistance is inversely proportional to area."
+    "exp": "R = ρL/A. Halving A doubles R. Resistance is inversely proportional to area."
   },
   {
     "subject": "physics",
@@ -2379,15 +2553,15 @@ const quizData = [
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "Three resistors of 2Î© each are connected in parallel. The equivalent resistance is:",
+    "q": "Three resistors of 2Ω each are connected in parallel. The equivalent resistance is:",
     "opts": [
-      "6Î©",
-      "2Î©",
-      "2/3 Î©",
-      "1Î©"
+      "6Ω",
+      "2Ω",
+      "2/3 Ω",
+      "1Ω"
     ],
     "ans": 2,
-    "exp": "1/R = 1/2 + 1/2 + 1/2 = 3/2 â†’ R = 2/3 Î©."
+    "exp": "1/R = 1/2 + 1/2 + 1/2 = 3/2 → R = 2/3 Ω."
   },
   {
     "subject": "physics",
@@ -2418,7 +2592,7 @@ const quizData = [
   {
     "subject": "physics",
     "chapter": "Electricity",
-    "q": "What is the total current drawn from a 12V battery connected to 3Î© and 6Î© in parallel?",
+    "q": "What is the total current drawn from a 12V battery connected to 3Ω and 6Ω in parallel?",
     "opts": [
       "2A",
       "4A",
@@ -2426,7 +2600,7 @@ const quizData = [
       "8A"
     ],
     "ans": 2,
-    "exp": "R_eq = (3Ã—6)/(3+6) = 2Î©. I = V/R = 12/2 = 6A."
+    "exp": "R_eq = (3×6)/(3+6) = 2Ω. I = V/R = 12/2 = 6A."
   },
   {
     "subject": "physics",
@@ -2452,7 +2626,7 @@ const quizData = [
       "Current heats conductors"
     ],
     "ans": 1,
-    "exp": "H. C. Oersted (1820) discovered that a current-carrying wire deflects a compass needle â€” electricity and magnetism are linked."
+    "exp": "H. C. Oersted (1820) discovered that a current-carrying wire deflects a compass needle — electricity and magnetism are linked."
   },
   {
     "subject": "physics",
@@ -2556,7 +2730,7 @@ const quizData = [
       "Ammeter"
     ],
     "ans": 2,
-    "exp": "A fuse (or MCB â€” Miniature Circuit Breaker) protects against overloading by breaking the circuit."
+    "exp": "A fuse (or MCB — Miniature Circuit Breaker) protects against overloading by breaking the circuit."
   },
   {
     "subject": "physics",
@@ -2569,7 +2743,7 @@ const quizData = [
       "Enter S pole"
     ],
     "ans": 2,
-    "exp": "If field lines crossed, the field direction at that point would be ambiguous â€” which is impossible. They never intersect."
+    "exp": "If field lines crossed, the field direction at that point would be ambiguous — which is impossible. They never intersect."
   },
   {
     "subject": "physics",
@@ -2647,20 +2821,20 @@ const quizData = [
       "Ring magnet"
     ],
     "ans": 1,
-    "exp": "A solenoid behaves like a bar magnet â€” one end acts as North pole, the other as South pole."
+    "exp": "A solenoid behaves like a bar magnet — one end acts as North pole, the other as South pole."
   },
   {
     "subject": "physics",
     "chapter": "Magnetic Effects of Electric Current",
     "q": "The force on a current-carrying conductor placed in a magnetic field is maximum when the angle between current and field is:",
     "opts": [
-      "0Â°",
-      "45Â°",
-      "60Â°",
-      "90Â°"
+      "0°",
+      "45°",
+      "60°",
+      "90°"
     ],
     "ans": 3,
-    "exp": "F = BIL sin Î¸. Force is maximum when Î¸ = 90Â° (conductor perpendicular to field)."
+    "exp": "F = BIL sin θ. Force is maximum when θ = 90° (conductor perpendicular to field)."
   },
   {
     "subject": "physics",
@@ -2686,7 +2860,7 @@ const quizData = [
       "Newton"
     ],
     "ans": 2,
-    "exp": "Michael Faraday discovered electromagnetic induction in 1831 â€” changing magnetic field induces electric current."
+    "exp": "Michael Faraday discovered electromagnetic induction in 1831 — changing magnetic field induces electric current."
   },
   {
     "subject": "physics",
@@ -2764,7 +2938,7 @@ const quizData = [
       "Has high resistivity"
     ],
     "ans": 1,
-    "exp": "Soft iron is easily magnetised by current and quickly loses magnetism when current stops â€” ideal for temporary electromagnets."
+    "exp": "Soft iron is easily magnetised by current and quickly loses magnetism when current stops — ideal for temporary electromagnets."
   },
   {
     "subject": "physics",
@@ -2777,7 +2951,7 @@ const quizData = [
       "Henry"
     ],
     "ans": 1,
-    "exp": "The SI unit of magnetic field strength (magnetic flux density) is Tesla (T). 1 T = 1 Wb/mÂ²."
+    "exp": "The SI unit of magnetic field strength (magnetic flux density) is Tesla (T). 1 T = 1 Wb/m²."
   },
   {
     "subject": "physics",
@@ -2803,7 +2977,7 @@ const quizData = [
       "Astigmatism"
     ],
     "ans": 2,
-    "exp": "Presbyopia patients need both concave and convex parts â€” bifocal lens."
+    "exp": "Presbyopia patients need both concave and convex parts — bifocal lens."
   },
   {
     "subject": "physics",
@@ -2868,12 +3042,12 @@ const quizData = [
       "Conductor is perpendicular to field"
     ],
     "ans": 2,
-    "exp": "F = BIL sin Î¸. When Î¸ = 0Â° (parallel), sin 0 = 0, so force = 0."
+    "exp": "F = BIL sin θ. When θ = 0° (parallel), sin 0 = 0, so force = 0."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
-    "q": "What type of reaction is: CaO + Hâ‚‚O â†’ Ca(OH)â‚‚?",
+    "q": "What type of reaction is: CaO + H₂O → Ca(OH)₂?",
     "opts": [
       "Decomposition",
       "Combination",
@@ -2881,7 +3055,7 @@ const quizData = [
       "Double displacement"
     ],
     "ans": 1,
-    "exp": "Two reactants combine to form a single product â€” combination reaction."
+    "exp": "Two reactants combine to form a single product — combination reaction."
   },
   {
     "subject": "chemistry",
@@ -2894,12 +3068,12 @@ const quizData = [
       "Redox only"
     ],
     "ans": 2,
-    "exp": "2Mg + Oâ‚‚ â†’ 2MgO. Combination and exothermic."
+    "exp": "2Mg + O₂ → 2MgO. Combination and exothermic."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
-    "q": "What type of reaction is: 2FeSOâ‚„ â†’ Feâ‚‚Oâ‚ƒ + SOâ‚‚ + SOâ‚ƒ?",
+    "q": "What type of reaction is: 2FeSO₄ → Fe₂O₃ + SO₂ + SO₃?",
     "opts": [
       "Combination",
       "Thermal decomposition",
@@ -2907,12 +3081,12 @@ const quizData = [
       "Double displacement"
     ],
     "ans": 1,
-    "exp": "One reactant breaks into multiple products on heating â€” thermal decomposition."
+    "exp": "One reactant breaks into multiple products on heating — thermal decomposition."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
-    "q": "In 2AgCl â†’ 2Ag + Clâ‚‚, the agent causing decomposition is:",
+    "q": "In 2AgCl → 2Ag + Cl₂, the agent causing decomposition is:",
     "opts": [
       "Heat",
       "Electricity",
@@ -2920,25 +3094,25 @@ const quizData = [
       "Pressure"
     ],
     "ans": 2,
-    "exp": "Photodecomposition â€” triggered by sunlight."
+    "exp": "Photodecomposition — triggered by sunlight."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
     "q": "Electrolysis of water produces:",
     "opts": [
-      "Hâ‚‚ at anode, Oâ‚‚ at cathode",
-      "Oâ‚‚ at anode, Hâ‚‚ at cathode",
-      "Only Hâ‚‚",
-      "Only Oâ‚‚"
+      "H₂ at anode, O₂ at cathode",
+      "O₂ at anode, H₂ at cathode",
+      "Only H₂",
+      "Only O₂"
     ],
     "ans": 1,
-    "exp": "Cathode â†’ Hâ‚‚, Anode â†’ Oâ‚‚. Volume of Hâ‚‚ is double that of Oâ‚‚."
+    "exp": "Cathode → H₂, Anode → O₂. Volume of H₂ is double that of O₂."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
-    "q": "The reaction Fe + CuSOâ‚„ â†’ FeSOâ‚„ + Cu is:",
+    "q": "The reaction Fe + CuSO₄ → FeSO₄ + Cu is:",
     "opts": [
       "Combination",
       "Decomposition",
@@ -2946,20 +3120,20 @@ const quizData = [
       "Double displacement"
     ],
     "ans": 2,
-    "exp": "Iron displaces copper â€” single displacement reaction."
+    "exp": "Iron displaces copper — single displacement reaction."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
     "q": "Which is a double displacement reaction?",
     "opts": [
-      "C + Oâ‚‚ â†’ COâ‚‚",
-      "2Hâ‚‚ + Oâ‚‚ â†’ 2Hâ‚‚O",
-      "Naâ‚‚SOâ‚„ + BaClâ‚‚ â†’ BaSOâ‚„ + 2NaCl",
-      "Zn + CuSOâ‚„ â†’ ZnSOâ‚„ + Cu"
+      "C + O₂ → CO₂",
+      "2H₂ + O₂ → 2H₂O",
+      "Na₂SO₄ + BaCl₂ → BaSO₄ + 2NaCl",
+      "Zn + CuSO₄ → ZnSO₄ + Cu"
     ],
     "ans": 2,
-    "exp": "Both reactants exchange ions forming BaSOâ‚„ precipitate."
+    "exp": "Both reactants exchange ions forming BaSO₄ precipitate."
   },
   {
     "subject": "chemistry",
@@ -2972,7 +3146,7 @@ const quizData = [
       "Photochemical"
     ],
     "ans": 1,
-    "exp": "Glucose breakdown releases energy â€” exothermic."
+    "exp": "Glucose breakdown releases energy — exothermic."
   },
   {
     "subject": "chemistry",
@@ -2990,15 +3164,15 @@ const quizData = [
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
-    "q": "What is the oxidising agent in CuO + Hâ‚‚ â†’ Cu + Hâ‚‚O?",
+    "q": "What is the oxidising agent in CuO + H₂ → Cu + H₂O?",
     "opts": [
-      "Hâ‚‚",
+      "H₂",
       "Cu",
       "CuO",
-      "Hâ‚‚O"
+      "H₂O"
     ],
     "ans": 2,
-    "exp": "CuO oxidises Hâ‚‚ and gets reduced itself. CuO is the oxidising agent."
+    "exp": "CuO oxidises H₂ and gets reduced itself. CuO is the oxidising agent."
   },
   {
     "subject": "chemistry",
@@ -3011,7 +3185,7 @@ const quizData = [
       "Bacterial digestion"
     ],
     "ans": 1,
-    "exp": "Fats react with Oâ‚‚ â†’ bad smell. Prevented by antioxidants."
+    "exp": "Fats react with O₂ → bad smell. Prevented by antioxidants."
   },
   {
     "subject": "chemistry",
@@ -3024,7 +3198,7 @@ const quizData = [
       "Acid only"
     ],
     "ans": 2,
-    "exp": "Rust (Feâ‚‚Oâ‚ƒ.xHâ‚‚O) forms only with both Oâ‚‚ and moisture."
+    "exp": "Rust (Fe₂O₃.xH₂O) forms only with both O₂ and moisture."
   },
   {
     "subject": "chemistry",
@@ -3037,7 +3211,7 @@ const quizData = [
       "Both"
     ],
     "ans": 0,
-    "exp": "Reducing agent gets oxidised â€” it loses electrons."
+    "exp": "Reducing agent gets oxidised — it loses electrons."
   },
   {
     "subject": "chemistry",
@@ -3047,10 +3221,10 @@ const quizData = [
       "Oxygen",
       "Chlorine",
       "Hydrogen",
-      "SOâ‚‚"
+      "SO₂"
     ],
     "ans": 2,
-    "exp": "Zn + 2HCl â†’ ZnClâ‚‚ + Hâ‚‚â†‘"
+    "exp": "Zn + 2HCl → ZnCl₂ + H₂↑"
   },
   {
     "subject": "chemistry",
@@ -3063,7 +3237,7 @@ const quizData = [
       "Potassium chloride"
     ],
     "ans": 2,
-    "exp": "Pb(NOâ‚ƒ)â‚‚ + 2KI â†’ PbIâ‚‚â†“ (yellow) + 2KNOâ‚ƒ"
+    "exp": "Pb(NO₃)₂ + 2KI → PbI₂↓ (yellow) + 2KNO₃"
   },
   {
     "subject": "chemistry",
@@ -3081,15 +3255,15 @@ const quizData = [
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
-    "q": "Decomposition of CaCOâ‚ƒ on heating gives:",
+    "q": "Decomposition of CaCO₃ on heating gives:",
     "opts": [
-      "Ca + COâ‚ƒ",
-      "CaO + COâ‚‚",
-      "Ca(OH)â‚‚ + COâ‚‚",
+      "Ca + CO₃",
+      "CaO + CO₂",
+      "Ca(OH)₂ + CO₂",
       "CaO + CO"
     ],
     "ans": 1,
-    "exp": "CaCOâ‚ƒ â†’(heat)â†’ CaO (quicklime) + COâ‚‚"
+    "exp": "CaCO₃ →(heat)→ CaO (quicklime) + CO₂"
   },
   {
     "subject": "chemistry",
@@ -3102,7 +3276,7 @@ const quizData = [
       "Law of energy"
     ],
     "ans": 1,
-    "exp": "Atoms are neither created nor destroyed â€” mass is conserved."
+    "exp": "Atoms are neither created nor destroyed — mass is conserved."
   },
   {
     "subject": "chemistry",
@@ -3115,7 +3289,7 @@ const quizData = [
       "Rusting"
     ],
     "ans": 2,
-    "exp": "Photosynthesis absorbs sunlight energy â€” endothermic."
+    "exp": "Photosynthesis absorbs sunlight energy — endothermic."
   },
   {
     "subject": "chemistry",
@@ -3123,12 +3297,12 @@ const quizData = [
     "q": "Silver articles turn black due to:",
     "opts": [
       "Oxidation",
-      "Corrosion by Hâ‚‚S forming Agâ‚‚S",
+      "Corrosion by H₂S forming Ag₂S",
       "Decomposition",
       "Reduction"
     ],
     "ans": 1,
-    "exp": "Ag reacts with Hâ‚‚S in air forming black Agâ‚‚S tarnish."
+    "exp": "Ag reacts with H₂S in air forming black Ag₂S tarnish."
   },
   {
     "subject": "chemistry",
@@ -3141,7 +3315,7 @@ const quizData = [
       "Neutralisation"
     ],
     "ans": 1,
-    "exp": "2AgBr â†’(light)â†’ 2Ag + Brâ‚‚. Silver deposits form the image."
+    "exp": "2AgBr →(light)→ 2Ag + Br₂. Silver deposits form the image."
   },
   {
     "subject": "chemistry",
@@ -3167,7 +3341,7 @@ const quizData = [
       "Displacement"
     ],
     "ans": 1,
-    "exp": "CaO + Hâ‚‚O â†’ Ca(OH)â‚‚ + heat. Combination + exothermic."
+    "exp": "CaO + H₂O → Ca(OH)₂ + heat. Combination + exothermic."
   },
   {
     "subject": "chemistry",
@@ -3180,7 +3354,7 @@ const quizData = [
       "Increase weight"
     ],
     "ans": 1,
-    "exp": "Nâ‚‚ is inert and prevents oxidation of fats in chips."
+    "exp": "N₂ is inert and prevents oxidation of fats in chips."
   },
   {
     "subject": "chemistry",
@@ -3188,25 +3362,25 @@ const quizData = [
     "q": "The chemical formula of rust is:",
     "opts": [
       "FeO",
-      "Feâ‚‚Oâ‚ƒ",
-      "Feâ‚‚Oâ‚ƒ.xHâ‚‚O",
-      "Feâ‚ƒOâ‚„"
+      "Fe₂O₃",
+      "Fe₂O₃.xH₂O",
+      "Fe₃O₄"
     ],
     "ans": 2,
-    "exp": "Rust is hydrated iron(III) oxide â€” Feâ‚‚Oâ‚ƒ.xHâ‚‚O."
+    "exp": "Rust is hydrated iron(III) oxide — Fe₂O₃.xH₂O."
   },
   {
     "subject": "chemistry",
     "chapter": "Chemical Reactions and Equations",
     "q": "Brown fumes appear when lead nitrate is heated. These fumes are:",
     "opts": [
-      "Oâ‚‚",
-      "NOâ‚‚",
-      "COâ‚‚",
-      "SOâ‚‚"
+      "O₂",
+      "NO₂",
+      "CO₂",
+      "SO₂"
     ],
     "ans": 1,
-    "exp": "2Pb(NOâ‚ƒ)â‚‚ â†’ 2PbO + 4NOâ‚‚â†‘ (brown) + Oâ‚‚"
+    "exp": "2Pb(NO₃)₂ → 2PbO + 4NO₂↑ (brown) + O₂"
   },
   {
     "subject": "chemistry",
@@ -3232,7 +3406,7 @@ const quizData = [
       "Acid"
     ],
     "ans": 1,
-    "exp": "Painting, oiling, or galvanising (zinc) prevent contact with Oâ‚‚ and moisture."
+    "exp": "Painting, oiling, or galvanising (zinc) prevent contact with O₂ and moisture."
   },
   {
     "subject": "chemistry",
@@ -3263,7 +3437,7 @@ const quizData = [
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
-    "q": "The pH of a solution with [Hâº]=0.01 mol/L is:",
+    "q": "The pH of a solution with [H⁺]=0.01 mol/L is:",
     "opts": [
       "1",
       "2",
@@ -3271,7 +3445,7 @@ const quizData = [
       "0"
     ],
     "ans": 1,
-    "exp": "pH = -log(0.01) = -log(10â»Â²) = 2."
+    "exp": "pH = -log(0.01) = -log(10⁻²) = 2."
   },
   {
     "subject": "chemistry",
@@ -3284,7 +3458,7 @@ const quizData = [
       "Sulphuric acid"
     ],
     "ans": 3,
-    "exp": "Hâ‚‚SOâ‚„ fully dissociates in water â€” strong acid."
+    "exp": "H₂SO₄ fully dissociates in water — strong acid."
   },
   {
     "subject": "chemistry",
@@ -3297,7 +3471,7 @@ const quizData = [
       "14"
     ],
     "ans": 2,
-    "exp": "NaHCOâ‚ƒ is a mild base â€” pH around 8-9."
+    "exp": "NaHCO₃ is a mild base — pH around 8-9."
   },
   {
     "subject": "chemistry",
@@ -3318,38 +3492,38 @@ const quizData = [
     "q": "Neutralisation of HCl with NaOH produces:",
     "opts": [
       "Only water",
-      "NaCl + Hâ‚‚O",
-      "Hâ‚‚ gas",
-      "Na + Clâ‚‚"
+      "NaCl + H₂O",
+      "H₂ gas",
+      "Na + Cl₂"
     ],
     "ans": 1,
-    "exp": "Acid + Base â†’ Salt + Water."
+    "exp": "Acid + Base → Salt + Water."
   },
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
     "q": "Plaster of Paris is prepared by:",
     "opts": [
-      "Heating marble at 1000Â°C",
-      "Heating gypsum at ~100Â°C",
+      "Heating marble at 1000°C",
+      "Heating gypsum at ~100°C",
       "Dissolving lime in water",
-      "Electrolysis of CaSOâ‚„"
+      "Electrolysis of CaSO₄"
     ],
     "ans": 1,
-    "exp": "CaSOâ‚„.2Hâ‚‚O â†’ CaSOâ‚„.Â½Hâ‚‚O + 1.5Hâ‚‚O at ~100Â°C."
+    "exp": "CaSO₄.2H₂O → CaSO₄.½H₂O + 1.5H₂O at ~100°C."
   },
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
     "q": "The chemical formula of washing soda is:",
     "opts": [
-      "NaHCOâ‚ƒ",
-      "Naâ‚‚COâ‚ƒ",
-      "Naâ‚‚COâ‚ƒ.10Hâ‚‚O",
+      "NaHCO₃",
+      "Na₂CO₃",
+      "Na₂CO₃.10H₂O",
       "NaOH"
     ],
     "ans": 2,
-    "exp": "Washing soda = Naâ‚‚COâ‚ƒ.10Hâ‚‚O (sodium carbonate decahydrate)."
+    "exp": "Washing soda = Na₂CO₃.10H₂O (sodium carbonate decahydrate)."
   },
   {
     "subject": "chemistry",
@@ -3362,7 +3536,7 @@ const quizData = [
       "Bleaching powder"
     ],
     "ans": 1,
-    "exp": "Antacids (NaHCOâ‚ƒ) neutralise excess HCl in stomach."
+    "exp": "Antacids (NaHCO₃) neutralise excess HCl in stomach."
   },
   {
     "subject": "chemistry",
@@ -3384,11 +3558,11 @@ const quizData = [
     "opts": [
       "Mixing lime and water",
       "Passing chlorine over slaked lime",
-      "Heating CaCOâ‚ƒ",
+      "Heating CaCO₃",
       "Mixing HCl and lime"
     ],
     "ans": 1,
-    "exp": "Ca(OH)â‚‚ + Clâ‚‚ â†’ Ca(OCl)Cl + Hâ‚‚O"
+    "exp": "Ca(OH)₂ + Cl₂ → Ca(OCl)Cl + H₂O"
   },
   {
     "subject": "chemistry",
@@ -3406,7 +3580,7 @@ const quizData = [
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
-    "q": "When COâ‚‚ is passed through lime water, it turns:",
+    "q": "When CO₂ is passed through lime water, it turns:",
     "opts": [
       "Yellow",
       "Milky",
@@ -3414,7 +3588,7 @@ const quizData = [
       "Red"
     ],
     "ans": 1,
-    "exp": "Ca(OH)â‚‚ + COâ‚‚ â†’ CaCOâ‚ƒâ†“ (white) + Hâ‚‚O. Turns milky."
+    "exp": "Ca(OH)₂ + CO₂ → CaCO₃↓ (white) + H₂O. Turns milky."
   },
   {
     "subject": "chemistry",
@@ -3440,7 +3614,7 @@ const quizData = [
       "Oxalic acid"
     ],
     "ans": 2,
-    "exp": "Vinegar = 4-8% acetic acid (CHâ‚ƒCOOH)."
+    "exp": "Vinegar = 4-8% acetic acid (CH₃COOH)."
   },
   {
     "subject": "chemistry",
@@ -3460,26 +3634,26 @@ const quizData = [
     "chapter": "Acids, Bases and Salts",
     "q": "Acids produce which ion in water?",
     "opts": [
-      "OHâ»",
-      "Hâº (or Hâ‚ƒOâº)",
-      "Naâº",
-      "Clâ»"
+      "OH⁻",
+      "H⁺ (or H₃O⁺)",
+      "Na⁺",
+      "Cl⁻"
     ],
     "ans": 1,
-    "exp": "Acids dissociate to release Hâº ions (hydronium Hâ‚ƒOâº)."
+    "exp": "Acids dissociate to release H⁺ ions (hydronium H₃O⁺)."
   },
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
     "q": "Bases produce which ion in water?",
     "opts": [
-      "Hâº",
-      "OHâ»",
-      "Naâº",
-      "SOâ‚„Â²â»"
+      "H⁺",
+      "OH⁻",
+      "Na⁺",
+      "SO₄²⁻"
     ],
     "ans": 1,
-    "exp": "Bases release OHâ» (hydroxyl) ions in water."
+    "exp": "Bases release OH⁻ (hydroxyl) ions in water."
   },
   {
     "subject": "chemistry",
@@ -3492,7 +3666,7 @@ const quizData = [
       "1"
     ],
     "ans": 1,
-    "exp": "Pure water is neutral â€” pH = 7."
+    "exp": "Pure water is neutral — pH = 7."
   },
   {
     "subject": "chemistry",
@@ -3512,13 +3686,13 @@ const quizData = [
     "chapter": "Acids, Bases and Salts",
     "q": "Formula of baking soda:",
     "opts": [
-      "Naâ‚‚COâ‚ƒ",
+      "Na₂CO₃",
       "NaOH",
-      "NaHCOâ‚ƒ",
-      "CaCOâ‚ƒ"
+      "NaHCO₃",
+      "CaCO₃"
     ],
     "ans": 2,
-    "exp": "Baking soda = Sodium bicarbonate = NaHCOâ‚ƒ."
+    "exp": "Baking soda = Sodium bicarbonate = NaHCO₃."
   },
   {
     "subject": "chemistry",
@@ -3531,7 +3705,7 @@ const quizData = [
       "Heat before mixing"
     ],
     "ans": 1,
-    "exp": "Always add acid to water (not water to acid) â€” prevents splattering from heat."
+    "exp": "Always add acid to water (not water to acid) — prevents splattering from heat."
   },
   {
     "subject": "chemistry",
@@ -3557,7 +3731,7 @@ const quizData = [
       "Strong base"
     ],
     "ans": 3,
-    "exp": "NaOH fully dissociates â€” strong base."
+    "exp": "NaOH fully dissociates — strong base."
   },
   {
     "subject": "chemistry",
@@ -3566,16 +3740,16 @@ const quizData = [
     "opts": [
       "Losing water",
       "Absorbing water to form gypsum",
-      "Reacting with COâ‚‚",
+      "Reacting with CO₂",
       "Oxidation"
     ],
     "ans": 1,
-    "exp": "CaSOâ‚„.Â½Hâ‚‚O + 1.5Hâ‚‚O â†’ CaSOâ‚„.2Hâ‚‚O (gypsum). Sets hard."
+    "exp": "CaSO₄.½H₂O + 1.5H₂O → CaSO₄.2H₂O (gypsum). Sets hard."
   },
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
-    "q": "Milk of magnesia (Mg(OH)â‚‚) is used as:",
+    "q": "Milk of magnesia (Mg(OH)₂) is used as:",
     "opts": [
       "Fertiliser",
       "Antacid",
@@ -3583,7 +3757,7 @@ const quizData = [
       "Bleach"
     ],
     "ans": 1,
-    "exp": "Mg(OH)â‚‚ is a mild base that neutralises excess stomach acid."
+    "exp": "Mg(OH)₂ is a mild base that neutralises excess stomach acid."
   },
   {
     "subject": "chemistry",
@@ -3596,33 +3770,33 @@ const quizData = [
       "Above 10"
     ],
     "ans": 1,
-    "exp": "Acid rain: pH < 5.6, caused by SOâ‚‚ and NOâ‚“ dissolving in rain."
+    "exp": "Acid rain: pH < 5.6, caused by SO₂ and NOₓ dissolving in rain."
   },
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
     "q": "Chlor-alkali process uses electrolysis of:",
     "opts": [
-      "NaHCOâ‚ƒ",
+      "NaHCO₃",
       "NaCl (brine)",
       "NaOH",
-      "Naâ‚‚COâ‚ƒ"
+      "Na₂CO₃"
     ],
     "ans": 1,
-    "exp": "Electrolysis of brine gives NaOH, Clâ‚‚ and Hâ‚‚."
+    "exp": "Electrolysis of brine gives NaOH, Cl₂ and H₂."
   },
   {
     "subject": "chemistry",
     "chapter": "Acids, Bases and Salts",
     "q": "Blue vitriol is:",
     "opts": [
-      "CuSOâ‚„.5Hâ‚‚O",
-      "FeSOâ‚„.7Hâ‚‚O",
-      "ZnSOâ‚„.7Hâ‚‚O",
-      "MgSOâ‚„.7Hâ‚‚O"
+      "CuSO₄.5H₂O",
+      "FeSO₄.7H₂O",
+      "ZnSO₄.7H₂O",
+      "MgSO₄.7H₂O"
     ],
     "ans": 0,
-    "exp": "Blue vitriol = Copper sulphate pentahydrate = CuSOâ‚„.5Hâ‚‚O."
+    "exp": "Blue vitriol = Copper sulphate pentahydrate = CuSO₄.5H₂O."
   },
   {
     "subject": "chemistry",
@@ -3635,7 +3809,7 @@ const quizData = [
       "Rain water"
     ],
     "ans": 1,
-    "exp": "Water of crystallisation: definite number of Hâ‚‚O molecules bound in crystal structure."
+    "exp": "Water of crystallisation: definite number of H₂O molecules bound in crystal structure."
   },
   {
     "subject": "chemistry",
@@ -3661,7 +3835,7 @@ const quizData = [
       "Potassium"
     ],
     "ans": 3,
-    "exp": "K is at top of reactivity series â€” most reactive common metal."
+    "exp": "K is at top of reactivity series — most reactive common metal."
   },
   {
     "subject": "chemistry",
@@ -3674,7 +3848,7 @@ const quizData = [
       "Gallium"
     ],
     "ans": 2,
-    "exp": "Mercury (Hg) â€” melting point -38.8Â°C."
+    "exp": "Mercury (Hg) — melting point -38.8°C."
   },
   {
     "subject": "chemistry",
@@ -3700,7 +3874,7 @@ const quizData = [
       "Open air"
     ],
     "ans": 2,
-    "exp": "Na reacts violently with water/air â€” stored under kerosene."
+    "exp": "Na reacts violently with water/air — stored under kerosene."
   },
   {
     "subject": "chemistry",
@@ -3739,7 +3913,7 @@ const quizData = [
       "Making alloys"
     ],
     "ans": 1,
-    "exp": "2Al + Feâ‚‚Oâ‚ƒ â†’ Alâ‚‚Oâ‚ƒ + 2Fe + heat. Welds railway tracks."
+    "exp": "2Al + Fe₂O₃ → Al₂O₃ + 2Fe + heat. Welds railway tracks."
   },
   {
     "subject": "chemistry",
@@ -3752,7 +3926,7 @@ const quizData = [
       "Cryolite"
     ],
     "ans": 1,
-    "exp": "Bauxite (Alâ‚‚Oâ‚ƒ.2Hâ‚‚O) is the main aluminium ore."
+    "exp": "Bauxite (Al₂O₃.2H₂O) is the main aluminium ore."
   },
   {
     "subject": "chemistry",
@@ -3798,13 +3972,13 @@ const quizData = [
     "chapter": "Metals and Non-metals",
     "q": "Chemical formula of rust:",
     "opts": [
-      "Feâ‚‚Oâ‚ƒ",
+      "Fe₂O₃",
       "FeO",
-      "Feâ‚‚Oâ‚ƒ.xHâ‚‚O",
-      "Feâ‚ƒOâ‚„"
+      "Fe₂O₃.xH₂O",
+      "Fe₃O₄"
     ],
     "ans": 2,
-    "exp": "Rust = hydrated iron(III) oxide = Feâ‚‚Oâ‚ƒ.xHâ‚‚O."
+    "exp": "Rust = hydrated iron(III) oxide = Fe₂O₃.xH₂O."
   },
   {
     "subject": "chemistry",
@@ -3817,7 +3991,7 @@ const quizData = [
       "Makes it magnetic"
     ],
     "ans": 2,
-    "exp": "Electrolysis grows thick protective Alâ‚‚Oâ‚ƒ layer."
+    "exp": "Electrolysis grows thick protective Al₂O₃ layer."
   },
   {
     "subject": "chemistry",
@@ -3830,7 +4004,7 @@ const quizData = [
       "Phosphorus"
     ],
     "ans": 2,
-    "exp": "Iodine is a lustrous (shiny) non-metal â€” exception to general rule."
+    "exp": "Iodine is a lustrous (shiny) non-metal — exception to general rule."
   },
   {
     "subject": "chemistry",
@@ -3843,7 +4017,7 @@ const quizData = [
       "Hydrogen bonds"
     ],
     "ans": 1,
-    "exp": "Metals lose electrons to form cations â€” ionic bonding."
+    "exp": "Metals lose electrons to form cations — ionic bonding."
   },
   {
     "subject": "chemistry",
@@ -3856,20 +4030,20 @@ const quizData = [
       "They are heavy"
     ],
     "ans": 1,
-    "exp": "Noble metals are least reactive â€” don't corrode easily."
+    "exp": "Noble metals are least reactive — don't corrode easily."
   },
   {
     "subject": "chemistry",
     "chapter": "Metals and Non-metals",
     "q": "Which gas is produced when metals react with acids?",
     "opts": [
-      "Oâ‚‚",
-      "COâ‚‚",
-      "Hâ‚‚",
-      "Nâ‚‚"
+      "O₂",
+      "CO₂",
+      "H₂",
+      "N₂"
     ],
     "ans": 2,
-    "exp": "Metal + dilute acid â†’ Salt + Hâ‚‚â†‘"
+    "exp": "Metal + dilute acid → Salt + H₂↑"
   },
   {
     "subject": "chemistry",
@@ -3882,7 +4056,7 @@ const quizData = [
       "Neither"
     ],
     "ans": 2,
-    "exp": "Amphoteric oxides (Alâ‚‚Oâ‚ƒ, ZnO) react with both acids and bases."
+    "exp": "Amphoteric oxides (Al₂O₃, ZnO) react with both acids and bases."
   },
   {
     "subject": "chemistry",
@@ -3960,7 +4134,7 @@ const quizData = [
       "Filtration"
     ],
     "ans": 1,
-    "exp": "Impure Cu = anode, pure Cu = cathode, CuSOâ‚„ = electrolyte."
+    "exp": "Impure Cu = anode, pure Cu = cathode, CuSO₄ = electrolyte."
   },
   {
     "subject": "chemistry",
@@ -3973,7 +4147,7 @@ const quizData = [
       "Amphoteric always"
     ],
     "ans": 1,
-    "exp": "Metal oxides are basic â€” they react with acids."
+    "exp": "Metal oxides are basic — they react with acids."
   },
   {
     "subject": "chemistry",
@@ -3986,7 +4160,7 @@ const quizData = [
       "Metallic"
     ],
     "ans": 1,
-    "exp": "Non-metal oxides are acidic â€” COâ‚‚, SOâ‚‚ form acids with water."
+    "exp": "Non-metal oxides are acidic — CO₂, SO₂ form acids with water."
   },
   {
     "subject": "chemistry",
@@ -4012,7 +4186,7 @@ const quizData = [
       "Roasting only"
     ],
     "ans": 1,
-    "exp": "Feâ‚‚Oâ‚ƒ + 3C â†’ 2Fe + 3CO. Carbon reduces iron oxide."
+    "exp": "Fe₂O₃ + 3C → 2Fe + 3CO. Carbon reduces iron oxide."
   },
   {
     "subject": "chemistry",
@@ -4032,13 +4206,13 @@ const quizData = [
     "chapter": "Metals and Non-metals",
     "q": "Aqua regia can dissolve gold. It is a mixture of:",
     "opts": [
-      "HCl + HNOâ‚ƒ (3:1)",
-      "Hâ‚‚SOâ‚„ + HCl",
-      "HNOâ‚ƒ + Hâ‚‚SOâ‚„",
-      "HCl + Hâ‚‚O"
+      "HCl + HNO₃ (3:1)",
+      "H₂SO₄ + HCl",
+      "HNO₃ + H₂SO₄",
+      "HCl + H₂O"
     ],
     "ans": 0,
-    "exp": "Aqua regia = 3 parts conc. HCl + 1 part conc. HNOâ‚ƒ."
+    "exp": "Aqua regia = 3 parts conc. HCl + 1 part conc. HNO₃."
   },
   {
     "subject": "chemistry",
@@ -4051,7 +4225,7 @@ const quizData = [
       "6"
     ],
     "ans": 2,
-    "exp": "Carbon has 4 valence electrons â€” forms 4 covalent bonds."
+    "exp": "Carbon has 4 valence electrons — forms 4 covalent bonds."
   },
   {
     "subject": "chemistry",
@@ -4097,36 +4271,36 @@ const quizData = [
     "chapter": "Carbon and its Compounds",
     "q": "General formula of alkenes:",
     "opts": [
-      "Câ‚™Hâ‚‚â‚™â‚Šâ‚‚",
-      "Câ‚™Hâ‚‚â‚™",
-      "Câ‚™Hâ‚‚â‚™â‚‹â‚‚",
-      "Câ‚™Hâ‚™"
+      "CₙH₂ₙ₊₂",
+      "CₙH₂ₙ",
+      "CₙH₂ₙ₋₂",
+      "CₙHₙ"
     ],
     "ans": 1,
-    "exp": "Alkenes have one C=C double bond. Formula: Câ‚™Hâ‚‚â‚™."
+    "exp": "Alkenes have one C=C double bond. Formula: CₙH₂ₙ."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
     "q": "Ethanol has the formula:",
     "opts": [
-      "CHâ‚ƒOH",
-      "Câ‚‚Hâ‚…OH",
-      "Câ‚ƒHâ‚‡OH",
-      "Câ‚‚Hâ‚„"
+      "CH₃OH",
+      "C₂H₅OH",
+      "C₃H₇OH",
+      "C₂H₄"
     ],
     "ans": 1,
-    "exp": "Ethanol = Câ‚‚Hâ‚…OH, contains -OH group."
+    "exp": "Ethanol = C₂H₅OH, contains -OH group."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
     "q": "Functional group in carboxylic acids:",
     "opts": [
-      "â€“OH",
-      "â€“CHO",
-      "â€“COâ€“",
-      "â€“COOH"
+      "–OH",
+      "–CHO",
+      "–CO–",
+      "–COOH"
     ],
     "ans": 3,
     "exp": "-COOH (carboxyl) defines carboxylic acids."
@@ -4142,7 +4316,7 @@ const quizData = [
       "Making acid"
     ],
     "ans": 0,
-    "exp": "Fat + NaOH â†’ Soap + Glycerol."
+    "exp": "Fat + NaOH → Soap + Glycerol."
   },
   {
     "subject": "chemistry",
@@ -4150,25 +4324,25 @@ const quizData = [
     "q": "Why don't soaps work in hard water?",
     "opts": [
       "Not soluble",
-      "Form precipitate with CaÂ²âº/MgÂ²âº",
+      "Form precipitate with Ca²⁺/Mg²⁺",
       "Too acidic",
       "Water too basic"
     ],
     "ans": 1,
-    "exp": "CaÂ²âº/MgÂ²âº ions form insoluble scum with soap."
+    "exp": "Ca²⁺/Mg²⁺ ions form insoluble scum with soap."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
     "q": "Detergents work in hard water because:",
     "opts": [
-      "React with CaÂ²âº",
+      "React with Ca²⁺",
       "Sulphonate group doesn't form ppt with hard water ions",
       "More acidic",
       "More basic"
     ],
     "ans": 1,
-    "exp": "Calcium/magnesium sulphonates are soluble â€” no scum."
+    "exp": "Calcium/magnesium sulphonates are soluble — no scum."
   },
   {
     "subject": "chemistry",
@@ -4181,7 +4355,7 @@ const quizData = [
       "Alkyne"
     ],
     "ans": 1,
-    "exp": "Esterification: CHâ‚ƒCOOH + Câ‚‚Hâ‚…OH â†’ CHâ‚ƒCOOCâ‚‚Hâ‚… + Hâ‚‚O"
+    "exp": "Esterification: CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O"
   },
   {
     "subject": "chemistry",
@@ -4207,7 +4381,7 @@ const quizData = [
       "Graphite"
     ],
     "ans": 3,
-    "exp": "Graphite layers slide easily â€” used as dry lubricant."
+    "exp": "Graphite layers slide easily — used as dry lubricant."
   },
   {
     "subject": "chemistry",
@@ -4240,13 +4414,13 @@ const quizData = [
     "chapter": "Carbon and its Compounds",
     "q": "Methane has the formula:",
     "opts": [
-      "Câ‚‚Hâ‚†",
-      "CHâ‚„",
-      "Câ‚‚Hâ‚‚",
-      "Câ‚ƒHâ‚ˆ"
+      "C₂H₆",
+      "CH₄",
+      "C₂H₂",
+      "C₃H₈"
     ],
     "ans": 1,
-    "exp": "Methane (CHâ‚„) is the simplest alkane (n=1)."
+    "exp": "Methane (CH₄) is the simplest alkane (n=1)."
   },
   {
     "subject": "chemistry",
@@ -4285,12 +4459,12 @@ const quizData = [
       "100% acetic acid"
     ],
     "ans": 1,
-    "exp": "Vinegar = 5-8% solution of acetic acid (CHâ‚ƒCOOH) in water."
+    "exp": "Vinegar = 5-8% solution of acetic acid (CH₃COOH) in water."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
-    "q": "Ethanol on oxidation with alkaline KMnOâ‚„ gives:",
+    "q": "Ethanol on oxidation with alkaline KMnO₄ gives:",
     "opts": [
       "Ethane",
       "Ethanoic acid",
@@ -4298,7 +4472,7 @@ const quizData = [
       "Ethene"
     ],
     "ans": 1,
-    "exp": "Câ‚‚Hâ‚…OH + [O] â†’ CHâ‚ƒCOOH (ethanoic acid)."
+    "exp": "C₂H₅OH + [O] → CH₃COOH (ethanoic acid)."
   },
   {
     "subject": "chemistry",
@@ -4311,7 +4485,7 @@ const quizData = [
       "4"
     ],
     "ans": 2,
-    "exp": "Prop- = 3. Propane = Câ‚ƒHâ‚ˆ."
+    "exp": "Prop- = 3. Propane = C₃H₈."
   },
   {
     "subject": "chemistry",
@@ -4337,7 +4511,7 @@ const quizData = [
       "No carbon bond"
     ],
     "ans": 1,
-    "exp": "Ethene (Câ‚‚Hâ‚„) has one C=C double bond."
+    "exp": "Ethene (C₂H₄) has one C=C double bond."
   },
   {
     "subject": "chemistry",
@@ -4350,38 +4524,38 @@ const quizData = [
       "Salt in water"
     ],
     "ans": 1,
-    "exp": "Soap molecules form spherical micelles â€” tails inward, heads outward."
+    "exp": "Soap molecules form spherical micelles — tails inward, heads outward."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
     "q": "Homologous series members differ by:",
     "opts": [
-      "â€“CHâ‚‚â€“ unit",
-      "â€“OH group",
-      "â€“COOH group",
+      "–CH₂– unit",
+      "–OH group",
+      "–COOH group",
       "One electron"
     ],
     "ans": 0,
-    "exp": "Each successive member differs by â€“CHâ‚‚â€“ (14 atomic mass units)."
+    "exp": "Each successive member differs by –CH₂– (14 atomic mass units)."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
     "q": "Freezing point of pure acetic acid:",
     "opts": [
-      "0Â°C",
-      "-10Â°C",
-      "16.6Â°C",
-      "100Â°C"
+      "0°C",
+      "-10°C",
+      "16.6°C",
+      "100°C"
     ],
     "ans": 2,
-    "exp": "Pure acetic acid freezes at 16.6Â°C â€” called glacial acetic acid."
+    "exp": "Pure acetic acid freezes at 16.6°C — called glacial acetic acid."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
-    "q": "IUPAC name of CHâ‚ƒCHO:",
+    "q": "IUPAC name of CH₃CHO:",
     "opts": [
       "Methanal",
       "Ethanal",
@@ -4389,7 +4563,7 @@ const quizData = [
       "Ethanol"
     ],
     "ans": 1,
-    "exp": "CHâ‚ƒCHO = ethanal (2-carbon aldehyde)."
+    "exp": "CH₃CHO = ethanal (2-carbon aldehyde)."
   },
   {
     "subject": "chemistry",
@@ -4402,7 +4576,7 @@ const quizData = [
       "1"
     ],
     "ans": 2,
-    "exp": "Carbon's tetravalency â€” always forms 4 covalent bonds."
+    "exp": "Carbon's tetravalency — always forms 4 covalent bonds."
   },
   {
     "subject": "chemistry",
@@ -4415,12 +4589,12 @@ const quizData = [
       "Zinc"
     ],
     "ans": 1,
-    "exp": "Unsaturated oil + Hâ‚‚ â†’ saturated fat (vanaspati ghee) using Ni catalyst."
+    "exp": "Unsaturated oil + H₂ → saturated fat (vanaspati ghee) using Ni catalyst."
   },
   {
     "subject": "chemistry",
     "chapter": "Carbon and its Compounds",
-    "q": "Fullerene (Câ‚†â‚€) has the shape of:",
+    "q": "Fullerene (C₆₀) has the shape of:",
     "opts": [
       "Cube",
       "Football (soccer ball)",
@@ -4428,1176 +4602,1956 @@ const quizData = [
       "Flat sheet"
     ],
     "ans": 1,
-    "exp": "Buckminsterfullerene Câ‚†â‚€ resembles a football (truncated icosahedron)."
+    "exp": "Buckminsterfullerene C₆₀ resembles a football (truncated icosahedron)."
   },
-{
-  "subject": "biology",
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Site of photosynthesis in plants:",
-        "opts": [
-          "Mitochondria",
-          "Chloroplast",
-          "Nucleus",
-          "Vacuole"
-        ],
-          "ans": 1,
-            "exp": "Chloroplasts contain chlorophyll â€” site of photosynthesis."
-},
-{
-  "subject": "biology",
+    "q": "Site of photosynthesis in plants:",
+    "opts": [
+      "Mitochondria",
+      "Chloroplast",
+      "Nucleus",
+      "Vacuole"
+    ],
+    "ans": 1,
+    "exp": "Chloroplasts contain chlorophyll — site of photosynthesis."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Products of photosynthesis:",
-        "opts": [
-          "COâ‚‚ + Hâ‚‚O",
-          "Glucose + Oâ‚‚",
-          "Oâ‚‚ + Hâ‚‚O",
-          "Only COâ‚‚"
-        ],
-          "ans": 1,
-            "exp": "6COâ‚‚ + 6Hâ‚‚O â†’ Câ‚†Hâ‚â‚‚Oâ‚† + 6Oâ‚‚"
-},
-{
-  "subject": "biology",
+    "q": "Products of photosynthesis:",
+    "opts": [
+      "CO₂ + H₂O",
+      "Glucose + O₂",
+      "O₂ + H₂O",
+      "Only CO₂"
+    ],
+    "ans": 1,
+    "exp": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Powerhouse of the cell:",
-        "opts": [
-          "Nucleus",
-          "Chloroplast",
-          "Mitochondria",
-          "Ribosome"
-        ],
-          "ans": 2,
-            "exp": "Mitochondria produce ATP via aerobic respiration."
-},
-{
-  "subject": "biology",
+    "q": "Powerhouse of the cell:",
+    "opts": [
+      "Nucleus",
+      "Chloroplast",
+      "Mitochondria",
+      "Ribosome"
+    ],
+    "ans": 2,
+    "exp": "Mitochondria produce ATP via aerobic respiration."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "End products of aerobic respiration:",
-        "opts": [
-          "Glucose + Oâ‚‚",
-          "COâ‚‚ + Hâ‚‚O + energy",
-          "Lactic acid + energy",
-          "Ethanol + COâ‚‚"
-        ],
-          "ans": 1,
-            "exp": "Câ‚†Hâ‚â‚‚Oâ‚† + 6Oâ‚‚ â†’ 6COâ‚‚ + 6Hâ‚‚O + ATP"
-},
-{
-  "subject": "biology",
+    "q": "End products of aerobic respiration:",
+    "opts": [
+      "Glucose + O₂",
+      "CO₂ + H₂O + energy",
+      "Lactic acid + energy",
+      "Ethanol + CO₂"
+    ],
+    "ans": 1,
+    "exp": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP"
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Anaerobic respiration in yeast produces:",
-        "opts": [
-          "Lactic acid",
-          "COâ‚‚ + Ethanol",
-          "Only COâ‚‚",
-          "Only Ethanol"
-        ],
-          "ans": 1,
-            "exp": "Yeast: Glucose â†’ Ethanol + COâ‚‚ + small energy."
-},
-{
-  "subject": "biology",
+    "q": "Anaerobic respiration in yeast produces:",
+    "opts": [
+      "Lactic acid",
+      "CO₂ + Ethanol",
+      "Only CO₂",
+      "Only Ethanol"
+    ],
+    "ans": 1,
+    "exp": "Yeast: Glucose → Ethanol + CO₂ + small energy."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Muscle cramps are caused by:",
-        "opts": [
-          "COâ‚‚",
-          "Lactic acid",
-          "Ethanol",
-          "ATP"
-        ],
-          "ans": 1,
-            "exp": "Anaerobic respiration in muscles produces lactic acid â†’ cramps."
-},
-{
-  "subject": "biology",
+    "q": "Muscle cramps are caused by:",
+    "opts": [
+      "CO₂",
+      "Lactic acid",
+      "Ethanol",
+      "ATP"
+    ],
+    "ans": 1,
+    "exp": "Anaerobic respiration in muscles produces lactic acid → cramps."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Water enters root cells by:",
-        "opts": [
-          "Active transport",
-          "Diffusion",
-          "Osmosis",
-          "Transpiration"
-        ],
-          "ans": 2,
-            "exp": "Osmosis: water moves from high to low water concentration."
-},
-{
-  "subject": "biology",
+    "q": "Water enters root cells by:",
+    "opts": [
+      "Active transport",
+      "Diffusion",
+      "Osmosis",
+      "Transpiration"
+    ],
+    "ans": 2,
+    "exp": "Osmosis: water moves from high to low water concentration."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Which tissue transports water in plants?",
-        "opts": [
-          "Phloem",
-          "Xylem",
-          "Epidermis",
-          "Cortex"
-        ],
-          "ans": 1,
-            "exp": "Xylem transports water and minerals from roots to leaves."
-},
-{
-  "subject": "biology",
+    "q": "Which tissue transports water in plants?",
+    "opts": [
+      "Phloem",
+      "Xylem",
+      "Epidermis",
+      "Cortex"
+    ],
+    "ans": 1,
+    "exp": "Xylem transports water and minerals from roots to leaves."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Transpiration helps in:",
-        "opts": [
-          "Gas exchange only",
-          "Cooling + water pull for upward transport",
-          "Photosynthesis",
-          "Reproduction"
-        ],
-          "ans": 1,
-            "exp": "Creates suction that draws water up through xylem + cools plant."
-},
-{
-  "subject": "biology",
+    "q": "Transpiration helps in:",
+    "opts": [
+      "Gas exchange only",
+      "Cooling + water pull for upward transport",
+      "Photosynthesis",
+      "Reproduction"
+    ],
+    "ans": 1,
+    "exp": "Creates suction that draws water up through xylem + cools plant."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Structural unit of kidney:",
-        "opts": [
-          "Glomerulus",
-          "Ureter",
-          "Nephron",
-          "Bowman's capsule"
-        ],
-          "ans": 2,
-            "exp": "Nephron is basic unit â€” each kidney has ~1 million nephrons."
-},
-{
-  "subject": "biology",
+    "q": "Structural unit of kidney:",
+    "opts": [
+      "Glomerulus",
+      "Ureter",
+      "Nephron",
+      "Bowman's capsule"
+    ],
+    "ans": 2,
+    "exp": "Nephron is basic unit — each kidney has ~1 million nephrons."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Main nitrogenous waste in humans:",
-        "opts": [
-          "Uric acid",
-          "Ammonia",
-          "Urea",
-          "Creatinine"
-        ],
-          "ans": 2,
-            "exp": "Urea formed from amino acid breakdown in liver."
-},
-{
-  "subject": "biology",
+    "q": "Main nitrogenous waste in humans:",
+    "opts": [
+      "Uric acid",
+      "Ammonia",
+      "Urea",
+      "Creatinine"
+    ],
+    "ans": 2,
+    "exp": "Urea formed from amino acid breakdown in liver."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Stomata in leaves allow:",
-        "opts": [
-          "Only water out",
-          "COâ‚‚ in, Oâ‚‚/water vapour out",
-          "Only Oâ‚‚ in",
-          "Light in"
-        ],
-          "ans": 1,
-            "exp": "Guard cells control opening for gas exchange."
-},
-{
-  "subject": "biology",
+    "q": "Stomata in leaves allow:",
+    "opts": [
+      "Only water out",
+      "CO₂ in, O₂/water vapour out",
+      "Only O₂ in",
+      "Light in"
+    ],
+    "ans": 1,
+    "exp": "Guard cells control opening for gas exchange."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Which component of blood carries oxygen?",
-        "opts": [
-          "Plasma",
-          "Platelets",
-          "White blood cells",
-          "Red blood cells (haemoglobin)"
-        ],
-          "ans": 3,
-            "exp": "RBCs contain haemoglobin that binds Oâ‚‚."
-},
-{
-  "subject": "biology",
+    "q": "Which component of blood carries oxygen?",
+    "opts": [
+      "Plasma",
+      "Platelets",
+      "White blood cells",
+      "Red blood cells (haemoglobin)"
+    ],
+    "ans": 3,
+    "exp": "RBCs contain haemoglobin that binds O₂."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Double circulation means:",
-        "opts": [
-          "Blood circulates twice daily",
-          "Blood passes through heart twice per cycle",
-          "Two blood systems",
-          "Heart beats twice per second"
-        ],
-          "ans": 1,
-            "exp": "Pulmonary + systemic circuits â€” blood through heart twice."
-},
-{
-  "subject": "biology",
+    "q": "Double circulation means:",
+    "opts": [
+      "Blood circulates twice daily",
+      "Blood passes through heart twice per cycle",
+      "Two blood systems",
+      "Heart beats twice per second"
+    ],
+    "ans": 1,
+    "exp": "Pulmonary + systemic circuits — blood through heart twice."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Which chamber pumps blood to body?",
-        "opts": [
-          "Right atrium",
-          "Right ventricle",
-          "Left atrium",
-          "Left ventricle"
-        ],
-          "ans": 3,
-            "exp": "Left ventricle pumps oxygenated blood via aorta."
-},
-{
-  "subject": "biology",
+    "q": "Which chamber pumps blood to body?",
+    "opts": [
+      "Right atrium",
+      "Right ventricle",
+      "Left atrium",
+      "Left ventricle"
+    ],
+    "ans": 3,
+    "exp": "Left ventricle pumps oxygenated blood via aorta."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Bile is produced in:",
-        "opts": [
-          "Pancreas",
-          "Gall bladder",
-          "Liver",
-          "Stomach"
-        ],
-          "ans": 2,
-            "exp": "Liver produces bile; gall bladder stores it."
-},
-{
-  "subject": "biology",
+    "q": "Bile is produced in:",
+    "opts": [
+      "Pancreas",
+      "Gall bladder",
+      "Liver",
+      "Stomach"
+    ],
+    "ans": 2,
+    "exp": "Liver produces bile; gall bladder stores it."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Role of villi in small intestine:",
-        "opts": [
-          "Produce enzymes",
-          "Absorb nutrients into blood",
-          "Produce bile",
-          "Contract to move food"
-        ],
-          "ans": 1,
-            "exp": "Finger-like projections increase surface area for absorption."
-},
-{
-  "subject": "biology",
+    "q": "Role of villi in small intestine:",
+    "opts": [
+      "Produce enzymes",
+      "Absorb nutrients into blood",
+      "Produce bile",
+      "Contract to move food"
+    ],
+    "ans": 1,
+    "exp": "Finger-like projections increase surface area for absorption."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Saprophytes obtain nutrition by:",
-        "opts": [
-          "Photosynthesis",
-          "Eating organisms",
-          "Digesting dead matter externally then absorbing",
-          "Parasitism"
-        ],
-          "ans": 2,
-            "exp": "Fungi secrete enzymes externally, digest, then absorb."
-},
-{
-  "subject": "biology",
+    "q": "Saprophytes obtain nutrition by:",
+    "opts": [
+      "Photosynthesis",
+      "Eating organisms",
+      "Digesting dead matter externally then absorbing",
+      "Parasitism"
+    ],
+    "ans": 2,
+    "exp": "Fungi secrete enzymes externally, digest, then absorb."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Pepsin digests:",
-        "opts": [
-          "Carbohydrates",
-          "Fats",
-          "Proteins",
-          "Nucleic acids"
-        ],
-          "ans": 2,
-            "exp": "Pepsin is a protease â€” breaks proteins in acidic stomach."
-},
-{
-  "subject": "biology",
+    "q": "Pepsin digests:",
+    "opts": [
+      "Carbohydrates",
+      "Fats",
+      "Proteins",
+      "Nucleic acids"
+    ],
+    "ans": 2,
+    "exp": "Pepsin is a protease — breaks proteins in acidic stomach."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Which organ produces both enzymes and hormones?",
-        "opts": [
-          "Liver",
-          "Pancreas",
-          "Stomach",
-          "Duodenum"
-        ],
-          "ans": 1,
-            "exp": "Pancreas: enzymes (exocrine) + insulin/glucagon (endocrine)."
-},
-{
-  "subject": "biology",
+    "q": "Which organ produces both enzymes and hormones?",
+    "opts": [
+      "Liver",
+      "Pancreas",
+      "Stomach",
+      "Duodenum"
+    ],
+    "ans": 1,
+    "exp": "Pancreas: enzymes (exocrine) + insulin/glucagon (endocrine)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Heart of a fish has:",
-        "opts": [
-          "2 chambers",
-          "3 chambers",
-          "4 chambers",
-          "1 chamber"
-        ],
-          "ans": 0,
-            "exp": "Fish: 2-chambered (1 atrium + 1 ventricle)."
-},
-{
-  "subject": "biology",
+    "q": "Heart of a fish has:",
+    "opts": [
+      "2 chambers",
+      "3 chambers",
+      "4 chambers",
+      "1 chamber"
+    ],
+    "ans": 0,
+    "exp": "Fish: 2-chambered (1 atrium + 1 ventricle)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Which blood cells help in clotting?",
-        "opts": [
-          "RBC",
-          "WBC",
-          "Platelets",
-          "Plasma cells"
-        ],
-          "ans": 2,
-            "exp": "Platelets release clotting factors â†’ fibrin mesh stops bleeding."
-},
-{
-  "subject": "biology",
+    "q": "Which blood cells help in clotting?",
+    "opts": [
+      "RBC",
+      "WBC",
+      "Platelets",
+      "Plasma cells"
+    ],
+    "ans": 2,
+    "exp": "Platelets release clotting factors → fibrin mesh stops bleeding."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Blood pressure is measured in:",
-        "opts": [
-          "mmHg",
-          "psi",
-          "Pa",
-          "kPa"
-        ],
-          "ans": 0,
-            "exp": "Normal BP: 120/80 mmHg (systolic/diastolic)."
-},
-{
-  "subject": "biology",
+    "q": "Blood pressure is measured in:",
+    "opts": [
+      "mmHg",
+      "psi",
+      "Pa",
+      "kPa"
+    ],
+    "ans": 0,
+    "exp": "Normal BP: 120/80 mmHg (systolic/diastolic)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Filtration in nephron occurs in:",
-        "opts": [
-          "Loop of Henle",
-          "Collecting duct",
-          "Glomerulus inside Bowman's capsule",
-          "Distal tubule"
-        ],
-          "ans": 2,
-            "exp": "High pressure forces small molecules into Bowman's capsule."
-},
-{
-  "subject": "biology",
+    "q": "Filtration in nephron occurs in:",
+    "opts": [
+      "Loop of Henle",
+      "Collecting duct",
+      "Glomerulus inside Bowman's capsule",
+      "Distal tubule"
+    ],
+    "ans": 2,
+    "exp": "High pressure forces small molecules into Bowman's capsule."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Amoeba excretes mainly through:",
-        "opts": [
-          "Contractile vacuole",
-          "Simple diffusion through body surface",
-          "Kidneys",
-          "Lungs"
-        ],
-          "ans": 1,
-            "exp": "Simple organisms use diffusion for excretion."
-},
-{
-  "subject": "biology",
+    "q": "Amoeba excretes mainly through:",
+    "opts": [
+      "Contractile vacuole",
+      "Simple diffusion through body surface",
+      "Kidneys",
+      "Lungs"
+    ],
+    "ans": 1,
+    "exp": "Simple organisms use diffusion for excretion."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Which gas is required for photosynthesis?",
-        "opts": [
-          "Oxygen",
-          "Nitrogen",
-          "Carbon dioxide",
-          "Hydrogen"
-        ],
-          "ans": 2,
-            "exp": "COâ‚‚ absorbed through stomata for photosynthesis."
-},
-{
-  "subject": "biology",
+    "q": "Which gas is required for photosynthesis?",
+    "opts": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "ans": 2,
+    "exp": "CO₂ absorbed through stomata for photosynthesis."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Function of WBCs:",
-        "opts": [
-          "Carry oxygen",
-          "Carry COâ‚‚",
-          "Defence against pathogens",
-          "Clotting"
-        ],
-          "ans": 2,
-            "exp": "WBCs fight infections â€” phagocytosis and antibody production."
-},
-{
-  "subject": "biology",
+    "q": "Function of WBCs:",
+    "opts": [
+      "Carry oxygen",
+      "Carry CO₂",
+      "Defence against pathogens",
+      "Clotting"
+    ],
+    "ans": 2,
+    "exp": "WBCs fight infections — phagocytosis and antibody production."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Salivary amylase digests:",
-        "opts": [
-          "Proteins",
-          "Fats",
-          "Starch",
-          "Cellulose"
-        ],
-          "ans": 2,
-            "exp": "Salivary amylase converts starch â†’ maltose in the mouth."
-},
-{
-  "subject": "biology",
+    "q": "Salivary amylase digests:",
+    "opts": [
+      "Proteins",
+      "Fats",
+      "Starch",
+      "Cellulose"
+    ],
+    "ans": 2,
+    "exp": "Salivary amylase converts starch → maltose in the mouth."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Oxygen is carried in blood mainly as:",
-        "opts": [
-          "Dissolved in plasma",
-          "Oxyhaemoglobin in RBCs",
-          "COâ‚‚ compound",
-          "Bicarbonate ion"
-        ],
-          "ans": 1,
-            "exp": "98.5% as oxyhaemoglobin in RBCs."
-},
-{
-  "subject": "biology",
+    "q": "Oxygen is carried in blood mainly as:",
+    "opts": [
+      "Dissolved in plasma",
+      "Oxyhaemoglobin in RBCs",
+      "CO₂ compound",
+      "Bicarbonate ion"
+    ],
+    "ans": 1,
+    "exp": "98.5% as oxyhaemoglobin in RBCs."
+  },
+  {
+    "subject": "biology",
     "chapter": "Life Processes",
-      "q": "Phloem transports:",
-        "opts": [
-          "Water and minerals",
-          "Food (sugars) from leaves to other parts",
-          "Only gases",
-          "Only waste"
-        ],
-          "ans": 1,
-            "exp": "Phloem = living cells that transport sucrose made in leaves."
-},
-{
-  "subject": "biology",
+    "q": "Phloem transports:",
+    "opts": [
+      "Water and minerals",
+      "Food (sugars) from leaves to other parts",
+      "Only gases",
+      "Only waste"
+    ],
+    "ans": 1,
+    "exp": "Phloem = living cells that transport sucrose made in leaves."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Basic unit of nervous system:",
-        "opts": [
-          "Brain",
-          "Neuron",
-          "Nerve",
-          "Synapse"
-        ],
-          "ans": 1,
-            "exp": "Neuron = nerve cell, conducts electrical impulses."
-},
-{
-  "subject": "biology",
+    "q": "Basic unit of nervous system:",
+    "opts": [
+      "Brain",
+      "Neuron",
+      "Nerve",
+      "Synapse"
+    ],
+    "ans": 1,
+    "exp": "Neuron = nerve cell, conducts electrical impulses."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "A synapse is:",
-        "opts": [
-          "A type of neuron",
-          "Gap between two neurons",
-          "Spinal cord junction",
-          "A reflex arc"
-        ],
-          "ans": 1,
-            "exp": "Chemical neurotransmitters cross the synaptic gap."
-},
-{
-  "subject": "biology",
+    "q": "A synapse is:",
+    "opts": [
+      "A type of neuron",
+      "Gap between two neurons",
+      "Spinal cord junction",
+      "A reflex arc"
+    ],
+    "ans": 1,
+    "exp": "Chemical neurotransmitters cross the synaptic gap."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Reflex actions are controlled by:",
-        "opts": [
-          "Brain",
-          "Spinal cord",
-          "Autonomic ganglia",
-          "All of above"
-        ],
-          "ans": 1,
-            "exp": "Reflex actions bypass brain â€” controlled by spinal cord."
-},
-{
-  "subject": "biology",
+    "q": "Reflex actions are controlled by:",
+    "opts": [
+      "Brain",
+      "Spinal cord",
+      "Autonomic ganglia",
+      "All of above"
+    ],
+    "ans": 1,
+    "exp": "Reflex actions bypass brain — controlled by spinal cord."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Correct reflex arc pathway:",
-        "opts": [
-          "Effectorâ†’motorâ†’spinalâ†’sensoryâ†’receptor",
-          "Receptorâ†’sensoryâ†’spinal cordâ†’motorâ†’effector",
-          "Brainâ†’spinalâ†’receptorâ†’effector",
-          "Effectorâ†’brainâ†’receptor"
-        ],
-          "ans": 1,
-            "exp": "Receptor â†’ Sensory â†’ Spinal cord â†’ Motor â†’ Effector"
-},
-{
-  "subject": "biology",
+    "q": "Correct reflex arc pathway:",
+    "opts": [
+      "Effector→motor→spinal→sensory→receptor",
+      "Receptor→sensory→spinal cord→motor→effector",
+      "Brain→spinal→receptor→effector",
+      "Effector→brain→receptor"
+    ],
+    "ans": 1,
+    "exp": "Receptor → Sensory → Spinal cord → Motor → Effector"
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Which brain part controls balance?",
-        "opts": [
-          "Cerebrum",
-          "Cerebellum",
-          "Medulla",
-          "Hypothalamus"
-        ],
-          "ans": 1,
-            "exp": "Cerebellum maintains posture, balance, coordination."
-},
-{
-  "subject": "biology",
+    "q": "Which brain part controls balance?",
+    "opts": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla",
+      "Hypothalamus"
+    ],
+    "ans": 1,
+    "exp": "Cerebellum maintains posture, balance, coordination."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Involuntary actions like heartbeat controlled by:",
-        "opts": [
-          "Cerebrum",
-          "Cerebellum",
-          "Medulla oblongata",
-          "Hypothalamus"
-        ],
-          "ans": 2,
-            "exp": "Medulla controls heartbeat, breathing, blood pressure."
-},
-{
-  "subject": "biology",
+    "q": "Involuntary actions like heartbeat controlled by:",
+    "opts": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla oblongata",
+      "Hypothalamus"
+    ],
+    "ans": 2,
+    "exp": "Medulla controls heartbeat, breathing, blood pressure."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Shoot grows towards light due to:",
-        "opts": [
-          "Gravity",
-          "Auxin accumulation on shaded side",
-          "Auxin in lit side",
-          "Photosynthesis pulling"
-        ],
-          "ans": 1,
-            "exp": "Auxin on shaded side â†’ more elongation â†’ bends toward light."
-},
-{
-  "subject": "biology",
+    "q": "Shoot grows towards light due to:",
+    "opts": [
+      "Gravity",
+      "Auxin accumulation on shaded side",
+      "Auxin in lit side",
+      "Photosynthesis pulling"
+    ],
+    "ans": 1,
+    "exp": "Auxin on shaded side → more elongation → bends toward light."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Geotropism means response to:",
-        "opts": [
-          "Light",
-          "Water",
-          "Gravity",
-          "Touch"
-        ],
-          "ans": 2,
-            "exp": "Roots: positive geotropism (down). Shoots: negative (up)."
-},
-{
-  "subject": "biology",
+    "q": "Geotropism means response to:",
+    "opts": [
+      "Light",
+      "Water",
+      "Gravity",
+      "Touch"
+    ],
+    "ans": 2,
+    "exp": "Roots: positive geotropism (down). Shoots: negative (up)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Auxin is produced in:",
-        "opts": [
-          "Roots",
-          "Shoot tips (meristematic region)",
-          "Leaves",
-          "Flowers"
-        ],
-          "ans": 1,
-            "exp": "Auxin synthesised at shoot/root tips."
-},
-{
-  "subject": "biology",
+    "q": "Auxin is produced in:",
+    "opts": [
+      "Roots",
+      "Shoot tips (meristematic region)",
+      "Leaves",
+      "Flowers"
+    ],
+    "ans": 1,
+    "exp": "Auxin synthesised at shoot/root tips."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Abscisic acid:",
-        "opts": [
-          "Promotes growth",
-          "Promotes flowering",
-          "Inhibits growth (causes wilting/dormancy)",
-          "Causes tropism"
-        ],
-          "ans": 2,
-            "exp": "ABA = growth inhibitor. Promotes stomatal closure under stress."
-},
-{
-  "subject": "biology",
+    "q": "Abscisic acid:",
+    "opts": [
+      "Promotes growth",
+      "Promotes flowering",
+      "Inhibits growth (causes wilting/dormancy)",
+      "Causes tropism"
+    ],
+    "ans": 2,
+    "exp": "ABA = growth inhibitor. Promotes stomatal closure under stress."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Insulin is produced by:",
-        "opts": [
-          "Liver",
-          "Thyroid",
-          "Pancreas",
-          "Adrenal gland"
-        ],
-          "ans": 2,
-            "exp": "Beta cells of islets of Langerhans in pancreas produce insulin."
-},
-{
-  "subject": "biology",
+    "q": "Insulin is produced by:",
+    "opts": [
+      "Liver",
+      "Thyroid",
+      "Pancreas",
+      "Adrenal gland"
+    ],
+    "ans": 2,
+    "exp": "Beta cells of islets of Langerhans in pancreas produce insulin."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Deficiency of iodine leads to:",
-        "opts": [
-          "Diabetes",
-          "Goitre",
-          "Dwarfism",
-          "Anaemia"
-        ],
-          "ans": 1,
-            "exp": "Iodine needed for thyroxin. Deficiency â†’ enlarged thyroid = goitre."
-},
-{
-  "subject": "biology",
+    "q": "Deficiency of iodine leads to:",
+    "opts": [
+      "Diabetes",
+      "Goitre",
+      "Dwarfism",
+      "Anaemia"
+    ],
+    "ans": 1,
+    "exp": "Iodine needed for thyroxin. Deficiency → enlarged thyroid = goitre."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Adrenaline is called 'fight or flight' hormone because:",
-        "opts": [
-          "Fights bacteria",
-          "Prepares body for emergency: â†‘heart rate, breathing",
-          "Controls sleep",
-          "Digests food quickly"
-        ],
-          "ans": 1,
-            "exp": "Adrenal glands release it during stress/danger."
-},
-{
-  "subject": "biology",
+    "q": "Adrenaline is called 'fight or flight' hormone because:",
+    "opts": [
+      "Fights bacteria",
+      "Prepares body for emergency: ↑heart rate, breathing",
+      "Controls sleep",
+      "Digests food quickly"
+    ],
+    "ans": 1,
+    "exp": "Adrenal glands release it during stress/danger."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Which gland is the master gland?",
-        "opts": [
-          "Thyroid",
-          "Adrenal",
-          "Pituitary",
-          "Pancreas"
-        ],
-          "ans": 2,
-            "exp": "Pituitary controls other endocrine glands."
-},
-{
-  "subject": "biology",
+    "q": "Which gland is the master gland?",
+    "opts": [
+      "Thyroid",
+      "Adrenal",
+      "Pituitary",
+      "Pancreas"
+    ],
+    "ans": 2,
+    "exp": "Pituitary controls other endocrine glands."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Testosterone is produced by:",
-        "opts": [
-          "Testes",
-          "Ovaries",
-          "Adrenal gland",
-          "Pancreas"
-        ],
-          "ans": 0,
-            "exp": "Testes secrete testosterone â€” male sex characteristics."
-},
-{
-  "subject": "biology",
+    "q": "Testosterone is produced by:",
+    "opts": [
+      "Testes",
+      "Ovaries",
+      "Adrenal gland",
+      "Pancreas"
+    ],
+    "ans": 0,
+    "exp": "Testes secrete testosterone — male sex characteristics."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Thyroxin requires for its synthesis:",
-        "opts": [
-          "Iron",
-          "Iodine",
-          "Calcium",
-          "Phosphorus"
-        ],
-          "ans": 1,
-            "exp": "Thyroxin = thyroid hormone containing iodine."
-},
-{
-  "subject": "biology",
+    "q": "Thyroxin requires for its synthesis:",
+    "opts": [
+      "Iron",
+      "Iodine",
+      "Calcium",
+      "Phosphorus"
+    ],
+    "ans": 1,
+    "exp": "Thyroxin = thyroid hormone containing iodine."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Brain is protected by:",
-        "opts": [
-          "Skull and cerebrospinal fluid",
-          "Muscles only",
-          "Skin only",
-          "Vertebrae"
-        ],
-          "ans": 0,
-            "exp": "Skull + CSF (shock absorber) + meninges protect brain."
-},
-{
-  "subject": "biology",
+    "q": "Brain is protected by:",
+    "opts": [
+      "Skull and cerebrospinal fluid",
+      "Muscles only",
+      "Skin only",
+      "Vertebrae"
+    ],
+    "ans": 0,
+    "exp": "Skull + CSF (shock absorber) + meninges protect brain."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Which plant movement does NOT involve growth?",
-        "opts": [
-          "Phototropism",
-          "Geotropism",
-          "Thigmonasty (Mimosa touch)",
-          "Hydrotropism"
-        ],
-          "ans": 2,
-            "exp": "Mimosa response = rapid turgor change, not growth."
-},
-{
-  "subject": "biology",
+    "q": "Which plant movement does NOT involve growth?",
+    "opts": [
+      "Phototropism",
+      "Geotropism",
+      "Thigmonasty (Mimosa touch)",
+      "Hydrotropism"
+    ],
+    "ans": 2,
+    "exp": "Mimosa response = rapid turgor change, not growth."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Estrogen is produced by:",
-        "opts": [
-          "Testes",
-          "Adrenal gland",
-          "Ovaries",
-          "Thyroid"
-        ],
-          "ans": 2,
-            "exp": "Ovaries produce estrogen â€” female sex hormone."
-},
-{
-  "subject": "biology",
+    "q": "Estrogen is produced by:",
+    "opts": [
+      "Testes",
+      "Adrenal gland",
+      "Ovaries",
+      "Thyroid"
+    ],
+    "ans": 2,
+    "exp": "Ovaries produce estrogen — female sex hormone."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Cerebrum controls:",
-        "opts": [
-          "Heartbeat",
-          "Thinking, memory, voluntary actions",
-          "Balance",
-          "Breathing"
-        ],
-          "ans": 1,
-            "exp": "Cerebrum = largest part of brain. Thinking, intelligence, senses."
-},
-{
-  "subject": "biology",
+    "q": "Cerebrum controls:",
+    "opts": [
+      "Heartbeat",
+      "Thinking, memory, voluntary actions",
+      "Balance",
+      "Breathing"
+    ],
+    "ans": 1,
+    "exp": "Cerebrum = largest part of brain. Thinking, intelligence, senses."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Gibberellin promotes:",
-        "opts": [
-          "Cell division",
-          "Stem elongation and seed germination",
-          "Wilting",
-          "Stomatal closure"
-        ],
-          "ans": 1,
-            "exp": "Gibberellins promote stem growth and break seed dormancy."
-},
-{
-  "subject": "biology",
+    "q": "Gibberellin promotes:",
+    "opts": [
+      "Cell division",
+      "Stem elongation and seed germination",
+      "Wilting",
+      "Stomatal closure"
+    ],
+    "ans": 1,
+    "exp": "Gibberellins promote stem growth and break seed dormancy."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Cytokinin promotes:",
-        "opts": [
-          "Growth inhibition",
-          "Cell division",
-          "Wilting",
-          "Leaf fall"
-        ],
-          "ans": 1,
-            "exp": "Cytokinins stimulate cell division (cytokinesis)."
-},
-{
-  "subject": "biology",
+    "q": "Cytokinin promotes:",
+    "opts": [
+      "Growth inhibition",
+      "Cell division",
+      "Wilting",
+      "Leaf fall"
+    ],
+    "ans": 1,
+    "exp": "Cytokinins stimulate cell division (cytokinesis)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Diabetes is caused by deficiency of:",
-        "opts": [
-          "Thyroxin",
-          "Adrenaline",
-          "Insulin",
-          "Growth hormone"
-        ],
-          "ans": 2,
-            "exp": "Insufficient insulin â†’ blood sugar stays high â†’ diabetes."
-},
-{
-  "subject": "biology",
+    "q": "Diabetes is caused by deficiency of:",
+    "opts": [
+      "Thyroxin",
+      "Adrenaline",
+      "Insulin",
+      "Growth hormone"
+    ],
+    "ans": 2,
+    "exp": "Insufficient insulin → blood sugar stays high → diabetes."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Growth hormone is secreted by:",
-        "opts": [
-          "Thyroid",
-          "Pituitary",
-          "Adrenal",
-          "Pancreas"
-        ],
-          "ans": 1,
-            "exp": "Pituitary (master gland) secretes growth hormone."
-},
-{
-  "subject": "biology",
+    "q": "Growth hormone is secreted by:",
+    "opts": [
+      "Thyroid",
+      "Pituitary",
+      "Adrenal",
+      "Pancreas"
+    ],
+    "ans": 1,
+    "exp": "Pituitary (master gland) secretes growth hormone."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Phototropism is growth response to:",
-        "opts": [
-          "Gravity",
-          "Light",
-          "Water",
-          "Touch"
-        ],
-          "ans": 1,
-            "exp": "Photo = light. Shoots grow toward light (positive phototropism)."
-},
-{
-  "subject": "biology",
+    "q": "Phototropism is growth response to:",
+    "opts": [
+      "Gravity",
+      "Light",
+      "Water",
+      "Touch"
+    ],
+    "ans": 1,
+    "exp": "Photo = light. Shoots grow toward light (positive phototropism)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Hydrotropism is plant response to:",
-        "opts": [
-          "Light",
-          "Gravity",
-          "Water",
-          "Touch"
-        ],
-          "ans": 2,
-            "exp": "Roots grow toward moisture â€” positive hydrotropism."
-},
-{
-  "subject": "biology",
+    "q": "Hydrotropism is plant response to:",
+    "opts": [
+      "Light",
+      "Gravity",
+      "Water",
+      "Touch"
+    ],
+    "ans": 2,
+    "exp": "Roots grow toward moisture — positive hydrotropism."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Chemical coordination in animals is by:",
-        "opts": [
-          "Nerves only",
-          "Hormones",
-          "Muscles",
-          "Bones"
-        ],
-          "ans": 1,
-            "exp": "Hormones = chemical messengers secreted by endocrine glands."
-},
-{
-  "subject": "biology",
+    "q": "Chemical coordination in animals is by:",
+    "opts": [
+      "Nerves only",
+      "Hormones",
+      "Muscles",
+      "Bones"
+    ],
+    "ans": 1,
+    "exp": "Hormones = chemical messengers secreted by endocrine glands."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Nerve impulse travels as:",
-        "opts": [
-          "Chemical signal only",
-          "Electrochemical signal",
-          "Mechanical wave",
-          "Sound wave"
-        ],
-          "ans": 1,
-            "exp": "Electrical impulse along neuron + chemical at synapse = electrochemical."
-},
-{
-  "subject": "biology",
+    "q": "Nerve impulse travels as:",
+    "opts": [
+      "Chemical signal only",
+      "Electrochemical signal",
+      "Mechanical wave",
+      "Sound wave"
+    ],
+    "ans": 1,
+    "exp": "Electrical impulse along neuron + chemical at synapse = electrochemical."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Feedback mechanism in hormones means:",
-        "opts": [
-          "Constant secretion",
-          "Self-regulating loop (high levelâ†’stop, lowâ†’secrete)",
-          "Random secretion",
-          "External control"
-        ],
-          "ans": 1,
-            "exp": "E.g., high blood glucose â†’ insulin released â†’ glucose drops â†’ insulin stops."
-},
-{
-  "subject": "biology",
+    "q": "Feedback mechanism in hormones means:",
+    "opts": [
+      "Constant secretion",
+      "Self-regulating loop (high level→stop, low→secrete)",
+      "Random secretion",
+      "External control"
+    ],
+    "ans": 1,
+    "exp": "E.g., high blood glucose → insulin released → glucose drops → insulin stops."
+  },
+  {
+    "subject": "biology",
     "chapter": "Control and Coordination",
-      "q": "Spinal cord is protected by:",
-        "opts": [
-          "Skull",
-          "Vertebral column",
-          "Ribs",
-          "Pelvis"
-        ],
-          "ans": 1,
-            "exp": "Vertebral column (backbone) protects the spinal cord."
-},
-{
-  "subject": "biology",
+    "q": "Spinal cord is protected by:",
+    "opts": [
+      "Skull",
+      "Vertebral column",
+      "Ribs",
+      "Pelvis"
+    ],
+    "ans": 1,
+    "exp": "Vertebral column (backbone) protects the spinal cord."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Binary fission is observed in:",
+    "opts": [
+      "Hydra",
+      "Amoeba",
+      "Planaria",
+      "Yeast"
+    ],
+    "ans": 1,
+    "exp": "Amoeba divides into two identical daughter cells."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Reproduction in yeast occurs by:",
+    "opts": [
+      "Fragmentation",
+      "Binary Fission",
+      "Budding",
+      "Spore formation"
+    ],
+    "ans": 2,
+    "exp": "Yeast reproduces by growing a small bud which separates into a new cell."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Vegetative propagation refers to forming new plants from:",
+    "opts": [
+      "Stem, roots, and leaves",
+      "Flowers, fruits, and seeds",
+      "Seeds, roots, and stems",
+      "Only leaves"
+    ],
+    "ans": 0,
+    "exp": "Vegetative parts = stem, roots, leaves. Reproductive parts = flowers."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which organism can regenerate a whole body from a cut part?",
+    "opts": [
+      "Human",
+      "Amoeba",
+      "Planaria",
+      "Spirogyra"
+    ],
+    "ans": 2,
+    "exp": "Planaria has high regeneration capacity."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Male reproductive part of a flower:",
+    "opts": [
+      "Carpel",
+      "Stamen",
+      "Petal",
+      "Sepal"
+    ],
+    "ans": 1,
+    "exp": "Stamen consists of anther (makes pollen) and filament."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Female reproductive part of a flower:",
+    "opts": [
+      "Stamen",
+      "Carpel (Pistil)",
+      "Anther",
+      "Pollen"
+    ],
+    "ans": 1,
+    "exp": "Carpel has three parts: stigma, style, and ovary."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Site of fertilization in human females:",
+    "opts": [
+      "Ovary",
+      "Uterus",
+      "Fallopian tube (Oviduct)",
+      "Vagina"
+    ],
+    "ans": 2,
+    "exp": "Fertilization (fusion of sperm and egg) occurs in the fallopian tube."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Testes are located in the scrotum because:",
+    "opts": [
+      "It protects them",
+      "Sperm formation requires lower temperature",
+      "It connects to vas deferens",
+      "It stores urea"
+    ],
+    "ans": 1,
+    "exp": "Scrotum temperature is 2-3°C lower than body temp, ideal for sperm."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which is a viral sexually transmitted disease (STD)?",
+    "opts": [
+      "Syphilis",
+      "Gonorrhea",
+      "HIV/AIDS",
+      "Cholera"
+    ],
+    "ans": 2,
+    "exp": "HIV/AIDS and Warts are viral STDs."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Function of placenta:",
+    "opts": [
+      "Produce eggs",
+      "Transport sperm",
+      "Provide nutrition to embryo from mother's blood",
+      "Produce hormones only in males"
+    ],
+    "ans": 2,
+    "exp": "Placenta exchanges nutrients, O₂, and waste between mother and fetus."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "The fusion of male and female gametes is called:",
+    "opts": [
+      "Pollination",
+      "Fertilization",
+      "Germination",
+      "Ovulation"
+    ],
+    "ans": 1,
+    "exp": "Fertilization results in the formation of a zygote."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Copper-T is placed in the:",
+    "opts": [
+      "Ovary",
+      "Fallopian tube",
+      "Uterus",
+      "Vagina"
+    ],
+    "ans": 2,
+    "exp": "IUD (Intra-Uterine Device) placed in uterus to prevent pregnancy."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "The process of release of an egg from the ovary:",
+    "opts": [
+      "Fertilization",
+      "Menstruation",
+      "Ovulation",
+      "Gestation"
+    ],
+    "ans": 2,
+    "exp": "Ovulation occurs approximately every 28 days."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Pollen grains are produced in:",
+    "opts": [
+      "Ovary",
+      "Stigma",
+      "Anther",
+      "Style"
+    ],
+    "ans": 2,
+    "exp": "Anther (part of stamen) produces pollen grains (male gametes)."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Spirogyra reproduces asexually by:",
+    "opts": [
+      "Budding",
+      "Fragmentation",
+      "Binary fission",
+      "Spore formation"
+    ],
+    "ans": 1,
+    "exp": "Spirogyra (algae) breaks into fragments, and each grows into a new plant."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which part of the flower becomes the fruit?",
+    "opts": [
+      "Ovule",
+      "Ovary",
+      "Stigma",
+      "Petals"
+    ],
+    "ans": 1,
+    "exp": "After fertilization, ovary ripens into fruit, and ovules into seeds."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Oral contraceptive pills prevent pregnancy by:",
+    "opts": [
+      "Killing sperm",
+      "Preventing ovulation",
+      "Blocking fallopian tubes",
+      "Creating mechanical barrier"
+    ],
+    "ans": 1,
+    "exp": "Pills change hormonal balance so eggs are not released."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Asexual reproduction in bread mould (Rhizopus) is by:",
+    "opts": [
+      "Budding",
+      "Vegetative propagation",
+      "Spore formation",
+      "Regeneration"
+    ],
+    "ans": 2,
+    "exp": "Rhizopus produces spores in sporangia which spread in air."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "DNA copying during reproduction is important because:",
+    "opts": [
+      "It makes the cells immortal",
+      "It passes genetic traits to offspring",
+      "It destroys old DNA",
+      "It reduces variation"
+    ],
+    "ans": 1,
+    "exp": "DNA carries the blueprint of body design to the next generation."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Variation is beneficial for a species because:",
+    "opts": [
+      "It makes them look different",
+      "It helps in survival during environmental changes",
+      "It increases competition",
+      "It reduces population size"
+    ],
+    "ans": 1,
+    "exp": "Variation gives species a chance to survive drastic environmental changes."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which part of the seed contains the future shoot?",
+    "opts": [
+      "Plumule",
+      "Radicle",
+      "Cotyledon",
+      "Seed coat"
+    ],
+    "ans": 0,
+    "exp": "The plumule develops into the future shoot, while radicle becomes the root."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "The period during adolescence when reproductive tissues begin to mature is called:",
+    "opts": [
+      "Puberty",
+      "Menstruation",
+      "Gestation",
+      "Fertilization"
+    ],
+    "ans": 0,
+    "exp": "Puberty marks the onset of sexual maturity in humans."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "In flowering plants, the pollen tube reaches the ovary through the:",
+    "opts": [
+      "Stigma",
+      "Style",
+      "Anther",
+      "Filament"
+    ],
+    "ans": 1,
+    "exp": "The style is the elongated part of the carpel through which the pollen tube grows."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which of the following is not a part of the female reproductive system in humans?",
+    "opts": [
+      "Ovary",
+      "Uterus",
+      "Vas deferens",
+      "Fallopian tube"
+    ],
+    "ans": 2,
+    "exp": "Vas deferens is part of the male reproductive system, carrying sperm."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "The process of attaching a cut part of one plant to the stem of another plant is called:",
+    "opts": [
+      "Layering",
+      "Grafting",
+      "Tissue culture",
+      "Cutting"
+    ],
+    "ans": 1,
+    "exp": "Grafting combines parts of two plants to grow as one."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which organism reproduces by multiple fission?",
+    "opts": [
+      "Amoeba",
+      "Plasmodium",
+      "Yeast",
+      "Hydra"
+    ],
+    "ans": 1,
+    "exp": "Plasmodium (malarial parasite) divides into many daughter cells simultaneously."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Growth of facial hair in males during puberty is controlled by:",
+    "opts": [
+      "Estrogen",
+      "Progesterone",
+      "Testosterone",
+      "Adrenaline"
+    ],
+    "ans": 2,
+    "exp": "Testosterone is the male sex hormone responsible for secondary sexual characters."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "The thread-like structures that develop on bread in bread mould are:",
+    "opts": [
+      "Hyphae",
+      "Spores",
+      "Sporangia",
+      "Roots"
+    ],
+    "ans": 0,
+    "exp": "Hyphae form the network of the fungus, while sporangia bear spores."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "Which method of contraception prevents the release of an egg?",
+    "opts": [
+      "Condom",
+      "Copper-T",
+      "Oral pills",
+      "Vasectomy"
+    ],
+    "ans": 2,
+    "exp": "Oral pills change hormonal balance, preventing ovulation."
+  },
+  {
+    "subject": "biology",
+    "chapter": "How Do Organisms Reproduce",
+    "q": "The embryo gets nutrition from the mother's blood with the help of a special tissue called:",
+    "opts": [
+      "Uterus",
+      "Placenta",
+      "Fallopian tube",
+      "Ovary"
+    ],
+    "ans": 1,
+    "exp": "Placenta is the connection between mother and developing fetus for exchange."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Mendel is called Father of Genetics because:",
-        "opts": [
-          "Discovered DNA",
-          "First systematic experiments on inheritance using pea plants",
-          "Discovered chromosomes",
-          "Named genes"
-        ],
-          "ans": 1,
-            "exp": "Mendel (1860s) derived laws of heredity using pea plants."
-},
-{
-  "subject": "biology",
+    "q": "Mendel is called Father of Genetics because:",
+    "opts": [
+      "Discovered DNA",
+      "First systematic experiments on inheritance using pea plants",
+      "Discovered chromosomes",
+      "Named genes"
+    ],
+    "ans": 1,
+    "exp": "Mendel (1860s) derived laws of heredity using pea plants."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Phenotypic ratio in F2 of monohybrid cross:",
-        "opts": [
-          "1:2:1",
-          "3:1",
-          "9:3:3:1",
-          "1:1"
-        ],
-          "ans": 1,
-            "exp": "3 dominant : 1 recessive."
-},
-{
-  "subject": "biology",
+    "q": "Phenotypic ratio in F2 of monohybrid cross:",
+    "opts": [
+      "1:2:1",
+      "3:1",
+      "9:3:3:1",
+      "1:1"
+    ],
+    "ans": 1,
+    "exp": "3 dominant : 1 recessive."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Genotypic ratio in F2 of monohybrid cross:",
-        "opts": [
-          "3:1",
-          "1:1",
-          "1:2:1",
-          "9:3:3:1"
-        ],
-          "ans": 2,
-            "exp": "1 TT : 2 Tt : 1 tt."
-},
-{
-  "subject": "biology",
+    "q": "Genotypic ratio in F2 of monohybrid cross:",
+    "opts": [
+      "3:1",
+      "1:1",
+      "1:2:1",
+      "9:3:3:1"
+    ],
+    "ans": 2,
+    "exp": "1 TT : 2 Tt : 1 tt."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Humans have ___ pairs of chromosomes:",
-        "opts": [
-          "23",
-          "46",
-          "48",
-          "44"
-        ],
-          "ans": 0,
-            "exp": "46 chromosomes = 23 pairs (22 autosomes + 1 sex pair)."
-},
-{
-  "subject": "biology",
+    "q": "Humans have ___ pairs of chromosomes:",
+    "opts": [
+      "23",
+      "46",
+      "48",
+      "44"
+    ],
+    "ans": 0,
+    "exp": "46 chromosomes = 23 pairs (22 autosomes + 1 sex pair)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Sex chromosomes in human female:",
-        "opts": [
-          "XY",
-          "XX",
-          "YY",
-          "XO"
-        ],
-          "ans": 1,
-            "exp": "Females = XX. Males = XY."
-},
-{
-  "subject": "biology",
+    "q": "Sex chromosomes in human female:",
+    "opts": [
+      "XY",
+      "XX",
+      "YY",
+      "XO"
+    ],
+    "ans": 1,
+    "exp": "Females = XX. Males = XY."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Who determines sex of child?",
-        "opts": [
-          "Mother",
-          "Father",
-          "Both equally",
-          "Environment"
-        ],
-          "ans": 1,
-            "exp": "Father's sperm: X â†’ girl, Y â†’ boy. Mother always gives X."
-},
-{
-  "subject": "biology",
+    "q": "Who determines sex of child?",
+    "opts": [
+      "Mother",
+      "Father",
+      "Both equally",
+      "Environment"
+    ],
+    "ans": 1,
+    "exp": "Father's sperm: X → girl, Y → boy. Mother always gives X."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Darwin's theory is based on:",
-        "opts": [
-          "Acquired characters",
-          "Natural selection",
-          "Genetic mutations",
-          "All equally"
-        ],
-          "ans": 1,
-            "exp": "Survival of the fittest through natural selection."
-},
-{
-  "subject": "biology",
+    "q": "Darwin's theory is based on:",
+    "opts": [
+      "Acquired characters",
+      "Natural selection",
+      "Genetic mutations",
+      "All equally"
+    ],
+    "ans": 1,
+    "exp": "Survival of the fittest through natural selection."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Homologous organs provide evidence for:",
-        "opts": [
-          "Convergent evolution",
-          "Common ancestry",
-          "Different origins",
-          "Analogous evolution"
-        ],
-          "ans": 1,
-            "exp": "Same structure, different function â†’ common ancestor."
-},
-{
-  "subject": "biology",
+    "q": "Homologous organs provide evidence for:",
+    "opts": [
+      "Convergent evolution",
+      "Common ancestry",
+      "Different origins",
+      "Analogous evolution"
+    ],
+    "ans": 1,
+    "exp": "Same structure, different function → common ancestor."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "What are analogous organs?",
-        "opts": [
-          "Same structure, same function",
-          "Different structure, same function",
-          "Same structure, different function",
-          "Different structure, different function"
-        ],
-          "ans": 1,
-            "exp": "E.g., bat wing (skin) and butterfly wing (chitin) â€” same function."
-},
-{
-  "subject": "biology",
+    "q": "What are analogous organs?",
+    "opts": [
+      "Same structure, same function",
+      "Different structure, same function",
+      "Same structure, different function",
+      "Different structure, different function"
+    ],
+    "ans": 1,
+    "exp": "E.g., bat wing (skin) and butterfly wing (chitin) — same function."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Fossils are important because:",
-        "opts": [
-          "Show current species",
-          "Direct evidence of past organisms",
-          "Show mutations",
-          "Explain genetics"
-        ],
-          "ans": 1,
-            "exp": "Preserved remains prove evolution occurred."
-},
-{
-  "subject": "biology",
+    "q": "Fossils are important because:",
+    "opts": [
+      "Show current species",
+      "Direct evidence of past organisms",
+      "Show mutations",
+      "Explain genetics"
+    ],
+    "ans": 1,
+    "exp": "Preserved remains prove evolution occurred."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "What is speciation?",
-        "opts": [
-          "Mutation in a gene",
-          "Formation of new species by isolation",
-          "Fossils forming",
-          "Natural selection alone"
-        ],
-          "ans": 1,
-            "exp": "Geographic/reproductive isolation â†’ populations diverge â†’ new species."
-},
-{
-  "subject": "biology",
+    "q": "What is speciation?",
+    "opts": [
+      "Mutation in a gene",
+      "Formation of new species by isolation",
+      "Fossils forming",
+      "Natural selection alone"
+    ],
+    "ans": 1,
+    "exp": "Geographic/reproductive isolation → populations diverge → new species."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Recessive allele is:",
-        "opts": [
-          "Dominant",
-          "Hidden when dominant allele present",
-          "Always lethal",
-          "Always expressed"
-        ],
-          "ans": 1,
-            "exp": "Recessive trait appears only in homozygous (tt) condition."
-},
-{
-  "subject": "biology",
+    "q": "Recessive allele is:",
+    "opts": [
+      "Dominant",
+      "Hidden when dominant allele present",
+      "Always lethal",
+      "Always expressed"
+    ],
+    "ans": 1,
+    "exp": "Recessive trait appears only in homozygous (tt) condition."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Modern evolutionary theory combines Darwinism with:",
-        "opts": [
-          "Lamarckism",
-          "Genetics (Mendelian)",
-          "Fossil record only",
-          "Ecology"
-        ],
-          "ans": 1,
-            "exp": "Modern Synthesis = natural selection + Mendelian genetics."
-},
-{
-  "subject": "biology",
+    "q": "Modern evolutionary theory combines Darwinism with:",
+    "opts": [
+      "Lamarckism",
+      "Genetics (Mendelian)",
+      "Fossil record only",
+      "Ecology"
+    ],
+    "ans": 1,
+    "exp": "Modern Synthesis = natural selection + Mendelian genetics."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "A mutation is:",
-        "opts": [
-          "Change in protein",
-          "Sudden heritable change in DNA",
-          "Loss of chromosome",
-          "Crossing over"
-        ],
-          "ans": 1,
-            "exp": "Mutations create new genetic variants â€” raw material for evolution."
-},
-{
-  "subject": "biology",
+    "q": "A mutation is:",
+    "opts": [
+      "Change in protein",
+      "Sudden heritable change in DNA",
+      "Loss of chromosome",
+      "Crossing over"
+    ],
+    "ans": 1,
+    "exp": "Mutations create new genetic variants — raw material for evolution."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Number of chromosomes in human gamete:",
-        "opts": [
-          "46",
-          "23",
-          "48",
-          "44"
-        ],
-          "ans": 1,
-            "exp": "Gametes are haploid (n=23). Zygote = 46 (2n)."
-},
-{
-  "subject": "biology",
+    "q": "Number of chromosomes in human gamete:",
+    "opts": [
+      "46",
+      "23",
+      "48",
+      "44"
+    ],
+    "ans": 1,
+    "exp": "Gametes are haploid (n=23). Zygote = 46 (2n)."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Dihybrid cross F2 ratio:",
-        "opts": [
-          "3:1",
-          "1:1",
-          "1:2:1",
-          "9:3:3:1"
-        ],
-          "ans": 3,
-            "exp": "Two traits independently assorting â†’ 9:3:3:1."
-},
-{
-  "subject": "biology",
+    "q": "Dihybrid cross F2 ratio:",
+    "opts": [
+      "3:1",
+      "1:1",
+      "1:2:1",
+      "9:3:3:1"
+    ],
+    "ans": 3,
+    "exp": "Two traits independently assorting → 9:3:3:1."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "DNA is located in:",
-        "opts": [
-          "Cytoplasm",
-          "Nucleus (chromosomes)",
-          "Cell membrane",
-          "Ribosomes"
-        ],
-          "ans": 1,
-            "exp": "DNA is in chromosomes inside the nucleus."
-},
-{
-  "subject": "biology",
+    "q": "DNA is located in:",
+    "opts": [
+      "Cytoplasm",
+      "Nucleus (chromosomes)",
+      "Cell membrane",
+      "Ribosomes"
+    ],
+    "ans": 1,
+    "exp": "DNA is in chromosomes inside the nucleus."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Lamarck proposed:",
-        "opts": [
-          "Natural selection",
-          "Inheritance of acquired characters",
-          "Gene theory",
-          "Mutation theory"
-        ],
-          "ans": 1,
-            "exp": "Lamarck said organisms pass on acquired traits â€” proven incorrect."
-},
-{
-  "subject": "biology",
+    "q": "Lamarck proposed:",
+    "opts": [
+      "Natural selection",
+      "Inheritance of acquired characters",
+      "Gene theory",
+      "Mutation theory"
+    ],
+    "ans": 1,
+    "exp": "Lamarck said organisms pass on acquired traits — proven incorrect."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Gregor Mendel used which organism?",
-        "opts": [
-          "Fruit fly",
-          "Pea plants",
-          "Mice",
-          "Bacteria"
-        ],
-          "ans": 1,
-            "exp": "Garden pea (Pisum sativum) â€” easy to grow, clear traits."
-},
-{
-  "subject": "biology",
+    "q": "Gregor Mendel used which organism?",
+    "opts": [
+      "Fruit fly",
+      "Pea plants",
+      "Mice",
+      "Bacteria"
+    ],
+    "ans": 1,
+    "exp": "Garden pea (Pisum sativum) — easy to grow, clear traits."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Law of Segregation states:",
-        "opts": [
-          "Alleles blend",
-          "Two alleles separate during gamete formation",
-          "Traits skip generations",
-          "Dominant always wins"
-        ],
-          "ans": 1,
-            "exp": "Each gamete gets only one allele per trait."
-},
-{
-  "subject": "biology",
+    "q": "Law of Segregation states:",
+    "opts": [
+      "Alleles blend",
+      "Two alleles separate during gamete formation",
+      "Traits skip generations",
+      "Dominant always wins"
+    ],
+    "ans": 1,
+    "exp": "Each gamete gets only one allele per trait."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Natural selection acts on:",
-        "opts": [
-          "Individual DNA",
-          "Phenotypic variation within populations",
-          "Specific genes",
-          "Mutations only"
-        ],
-          "ans": 1,
-            "exp": "Selection acts on observable traits (phenotype) in populations."
-},
-{
-  "subject": "biology",
+    "q": "Natural selection acts on:",
+    "opts": [
+      "Individual DNA",
+      "Phenotypic variation within populations",
+      "Specific genes",
+      "Mutations only"
+    ],
+    "ans": 1,
+    "exp": "Selection acts on observable traits (phenotype) in populations."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Lamarckism was shown to be:",
-        "opts": [
-          "Correct",
-          "Incorrect",
-          "Partially correct",
-          "Unproven"
-        ],
-          "ans": 1,
-            "exp": "Acquired characters are not inherited â€” only DNA changes in germ cells matter."
-},
-{
-  "subject": "biology",
+    "q": "Lamarckism was shown to be:",
+    "opts": [
+      "Correct",
+      "Incorrect",
+      "Partially correct",
+      "Unproven"
+    ],
+    "ans": 1,
+    "exp": "Acquired characters are not inherited — only DNA changes in germ cells matter."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Vestigial organs are:",
-        "opts": [
-          "Fully functional",
-          "Reduced, non-functional remnants of ancestral organs",
-          "New organs",
-          "Analogous organs"
-        ],
-          "ans": 1,
-            "exp": "E.g., appendix, wisdom teeth in humans â€” remnants of evolution."
-},
-{
-  "subject": "biology",
+    "q": "Vestigial organs are:",
+    "opts": [
+      "Fully functional",
+      "Reduced, non-functional remnants of ancestral organs",
+      "New organs",
+      "Analogous organs"
+    ],
+    "ans": 1,
+    "exp": "E.g., appendix, wisdom teeth in humans — remnants of evolution."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Variation is important for species because:",
-        "opts": [
-          "Makes them identical",
-          "Helps survive changing environments",
-          "Reduces fitness",
-          "Causes diseases"
-        ],
-          "ans": 1,
-            "exp": "Variation increases chances that some survive environmental changes."
-},
-{
-  "subject": "biology",
+    "q": "Variation is important for species because:",
+    "opts": [
+      "Makes them identical",
+      "Helps survive changing environments",
+      "Reduces fitness",
+      "Causes diseases"
+    ],
+    "ans": 1,
+    "exp": "Variation increases chances that some survive environmental changes."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Dominant trait is expressed in:",
-        "opts": [
-          "Only homozygous",
-          "Both homozygous and heterozygous",
-          "Only heterozygous",
-          "Neither"
-        ],
-          "ans": 1,
-            "exp": "Dominant allele expresses in TT and Tt."
-},
-{
-  "subject": "biology",
+    "q": "Dominant trait is expressed in:",
+    "opts": [
+      "Only homozygous",
+      "Both homozygous and heterozygous",
+      "Only heterozygous",
+      "Neither"
+    ],
+    "ans": 1,
+    "exp": "Dominant allele expresses in TT and Tt."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Mendel's Law of Independent Assortment applies to:",
-        "opts": [
-          "One gene",
-          "Two or more genes on different chromosomes",
-          "Linked genes",
-          "Same gene"
-        ],
-          "ans": 1,
-            "exp": "Genes on different chromosomes assort independently during gamete formation."
-},
-{
-  "subject": "biology",
+    "q": "Mendel's Law of Independent Assortment applies to:",
+    "opts": [
+      "One gene",
+      "Two or more genes on different chromosomes",
+      "Linked genes",
+      "Same gene"
+    ],
+    "ans": 1,
+    "exp": "Genes on different chromosomes assort independently during gamete formation."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Which provides strongest evidence for evolution?",
-        "opts": [
-          "Homologous organs alone",
-          "Fossil record + comparative anatomy + molecular biology",
-          "Vestigial organs alone",
-          "Embryology alone"
-        ],
-          "ans": 1,
-            "exp": "Multiple lines of evidence together strongly support evolution."
-},
-{
-  "subject": "biology",
+    "q": "Which provides strongest evidence for evolution?",
+    "opts": [
+      "Homologous organs alone",
+      "Fossil record + comparative anatomy + molecular biology",
+      "Vestigial organs alone",
+      "Embryology alone"
+    ],
+    "ans": 1,
+    "exp": "Multiple lines of evidence together strongly support evolution."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Genetic drift is most significant in:",
-        "opts": [
-          "Large populations",
-          "Small populations",
-          "All populations equally",
-          "Only animals"
-        ],
-          "ans": 1,
-            "exp": "Random changes in allele frequency matter more in small populations."
-},
-{
-  "subject": "biology",
+    "q": "Genetic drift is most significant in:",
+    "opts": [
+      "Large populations",
+      "Small populations",
+      "All populations equally",
+      "Only animals"
+    ],
+    "ans": 1,
+    "exp": "Random changes in allele frequency matter more in small populations."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "An organism with genotype Tt is:",
-        "opts": [
-          "Homozygous dominant",
-          "Homozygous recessive",
-          "Heterozygous",
-          "Pure breeding"
-        ],
-          "ans": 2,
-            "exp": "Tt = one dominant + one recessive allele = heterozygous."
-},
-{
-  "subject": "biology",
+    "q": "An organism with genotype Tt is:",
+    "opts": [
+      "Homozygous dominant",
+      "Homozygous recessive",
+      "Heterozygous",
+      "Pure breeding"
+    ],
+    "ans": 2,
+    "exp": "Tt = one dominant + one recessive allele = heterozygous."
+  },
+  {
+    "subject": "biology",
     "chapter": "Heredity and Evolution",
-      "q": "Evolution is not:",
-        "opts": [
-          "Gradual change over generations",
-          "Progress from lower to higher",
-          "Change in allele frequency",
-          "Driven by natural selection"
-        ],
-          "ans": 1,
-            "exp": "Evolution has no direction â€” it's not 'progress' from lower to higher forms."
-}
+    "q": "Evolution is not:",
+    "opts": [
+      "Gradual change over generations",
+      "Progress from lower to higher",
+      "Change in allele frequency",
+      "Driven by natural selection"
+    ],
+    "ans": 1,
+    "exp": "Evolution has no direction — it's not 'progress' from lower to higher forms."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "What is an ecosystem?",
+    "opts": [
+      "Collection of plants only",
+      "Collection of animals only",
+      "Interacting system of living organisms and their physical environment",
+      "A man-made garden only"
+    ],
+    "ans": 2,
+    "exp": "Ecosystem includes both biotic (living) and abiotic (non-living) components."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which of the following is an abiotic component?",
+    "opts": [
+      "Plants",
+      "Animals",
+      "Fungi",
+      "Temperature"
+    ],
+    "ans": 3,
+    "exp": "Abiotic components are physical/non-living factors like temperature, soil, water."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Organisms that can make their own food are called:",
+    "opts": [
+      "Consumers",
+      "Producers",
+      "Decomposers",
+      "Herbivores"
+    ],
+    "ans": 1,
+    "exp": "Producers (like green plants) make food via photosynthesis."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Primary consumers are always:",
+    "opts": [
+      "Carnivores",
+      "Omnivores",
+      "Herbivores",
+      "Decomposers"
+    ],
+    "ans": 2,
+    "exp": "Primary consumers eat producers (plants), so they are herbivores."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "What role do decomposers play in an ecosystem?",
+    "opts": [
+      "Produce food",
+      "Consume primary consumers",
+      "Break down dead organic matter",
+      "Provide oxygen"
+    ],
+    "ans": 2,
+    "exp": "Decomposers like bacteria and fungi recycle nutrients back to the soil."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "A food chain always starts with a:",
+    "opts": [
+      "Producer",
+      "Herbivore",
+      "Carnivore",
+      "Decomposer"
+    ],
+    "ans": 0,
+    "exp": "Producers convert solar energy into chemical energy to start the chain."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "According to the 10% law, how much energy is transferred between trophic levels?",
+    "opts": [
+      "100%",
+      "50%",
+      "10%",
+      "1%"
+    ],
+    "ans": 2,
+    "exp": "Only 10% of energy moves to the next trophic level; the rest is lost as heat."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which trophic level has the maximum energy in a food chain?",
+    "opts": [
+      "Producers",
+      "Primary consumers",
+      "Secondary consumers",
+      "Tertiary consumers"
+    ],
+    "ans": 0,
+    "exp": "Producers have the most energy, directly harnessed from the sun."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Biological magnification refers to:",
+    "opts": [
+      "Increase in plant size",
+      "Increase in animal population",
+      "Accumulation of toxic chemicals in higher trophic levels",
+      "Growth of bacteria"
+    ],
+    "ans": 2,
+    "exp": "Harmful chemicals like pesticides concentrate more at higher trophic levels."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "In a food chain: Grass -> Grasshopper -> Frog -> Snake, the frog is a:",
+    "opts": [
+      "Primary consumer",
+      "Secondary consumer",
+      "Tertiary consumer",
+      "Producer"
+    ],
+    "ans": 1,
+    "exp": "Grass(Producer) -> Grasshopper(Primary consumer) -> Frog(Secondary consumer)."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "What is a food web?",
+    "opts": [
+      "A spider's web",
+      "A single straight food chain",
+      "Interconnected food chains in an ecosystem",
+      "A web made of food"
+    ],
+    "ans": 2,
+    "exp": "Food webs show the complex, realistic feeding relationships in nature."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Ozone (O3) protects the earth from:",
+    "opts": [
+      "Infrared radiation",
+      "Ultraviolet (UV) radiation",
+      "Visible light",
+      "X-rays"
+    ],
+    "ans": 1,
+    "exp": "The ozone layer strongly absorbs harmful UV-B radiation from the sun."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Ozone depletion is primarily caused by:",
+    "opts": [
+      "Carbon dioxide",
+      "Methane",
+      "Chlorofluorocarbons (CFCs)",
+      "Sulfur dioxide"
+    ],
+    "ans": 2,
+    "exp": "CFCs release chlorine atoms into the stratosphere, which destroy ozone molecules."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Depletion of the ozone layer can lead to:",
+    "opts": [
+      "Global warming",
+      "Acid rain",
+      "Increased skin cancers and cataracts",
+      "Earthquakes"
+    ],
+    "ans": 2,
+    "exp": "More UV radiation reaching the surface increases UV-induced health risks."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "How many oxygen atoms make up a molecule of ozone?",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ozone is O3, containing three oxygen atoms."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which of the following is a biodegradable waste?",
+    "opts": [
+      "Plastic bags",
+      "Glass bottles",
+      "Vegetable peels",
+      "Aluminum cans"
+    ],
+    "ans": 2,
+    "exp": "Biodegradable wastes can be broken down by microbes (e.g., vegetable peels)."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which of the following is non-biodegradable?",
+    "opts": [
+      "Paper",
+      "DDT (a pesticide)",
+      "Cotton cloth",
+      "Wood"
+    ],
+    "ans": 1,
+    "exp": "DDT and plastics cannot be easily broken down by natural processes."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "A man-made ecosystem is:",
+    "opts": [
+      "Forest",
+      "Lake",
+      "Aquarium",
+      "Ocean"
+    ],
+    "ans": 2,
+    "exp": "Aquariums, crop fields, and gardens are artificial (man-made) ecosystems."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "The energy flow in an ecosystem is always:",
+    "opts": [
+      "Bidirectional",
+      "Unidirectional",
+      "Cyclic",
+      "Random"
+    ],
+    "ans": 1,
+    "exp": "Energy flows from sun -> producers -> consumers, and cannot flow backwards."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Nutrient flow in an ecosystem is:",
+    "opts": [
+      "Bidirectional",
+      "Unidirectional",
+      "Cyclic",
+      "Random"
+    ],
+    "ans": 2,
+    "exp": "Nutrients are recycled back into the soil by decomposers and reused by plants."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "If 1000 J of energy is available at the producer level, how much reaches the secondary consumer?",
+    "opts": [
+      "1000 J",
+      "100 J",
+      "10 J",
+      "1 J"
+    ],
+    "ans": 2,
+    "exp": "Producer(1000) -> Primary(100) -> Secondary(10J)."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Kulhads (clay cups) are better than plastic cups because they are:",
+    "opts": [
+      "Cheaper",
+      "More attractive",
+      "Biodegradable and eco-friendly",
+      "Lighter"
+    ],
+    "ans": 2,
+    "exp": "Clay is natural and safely returns to the soil, unlike plastic."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which protocol aimed to phase out CFCs?",
+    "opts": [
+      "Kyoto Protocol",
+      "Montreal Protocol",
+      "Paris Agreement",
+      "Earth Summit"
+    ],
+    "ans": 1,
+    "exp": "The 1987 Montreal Protocol successfully phased out ozone-depleting substances."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "The topmost trophic level in a human-involved food chain is often occupied by:",
+    "opts": [
+      "Plants",
+      "Cows",
+      "Humans",
+      "Insects"
+    ],
+    "ans": 2,
+    "exp": "Humans are often apex predators or top consumers in their food chains."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Burning of non-biodegradable waste (Incineration) is mainly used for:",
+    "opts": [
+      "Creating fertilizer",
+      "Reducing waste volume and generating energy, despite pollution risks",
+      "Producing clean air",
+      "Making soil fertile"
+    ],
+    "ans": 1,
+    "exp": "Incineration reduces waste volume but can release toxic gases."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "What happens to the remaining 90% of energy at each trophic level?",
+    "opts": [
+      "Used for life processes and lost as heat",
+      "Stored for the next level",
+      "Destroyed completely",
+      "Converted into water"
+    ],
+    "ans": 0,
+    "exp": "Organisms use energy for respiration, movement, and heat loss."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which of these is a terrestrial ecosystem?",
+    "opts": [
+      "Pond",
+      "River",
+      "Forest",
+      "Aquarium"
+    ],
+    "ans": 2,
+    "exp": "Forests, deserts, and grasslands are terrestrial (land-based) ecosystems."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Which organism is most vulnerable to biological magnification?",
+    "opts": [
+      "Plants",
+      "Herbivores",
+      "Top carnivores / Apex predators",
+      "Decomposers"
+    ],
+    "ans": 2,
+    "exp": "Toxins accumulate and reach their highest concentration at the top of the food chain."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "What is the physical environment of an ecosystem called?",
+    "opts": [
+      "Biotic environment",
+      "Habitat / Abiotic environment",
+      "Biosphere",
+      "Community"
+    ],
+    "ans": 1,
+    "exp": "The abiotic environment provides the physical setting for organisms to live."
+  },
+  {
+    "subject": "biology",
+    "chapter": "Our Environment",
+    "q": "Composting is an effective way to manage:",
+    "opts": [
+      "Plastic waste",
+      "Glass waste",
+      "E-waste",
+      "Biodegradable organic waste"
+    ],
+    "ans": 3,
+    "exp": "Composting uses microbes to break down organic waste into nutrient-rich manure."
+  }
 ];

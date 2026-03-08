@@ -18,6 +18,21 @@
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --bg2: #ffffff;
+  --bg3: #f1f5f9;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --accent-ph: #4f46e5;
+  --accent-ch: #d97706;
+  --accent-bi: #059669;
+  --text: #0f172a;
+  --text2: #334155;
+  --text3: #64748b;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,6 +61,28 @@ body {
 }
 
 /* HERO */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:hover {
+  background: var(--bg3);
+  border-color: var(--accent-ph);
+}
+
 .hero {
   position: relative;
   padding: 60px 24px 40px;
@@ -153,6 +190,41 @@ body {
   box-shadow: 0 0 16px rgba(99, 102, 241, 0.4);
 }
 
+.hero-search-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-search-input {
+  background: var(--bg2);
+  border: 2px solid var(--border);
+  color: var(--text);
+  padding: 16px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  max-width: 600px;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .hero-search-input {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero-search-input::placeholder {
+  color: var(--text3);
+}
+
+.hero-search-input:focus {
+  border-color: var(--accent-ph);
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+}
+
 /* STATS BAR */
 .stats-bar {
   display: flex;
@@ -213,6 +285,13 @@ body {
 .section-header h2 {
   font-size: 22px;
   font-weight: 700;
+}
+
+.actions-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 /* CHAPTER GRID */
@@ -977,30 +1056,30 @@ body {
   border: 1px solid var(--border);
 }
 
-/* PW NOTES BUTTON */
-.pw-notes-btn {
+/* OS NOTES BUTTON */
+.os-notes-btn {
   background: linear-gradient(135deg, #f59e0b, #d97706, #b45309) !important;
   box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4) !important;
 }
 
-.pw-notes-btn:hover {
+.os-notes-btn:hover {
   box-shadow: 0 6px 24px rgba(245, 158, 11, 0.6) !important;
 }
 
-/* PW BAR */
-.pw-bar {
+/* OS BAR */
+.os-bar {
   background: linear-gradient(135deg, #1a1200 0%, #111827 100%);
   border-bottom: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-#pw-notes-bar-title {
+#os-notes-bar-title {
   flex: 1;
   font-size: 16px;
   font-weight: 700;
   color: #fbbf24;
 }
 
-.pw-premium-badge {
+.os-premium-badge {
   background: linear-gradient(135deg, #f59e0b, #d97706);
   color: #000;
   padding: 5px 14px;
@@ -1024,15 +1103,15 @@ body {
   }
 }
 
-/* PW NOTES WRAPPER */
-.pw-notes-wrapper {
+/* OS NOTES WRAPPER */
+.os-notes-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px 60px;
 }
 
-/* PW HERO BANNER */
-.pw-hero-banner {
+/* OS HERO BANNER */
+.os-hero-banner {
   position: relative;
   text-align: center;
   padding: 48px 24px 40px;
@@ -1040,7 +1119,7 @@ body {
   margin-bottom: 32px;
 }
 
-.pw-hero-glow {
+.os-hero-glow {
   position: absolute;
   top: -60px;
   left: 50%;
@@ -1051,7 +1130,7 @@ body {
   pointer-events: none;
 }
 
-.pw-hero-icon {
+.os-hero-icon {
   font-size: 56px;
   margin-bottom: 12px;
   animation: crownFloat 3s ease-in-out infinite;
@@ -1069,35 +1148,35 @@ body {
   }
 }
 
-.pw-hero-banner h2 {
+.os-hero-banner h2 {
   font-size: clamp(24px, 5vw, 36px);
   font-weight: 800;
   color: var(--text);
   margin-bottom: 8px;
 }
 
-.pw-highlight {
+.os-highlight {
   background: linear-gradient(135deg, #f59e0b, #fbbf24, #f59e0b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.pw-hero-banner p {
+.os-hero-banner p {
   color: var(--text2);
   font-size: 15px;
   max-width: 480px;
   margin: 0 auto;
 }
 
-/* PW NOTES GRID */
-.pw-notes-grid {
+/* OS NOTES GRID */
+.os-notes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
 
-.pw-note-card {
+.os-note-card {
   background: linear-gradient(145deg, #1a1600 0%, var(--card) 40%);
   border: 1px solid rgba(245, 158, 11, 0.2);
   border-radius: var(--radius);
@@ -1112,7 +1191,7 @@ body {
   gap: 4px;
 }
 
-.pw-note-card::before {
+.os-note-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1123,7 +1202,7 @@ body {
   background: linear-gradient(180deg, #f59e0b, #d97706);
 }
 
-.pw-note-card::after {
+.os-note-card::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1134,55 +1213,55 @@ body {
   pointer-events: none;
 }
 
-.pw-note-card:hover {
+.os-note-card:hover {
   transform: translateY(-4px);
   border-color: rgba(245, 158, 11, 0.5);
   box-shadow: 0 8px 32px rgba(245, 158, 11, 0.15);
 }
 
-.pw-note-card.physics:hover {
+.os-note-card.physics:hover {
   box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2), 0 0 0 1px rgba(245, 158, 11, 0.3);
 }
 
-.pw-note-card.chemistry:hover {
+.os-note-card.chemistry:hover {
   box-shadow: 0 8px 32px rgba(245, 158, 11, 0.25), 0 0 0 1px rgba(245, 158, 11, 0.3);
 }
 
-.pw-note-card.biology:hover {
+.os-note-card.biology:hover {
   box-shadow: 0 8px 32px rgba(16, 185, 129, 0.2), 0 0 0 1px rgba(245, 158, 11, 0.3);
 }
 
-.pw-card-crown {
+.os-card-crown {
   font-size: 24px;
   margin-bottom: 4px;
   opacity: 0.8;
 }
 
-.pw-card-tag {
+.os-card-tag {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.pw-note-card.physics .pw-card-tag {
+.os-note-card.physics .os-card-tag {
   color: var(--accent-ph);
 }
 
-.pw-note-card.chemistry .pw-card-tag {
+.os-note-card.chemistry .os-card-tag {
   color: var(--accent-ch);
 }
 
-.pw-note-card.biology .pw-card-tag {
+.os-note-card.biology .os-card-tag {
   color: var(--accent-bi);
 }
 
-.pw-card-chapter {
+.os-card-chapter {
   font-size: 12px;
   color: var(--text3);
 }
 
-.pw-card-title {
+.os-card-title {
   font-size: 16px;
   font-weight: 700;
   color: var(--text);
@@ -1190,7 +1269,7 @@ body {
   margin-top: 2px;
 }
 
-.pw-card-action {
+.os-card-action {
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
@@ -1203,7 +1282,7 @@ body {
   transition: all 0.2s;
 }
 
-.pw-note-card:hover .pw-card-action {
+.os-note-card:hover .os-card-action {
   background: rgba(245, 158, 11, 0.2);
   border-color: rgba(245, 158, 11, 0.5);
 }
@@ -1403,6 +1482,236 @@ body {
 .pyq-card:hover .pyq-card-action {
   background: rgba(239, 68, 68, 0.2);
   border-color: rgba(239, 68, 68, 0.5);
+}
+
+/* PPT MASTER CARD BUTTON */
+.ppt-btn {
+  background: linear-gradient(135deg, #06b6d4, #0891b2, #0e7490) !important;
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.4) !important;
+}
+
+.ppt-btn:hover {
+  box-shadow: 0 6px 24px rgba(6, 182, 212, 0.6) !important;
+}
+
+/* PPT BAR */
+.ppt-bar {
+  background: linear-gradient(135deg, #001a1f 0%, #111827 100%);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+#ppt-bar-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #67e8f9;
+}
+
+.ppt-badge {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  color: #000;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pptPulse 2s ease-in-out infinite;
+}
+
+@keyframes pptPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.7);
+  }
+}
+
+/* PPT WRAPPER */
+.ppt-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+/* PPT HERO BANNER */
+.ppt-hero-banner {
+  position: relative;
+  text-align: center;
+  padding: 48px 24px 40px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.ppt-hero-glow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ppt-hero-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+  animation: crownFloat 3s ease-in-out infinite;
+}
+
+.ppt-hero-banner h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.ppt-highlight {
+  background: linear-gradient(135deg, #06b6d4, #67e8f9, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ppt-hero-banner p {
+  color: var(--text2);
+  font-size: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* PPT GRID */
+.ppt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.ppt-card {
+  background: linear-gradient(145deg, #001a1f 0%, var(--card) 40%);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: var(--radius);
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.ppt-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
+
+.ppt-card.physics::before {
+  background: var(--accent-ph);
+}
+
+.ppt-card.chemistry::before {
+  background: var(--accent-ch);
+}
+
+.ppt-card.biology::before {
+  background: var(--accent-bi);
+}
+
+.ppt-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(6, 182, 212, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.ppt-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.15);
+}
+
+.ppt-card.physics:hover {
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2), 0 0 0 1px rgba(6, 182, 212, 0.3);
+}
+
+.ppt-card.chemistry:hover {
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.2), 0 0 0 1px rgba(6, 182, 212, 0.3);
+}
+
+.ppt-card.biology:hover {
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.2), 0 0 0 1px rgba(6, 182, 212, 0.3);
+}
+
+.ppt-card-icon {
+  font-size: 28px;
+  margin-bottom: 4px;
+  opacity: 0.85;
+}
+
+.ppt-card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.ppt-card.physics .ppt-card-tag {
+  color: var(--accent-ph);
+}
+
+.ppt-card.chemistry .ppt-card-tag {
+  color: var(--accent-ch);
+}
+
+.ppt-card.biology .ppt-card-tag {
+  color: var(--accent-bi);
+}
+
+.ppt-card-chapter {
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.ppt-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.ppt-card-action {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  display: inline-block;
+  background: rgba(6, 182, 212, 0.12);
+  color: #67e8f9;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  transition: all 0.2s;
+}
+
+.ppt-card:hover .ppt-card-action {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: rgba(6, 182, 212, 0.5);
 }
 
 /* Responsive */

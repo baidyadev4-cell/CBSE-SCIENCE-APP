@@ -18,6 +18,7 @@
   <!-- HOME -->
   <div id="page-home" class="page active">
     <header class="hero">
+      <button class="theme-toggle" id="theme-btn" onclick="toggleTheme()">☀️ Light Mode</button>
       <div class="hero-glow"></div>
       <div class="hero-content">
         <div class="hero-badge">🎓 CBSE Class 10</div>
@@ -30,12 +31,16 @@
           <span class="pill pill-bi" onclick="filterSubject('biology')">🌿 Biology</span>
           <span class="pill pill-all active" onclick="filterSubject('all')">📚 All</span>
         </div>
+        <div class="hero-search-container">
+          <input type="text" id="chapter-search" class="hero-search-input"
+            placeholder="🔍 Search any chapter, topic, or keyword..." onkeyup="handleSearch()">
+        </div>
       </div>
     </header>
 
     <section class="stats-bar">
-      <div class="stat"><span class="stat-num">11</span><span class="stat-lbl">Chapters</span></div>
-      <div class="stat"><span class="stat-num">330</span><span class="stat-lbl">Quiz Questions</span></div>
+      <div class="stat"><span class="stat-num">13</span><span class="stat-lbl">Chapters</span></div>
+      <div class="stat"><span class="stat-num">390</span><span class="stat-lbl">Quiz Questions</span></div>
       <div class="stat"><span class="stat-num">200+</span><span class="stat-lbl">Q&amp;A Notes</span></div>
       <div class="stat"><span class="stat-num">3</span><span class="stat-lbl">Subjects</span></div>
     </section>
@@ -43,12 +48,12 @@
     <section class="section">
       <div class="section-header">
         <h2 id="chapter-section-title">📖 All Chapters</h2>
-        <button class="quiz-btn" onclick="goNotes()">📝 Watch Notes</button>
-        <button class="quiz-btn pw-notes-btn" onclick="goPwNotes()">👑 PW Notes</button>
-        <button class="quiz-btn pyq-btn" onclick="goPyqs()">📋 PYQs</button>
-        <button class="quiz-btn nbklm-btn"
-          onclick="window.open('https://notebooklm.google.com/notebook/653ddc21-b93e-4c8d-802a-bfcb570674d4','_blank')">🧠
-          NotebookLM</button>
+        <div class="actions-group">
+          <button class="quiz-btn" onclick="goNotes()">📝 Watch Notes</button>
+          <button class="quiz-btn pw-notes-btn" onclick="goOsNotes()">� Open-Source Notes</button>
+          <button class="quiz-btn pyq-btn" onclick="goPyqs()">📋 PYQs</button>
+          <button class="quiz-btn ppt-btn" onclick="goPpts()">📊 Master Card</button>
+        </div>
       </div>
       <div class="card-grid" id="chapter-grid"></div>
     </section>
@@ -95,21 +100,21 @@
     </div>
   </div>
 
-  <!-- PW PREMIUM NOTES -->
-  <div id="page-pw-notes" class="page">
-    <div class="chapter-bar pw-bar">
+  <!-- OPEN-SOURCE NOTES -->
+  <div id="page-os-notes" class="page">
+    <div class="chapter-bar os-bar">
       <button class="back-btn" onclick="goHome()">← Back</button>
-      <span id="pw-notes-bar-title">👑 Premium PW Short Notes</span>
-      <span class="pw-premium-badge">✨ PREMIUM</span>
+      <span id="os-notes-bar-title">� Open-Source Handwritten Notes</span>
+      <span class="os-premium-badge">✨ FREE</span>
     </div>
-    <div class="pw-notes-wrapper">
-      <div class="pw-hero-banner">
-        <div class="pw-hero-glow"></div>
-        <div class="pw-hero-icon">👑</div>
-        <h2>Physics Wallah <span class="pw-highlight">Premium Notes</span></h2>
+    <div class="os-notes-wrapper">
+      <div class="os-hero-banner">
+        <div class="os-hero-glow"></div>
+        <div class="os-hero-icon">�</div>
+        <h2>Open-Source <span class="os-highlight">Handwritten Notes</span></h2>
         <p>Chapter-wise short notes — concise, exam-ready &amp; free for you!</p>
       </div>
-      <div class="pw-notes-grid" id="pw-notes-grid"></div>
+      <div class="os-notes-grid" id="os-notes-grid"></div>
     </div>
   </div>
 
@@ -128,6 +133,24 @@
         <p>CBSE board exam papers, marking schemes &amp; sample papers — ace your exams!</p>
       </div>
       <div class="pyq-grid" id="pyq-grid"></div>
+    </div>
+  </div>
+
+  <!-- PPTs - MASTER CARD -->
+  <div id="page-ppts" class="page">
+    <div class="chapter-bar ppt-bar">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <span id="ppt-bar-title">📊 Master Card – PPTs</span>
+      <span class="ppt-badge">🎯 VISUAL NOTES</span>
+    </div>
+    <div class="ppt-wrapper">
+      <div class="ppt-hero-banner">
+        <div class="ppt-hero-glow"></div>
+        <div class="ppt-hero-icon">📊</div>
+        <h2>Master Card <span class="ppt-highlight">PPTs</span></h2>
+        <p>Chapter-wise visual presentations — quick revision &amp; concept clarity!</p>
+      </div>
+      <div class="ppt-grid" id="ppt-grid"></div>
     </div>
   </div>
 
