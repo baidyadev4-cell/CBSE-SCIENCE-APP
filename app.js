@@ -29,7 +29,6 @@ function renderGrid(filter) {
   const list = filter === 'all' ? chapters : chapters.filter(c => c.subject === filter);
   grid.innerHTML = list.map(ch => `
     <div class="chapter-card ${ch.subject}" onclick="openChapter('${ch.id}')">
-      <div class="card-icon">${ch.icon}</div>
       <div class="card-tag">${ch.subject.charAt(0).toUpperCase() + ch.subject.slice(1)}</div>
       <div class="card-num">${ch.num}</div>
       <div class="card-title">${ch.title}</div>
@@ -45,7 +44,7 @@ function openChapter(id) {
   if (!currentChapter) return;
   const ch = currentChapter;
 
-  document.getElementById('chapter-bar-title').textContent = `${ch.icon} ${ch.title}`;
+  document.getElementById('chapter-bar-title').textContent = ch.title;
   document.getElementById('chapter-quiz-btn').onclick = () => goQuizChapter(ch.title);
 
   const themeClass = ch.subject + '-theme';
@@ -136,7 +135,6 @@ function goNotes() {
     const hasPdf = !!notesMap[ch.id];
     return `
       <div class="notes-card ${ch.subject}${hasPdf ? '' : ' no-notes'}" ${hasPdf ? `onclick="openNotesPdf('${ch.id}')"` : ''}>
-        <div class="notes-card-icon">${ch.icon}</div>
         <div class="notes-card-tag">${ch.subject.charAt(0).toUpperCase() + ch.subject.slice(1)}</div>
         <div class="notes-card-title">${ch.title}</div>
         <div class="notes-card-num">${ch.num}</div>
@@ -150,6 +148,73 @@ function openNotesPdf(chapterId) {
   const pdf = notesMap[chapterId];
   if (pdf) {
     window.open('notes/' + encodeURIComponent(pdf), '_blank');
+  }
+}
+
+// ---- PW PREMIUM NOTES ----
+const pwNotesData = [
+  { id: 'pw-ph1', subject: 'physics', chapter: 'Chapter 10', title: 'Light – Reflection and Refraction', pdf: 'Light - Reflection and Refraction  Short Notes.pdf' },
+  { id: 'pw-ph2', subject: 'physics', chapter: 'Chapter 11', title: 'Human Eye and Colourful World', pdf: 'Human Eye and Colorful World  Short Notes.pdf' },
+  { id: 'pw-ph3', subject: 'physics', chapter: 'Chapter 12', title: 'Electricity', pdf: 'Electricity  Short Notes.pdf' },
+  { id: 'pw-ph4', subject: 'physics', chapter: 'Chapter 13', title: 'Magnetic Effects of Electric Current', pdf: 'Magnetic Effects of Electric Current  Short Notes.pdf' },
+  { id: 'pw-ch1', subject: 'chemistry', chapter: 'Chapter 1', title: 'Chemical Reactions and Equations', pdf: 'Chemical Reactions and Equations  Short Notes.pdf' },
+  { id: 'pw-ch2', subject: 'chemistry', chapter: 'Chapter 2', title: 'Acids, Bases and Salts', pdf: 'Acids, Bases and Salts  Short Notes.pdf' },
+  { id: 'pw-ch3', subject: 'chemistry', chapter: 'Chapter 3', title: 'Metals and Non-Metals', pdf: 'Metals and Non - Metals  Short Notes.pdf' },
+  { id: 'pw-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon and its Compounds  Short Notes.pdf' },
+  { id: 'pw-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Life Processes  Short Notes.pdf' },
+  { id: 'pw-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Control and Coordination  Short Notes.pdf' },
+  { id: 'pw-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'How Do Organisms Reproduce  Short Notes.pdf' },
+  { id: 'pw-bi4', subject: 'biology', chapter: 'Chapter 9', title: 'Heredity and Evolution', pdf: 'Heredity and Evolution  Short Notes.pdf' },
+  { id: 'pw-bi5', subject: 'biology', chapter: 'Chapter 15', title: 'Our Environment', pdf: 'Our Environment  Short Notes.pdf' }
+];
+
+function goPwNotes() {
+  const grid = document.getElementById('pw-notes-grid');
+  const filtered = currentFilter === 'all' ? pwNotesData : pwNotesData.filter(n => n.subject === currentFilter);
+  grid.innerHTML = filtered.map(note => `
+    <div class="pw-note-card ${note.subject}" onclick="openPwNotesPdf('${note.id}')">
+      <div class="pw-card-crown">👑</div>
+      <div class="pw-card-tag">${note.subject.charAt(0).toUpperCase() + note.subject.slice(1)}</div>
+      <div class="pw-card-chapter">${note.chapter}</div>
+      <div class="pw-card-title">${note.title}</div>
+      <div class="pw-card-action">📄 View Short Notes</div>
+    </div>
+  `).join('');
+  showPage('page-pw-notes');
+}
+
+function openPwNotesPdf(noteId) {
+  const note = pwNotesData.find(n => n.id === noteId);
+  if (note) {
+    window.open('pw_notes/' + encodeURIComponent(note.pdf), '_blank');
+  }
+}
+
+// ---- PYQs (PREVIOUS YEAR QUESTIONS) ----
+const pyqData = [
+  { id: 'pyq-1', icon: '📝', title: '2025 SQP (Questions)', desc: 'Official CBSE 2025 Sample Question Paper — practice the exact exam format.', tag: 'Questions', pdf: 'Science-SQP.pdf' },
+  { id: 'pyq-2', icon: '✅', title: '2025 MS (Answers)', desc: 'Official CBSE 2025 Marking Scheme — step-by-step answers with mark distribution.', tag: 'Answers', pdf: 'Science-MS.pdf' },
+  { id: 'pyq-3', icon: '📚', title: 'PYQs from 2014 to 2023', desc: 'Complete collection of CBSE board previous year questions from 2014 to 2023.', tag: 'PYQ Book', pdf: 'book.pdf' }
+];
+
+function goPyqs() {
+  const grid = document.getElementById('pyq-grid');
+  grid.innerHTML = pyqData.map(pyq => `
+    <div class="pyq-card" onclick="openPyqPdf('${pyq.id}')">
+      <div class="pyq-card-icon">${pyq.icon}</div>
+      <div class="pyq-card-tag">${pyq.tag}</div>
+      <div class="pyq-card-title">${pyq.title}</div>
+      <div class="pyq-card-desc">${pyq.desc}</div>
+      <div class="pyq-card-action">📄 View PDF</div>
+    </div>
+  `).join('');
+  showPage('page-pyqs');
+}
+
+function openPyqPdf(pyqId) {
+  const pyq = pyqData.find(p => p.id === pyqId);
+  if (pyq) {
+    window.open('pyqs/' + encodeURIComponent(pyq.pdf), '_blank');
   }
 }
 

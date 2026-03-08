@@ -44,6 +44,11 @@
       <div class="section-header">
         <h2 id="chapter-section-title">📖 All Chapters</h2>
         <button class="quiz-btn" onclick="goNotes()">📝 Watch Notes</button>
+        <button class="quiz-btn pw-notes-btn" onclick="goPwNotes()">👑 PW Notes</button>
+        <button class="quiz-btn pyq-btn" onclick="goPyqs()">📋 PYQs</button>
+        <button class="quiz-btn nbklm-btn"
+          onclick="window.open('https://notebooklm.google.com/notebook/653ddc21-b93e-4c8d-802a-bfcb570674d4','_blank')">🧠
+          NotebookLM</button>
       </div>
       <div class="card-grid" id="chapter-grid"></div>
     </section>
@@ -87,6 +92,42 @@
     </div>
     <div class="notes-wrapper">
       <div class="notes-grid" id="notes-grid"></div>
+    </div>
+  </div>
+
+  <!-- PW PREMIUM NOTES -->
+  <div id="page-pw-notes" class="page">
+    <div class="chapter-bar pw-bar">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <span id="pw-notes-bar-title">👑 Premium PW Short Notes</span>
+      <span class="pw-premium-badge">✨ PREMIUM</span>
+    </div>
+    <div class="pw-notes-wrapper">
+      <div class="pw-hero-banner">
+        <div class="pw-hero-glow"></div>
+        <div class="pw-hero-icon">👑</div>
+        <h2>Physics Wallah <span class="pw-highlight">Premium Notes</span></h2>
+        <p>Chapter-wise short notes — concise, exam-ready &amp; free for you!</p>
+      </div>
+      <div class="pw-notes-grid" id="pw-notes-grid"></div>
+    </div>
+  </div>
+
+  <!-- PYQs - PREVIOUS YEAR QUESTIONS -->
+  <div id="page-pyqs" class="page">
+    <div class="chapter-bar pyq-bar">
+      <button class="back-btn" onclick="goHome()">← Back</button>
+      <span id="pyq-bar-title">📋 Previous Year Questions</span>
+      <span class="pyq-badge">🔥 EXAM READY</span>
+    </div>
+    <div class="pyq-wrapper">
+      <div class="pyq-hero-banner">
+        <div class="pyq-hero-glow"></div>
+        <div class="pyq-hero-icon">📋</div>
+        <h2>Previous Year <span class="pyq-highlight">Questions</span></h2>
+        <p>CBSE board exam papers, marking schemes &amp; sample papers — ace your exams!</p>
+      </div>
+      <div class="pyq-grid" id="pyq-grid"></div>
     </div>
   </div>
 

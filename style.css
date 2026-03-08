@@ -351,6 +351,15 @@ body {
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
 }
 
+.nbklm-btn {
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
+}
+
+.nbklm-btn:hover {
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.5);
+}
+
 .quiz-btn-sm {
   background: rgba(99, 102, 241, 0.2);
   border: 1px solid rgba(99, 102, 241, 0.4);
@@ -966,6 +975,434 @@ body {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text3);
   border: 1px solid var(--border);
+}
+
+/* PW NOTES BUTTON */
+.pw-notes-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706, #b45309) !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4) !important;
+}
+
+.pw-notes-btn:hover {
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.6) !important;
+}
+
+/* PW BAR */
+.pw-bar {
+  background: linear-gradient(135deg, #1a1200 0%, #111827 100%);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+#pw-notes-bar-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fbbf24;
+}
+
+.pw-premium-badge {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #000;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.7);
+  }
+}
+
+/* PW NOTES WRAPPER */
+.pw-notes-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+/* PW HERO BANNER */
+.pw-hero-banner {
+  position: relative;
+  text-align: center;
+  padding: 48px 24px 40px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.pw-hero-glow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(245, 158, 11, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.pw-hero-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+  animation: crownFloat 3s ease-in-out infinite;
+}
+
+@keyframes crownFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.pw-hero-banner h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.pw-highlight {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pw-hero-banner p {
+  color: var(--text2);
+  font-size: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* PW NOTES GRID */
+.pw-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.pw-note-card {
+  background: linear-gradient(145deg, #1a1600 0%, var(--card) 40%);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: var(--radius);
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.pw-note-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  background: linear-gradient(180deg, #f59e0b, #d97706);
+}
+
+.pw-note-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.pw-note-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.15);
+}
+
+.pw-note-card.physics:hover {
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2), 0 0 0 1px rgba(245, 158, 11, 0.3);
+}
+
+.pw-note-card.chemistry:hover {
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.25), 0 0 0 1px rgba(245, 158, 11, 0.3);
+}
+
+.pw-note-card.biology:hover {
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.2), 0 0 0 1px rgba(245, 158, 11, 0.3);
+}
+
+.pw-card-crown {
+  font-size: 24px;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.pw-card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.pw-note-card.physics .pw-card-tag {
+  color: var(--accent-ph);
+}
+
+.pw-note-card.chemistry .pw-card-tag {
+  color: var(--accent-ch);
+}
+
+.pw-note-card.biology .pw-card-tag {
+  color: var(--accent-bi);
+}
+
+.pw-card-chapter {
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.pw-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.pw-card-action {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  transition: all 0.2s;
+}
+
+.pw-note-card:hover .pw-card-action {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
+/* PYQs BUTTON */
+.pyq-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626, #b91c1c) !important;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4) !important;
+}
+
+.pyq-btn:hover {
+  box-shadow: 0 6px 24px rgba(239, 68, 68, 0.6) !important;
+}
+
+/* PYQ BAR */
+.pyq-bar {
+  background: linear-gradient(135deg, #1a0500 0%, #111827 100%);
+  border-bottom: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+#pyq-bar-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fca5a5;
+}
+
+.pyq-badge {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pyqPulse 2s ease-in-out infinite;
+}
+
+@keyframes pyqPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.7);
+  }
+}
+
+/* PYQ WRAPPER */
+.pyq-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+/* PYQ HERO */
+.pyq-hero-banner {
+  position: relative;
+  text-align: center;
+  padding: 48px 24px 40px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.pyq-hero-glow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(239, 68, 68, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.pyq-hero-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+  animation: crownFloat 3s ease-in-out infinite;
+}
+
+.pyq-hero-banner h2 {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.pyq-highlight {
+  background: linear-gradient(135deg, #ef4444, #f87171, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pyq-hero-banner p {
+  color: var(--text2);
+  font-size: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* PYQ GRID */
+.pyq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.pyq-card {
+  background: linear-gradient(145deg, #1a0500 0%, var(--card) 40%);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius);
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.pyq-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  background: linear-gradient(180deg, #ef4444, #dc2626);
+}
+
+.pyq-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.pyq-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(239, 68, 68, 0.5);
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.2);
+}
+
+.pyq-card-icon {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.pyq-card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f87171;
+}
+
+.pyq-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.pyq-card-desc {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.pyq-card-action {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  display: inline-block;
+  background: rgba(239, 68, 68, 0.12);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  transition: all 0.2s;
+}
+
+.pyq-card:hover .pyq-card-action {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
 }
 
 /* Responsive */
