@@ -49,6 +49,13 @@ function filterSubject(subject) {
   document.querySelector('.' + map[subject])?.classList.add('active');
   const titles = { physics: '⚡ Physics Chapters', chemistry: '🧪 Chemistry Chapters', biology: '🌿 Biology Chapters', all: '📖 All Chapters' };
   document.getElementById('chapter-section-title').textContent = titles[subject];
+
+  const btn = document.getElementById('subject-quiz-btn');
+  if (btn) {
+    const btnTitles = { physics: '🎯 Physics MCQ Quiz', chemistry: '🎯 Chemistry MCQ Quiz', biology: '🎯 Biology MCQ Quiz', all: '🎯 All Subjects MCQ Quiz' };
+    btn.textContent = btnTitles[subject];
+  }
+
   renderGrid(subject);
 }
 
@@ -172,7 +179,9 @@ const notesMap = {
   'ch4': "Carbon and It's Compounds Handwritten Notes.pdf",
   'bi1': 'life processes Handwritten notes.pdf',
   'bi2': 'Control & coordination handwritten notes.pdf',
-  'bi3': 'heredity handwritten notes.pdf'
+  'bi_repo': 'How do organisms reproduce Handwritten Notes.pdf',
+  'bi3': 'heredity handwritten notes.pdf',
+  'bi4': 'Our Environment Handwritten notes.pdf'
 };
 
 function goNotes() {
@@ -200,19 +209,43 @@ function openNotesPdf(chapterId) {
 
 // ---- OPEN-SOURCE NOTES ----
 const osNotesData = [
-  { id: 'os-ph1', subject: 'physics', chapter: 'Chapter 10', title: 'Light – Reflection and Refraction', pdf: 'Light_Reflection_Refraction_OS_Notes.pdf' },
-  { id: 'os-ph2', subject: 'physics', chapter: 'Chapter 11', title: 'Human Eye and Colourful World', pdf: 'Human_Eye_OS_Notes.pdf' },
-  { id: 'os-ph3', subject: 'physics', chapter: 'Chapter 12', title: 'Electricity', pdf: 'Electricity_OS_Notes.pdf' },
-  { id: 'os-ph4', subject: 'physics', chapter: 'Chapter 13', title: 'Magnetic Effects of Electric Current', pdf: 'Magnetic_Effects_OS_Notes.pdf' },
-  { id: 'os-ch1', subject: 'chemistry', chapter: 'Chapter 1', title: 'Chemical Reactions and Equations', pdf: 'Chem_Reactions_OS_Notes.pdf' },
-  { id: 'os-ch2', subject: 'chemistry', chapter: 'Chapter 2', title: 'Acids, Bases and Salts', pdf: 'Acids_Bases_OS_Notes.pdf' },
-  { id: 'os-ch3', subject: 'chemistry', chapter: 'Chapter 3', title: 'Metals and Non-Metals', pdf: 'Metals_OS_Notes.pdf' },
-  { id: 'os-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon_OS_Notes.pdf' },
-  { id: 'os-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Life_Processes_OS_Notes.pdf' },
-  { id: 'os-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Control_Coordination_OS_Notes.pdf' },
-  { id: 'os-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'Reproduction_OS_Notes.pdf' },
-  { id: 'os-bi4', subject: 'biology', chapter: 'Chapter 9', title: 'Heredity and Evolution', pdf: 'Heredity_OS_Notes.pdf' },
-  { id: 'os-bi5', subject: 'biology', chapter: 'Chapter 13', title: 'Our Environment', pdf: 'Our_Environment_OS_Notes.pdf' }
+  {
+    id: 'os-ph1', subject: 'physics', chapter: 'Chapter 10', title: 'Light – Reflection and Refraction', pdf: 'Light - Reflection and Refraction  Short Notes.pdf'
+  },
+  {
+    id: 'os-ph2', subject: 'physics', chapter: 'Chapter 11', title: 'Human Eye and Colourful World', pdf: 'Human Eye and Colorful World  Short Notes.pdf'
+  },
+  {
+    id: 'os-ph3', subject: 'physics', chapter: 'Chapter 12', title: 'Electricity', pdf: 'Electricity  Short Notes.pdf'
+  },
+  {
+    id: 'os-ph4', subject: 'physics', chapter: 'Chapter 13', title: 'Magnetic Effects of Electric Current', pdf: 'Magnetic Effects of Electric Current  Short Notes.pdf'
+  },
+  {
+    id: 'os-ch1', subject: 'chemistry', chapter: 'Chapter 1', title: 'Chemical Reactions and Equations', pdf: 'Chemical Reactions and Equations  Short Notes.pdf'
+  },
+  {
+    id: 'os-ch2', subject: 'chemistry', chapter: 'Chapter 2', title: 'Acids, Bases and Salts', pdf: 'Acids, Bases and Salts  Short Notes.pdf'
+  },
+  {
+    id: 'os-ch3', subject: 'chemistry', chapter: 'Chapter 3', title: 'Metals and Non-Metals', pdf: 'Metals and Non - Metals  Short Notes.pdf'
+  },
+  {
+    id: 'os-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon and its Compounds  Short Notes.pdf'
+  },
+  {
+    id: 'os-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Life Processes  Short Notes.pdf'
+  },
+  {
+    id: 'os-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Control and Coordination  Short Notes.pdf'
+  },
+  {
+    id: 'os-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'How Do Organisms Reproduce  Short Notes.pdf'
+  },
+  {
+    id: 'os-bi4', subject: 'biology', chapter: 'Chapter 9', title: 'Heredity and Evolution', pdf: 'Heredity and Evolution  Short Notes.pdf'
+  },
+  { id: 'os-bi5', subject: 'biology', chapter: 'Chapter 13', title: 'Our Environment', pdf: 'Our Environment  Short Notes.pdf' }
 ];
 
 function goOsNotes() {
@@ -277,7 +310,9 @@ const pptData = [
   { id: 'ppt-ch4', subject: 'chemistry', chapter: 'Chapter 4', title: 'Carbon and its Compounds', pdf: 'Carbon_Architecture.pdf' },
   { id: 'ppt-bi1', subject: 'biology', chapter: 'Chapter 6', title: 'Life Processes', pdf: 'Engines_of_Life.pdf' },
   { id: 'ppt-bi2', subject: 'biology', chapter: 'Chapter 7', title: 'Control and Coordination', pdf: 'Biological_Control_and_Coordination.pdf' },
-  { id: 'ppt-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'Biological_Reproduction.pdf' }
+  { id: 'ppt-bi3', subject: 'biology', chapter: 'Chapter 8', title: 'How Do Organisms Reproduce', pdf: 'Biological_Reproduction.pdf' },
+  { id: 'ppt-bi4', subject: 'biology', chapter: 'Chapter 9', title: 'Heredity and Evolution', pdf: 'Heredity_and_Evolution.pdf' },
+  { id: 'ppt-bi5', subject: 'biology', chapter: 'Chapter 13', title: 'Our Environment', pdf: 'The_Living_Blueprint.pdf' }
 ];
 
 function goPpts() {
@@ -303,6 +338,16 @@ function openPptPdf(pptId) {
 }
 
 // ---- QUIZ ----
+
+function goQuizSubject(subject) {
+  const pool = subject === 'all' ? quizData : quizData.filter(q => q.subject === subject);
+  if (pool.length === 0) {
+    alert('No quiz questions found for this subject.');
+    return;
+  }
+  const label = subject === 'all' ? 'All Subjects' : subject.charAt(0).toUpperCase() + subject.slice(1);
+  startQuiz(pool, label);
+}
 
 function goQuizChapter(chapterTitle) {
   const pool = quizData.filter(q => q.chapter === chapterTitle);
@@ -331,14 +376,14 @@ function renderQ() {
     // Done
     const pct = Math.round((quizScore / quizPool.length) * 100);
     const emoji = pct >= 80 ? '🎉' : pct >= 50 ? '👍' : '😅';
-    const msg = pct >= 80 ? 'Excellent! You\'re a science star!' : pct >= 50 ? 'Good effort! Keep practicing.' : 'Keep studying — you\'ll get there!';
+    const msg = pct >= 80 ? "Excellent! You're a science star!" : pct >= 50 ? "Good effort! Keep practicing." : "Keep studying — you'll get there!";
     card.innerHTML = `
       <div class="quiz-done">
         <div class="big-emoji">${emoji}</div>
         <h2>${pct}% Score</h2>
         <p>${msg}</p>
         <div class="score-circle" style="--pct:${pct}%">${quizScore}/${quizPool.length}</div>
-        <button class="quiz-btn" onclick="goQuiz()">🔄 New Quiz</button>
+        <button class="quiz-btn" onclick="goHome()">🔄 Back to Home</button>
       </div>`;
     document.getElementById('quiz-prev').disabled = true;
     document.getElementById('quiz-next').disabled = true;

@@ -49,8 +49,10 @@
       <div class="section-header">
         <h2 id="chapter-section-title">📖 All Chapters</h2>
         <div class="actions-group">
-          <button class="quiz-btn" onclick="goNotes()">📝 Watch Notes</button>
-          <button class="quiz-btn pw-notes-btn" onclick="goOsNotes()">� Open-Source Notes</button>
+          <button class="quiz-btn" id="subject-quiz-btn" onclick="goQuizSubject(currentFilter)"
+            style="background: var(--accent); color: white;">🎯 All Subjects MCQ Quiz</button>
+          <button class="quiz-btn" onclick="goNotes()">📝 Notes</button>
+          <button class="quiz-btn pw-notes-btn" onclick="goOsNotes()">💎 PW Notes</button>
           <button class="quiz-btn pyq-btn" onclick="goPyqs()">📋 PYQs</button>
           <button class="quiz-btn ppt-btn" onclick="goPpts()">📊 Master Card</button>
         </div>
@@ -104,15 +106,15 @@
   <div id="page-os-notes" class="page">
     <div class="chapter-bar os-bar">
       <button class="back-btn" onclick="goHome()">← Back</button>
-      <span id="os-notes-bar-title">� Open-Source Handwritten Notes</span>
-      <span class="os-premium-badge">✨ FREE</span>
+      <span id="os-notes-bar-title">💎 PW Premium Notes</span>
+      <span class="os-premium-badge">✨ PREMIUM</span>
     </div>
     <div class="os-notes-wrapper">
       <div class="os-hero-banner">
         <div class="os-hero-glow"></div>
-        <div class="os-hero-icon">�</div>
-        <h2>Open-Source <span class="os-highlight">Handwritten Notes</span></h2>
-        <p>Chapter-wise short notes — concise, exam-ready &amp; free for you!</p>
+        <div class="os-hero-icon">💎</div>
+        <h2>Physics Wallah <span class="os-highlight">Premium Notes</span></h2>
+        <p>Expert-curated premium notes — high-yield &amp; exam-ready!</p>
       </div>
       <div class="os-notes-grid" id="os-notes-grid"></div>
     </div>
